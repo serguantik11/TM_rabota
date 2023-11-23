@@ -1,6 +1,6 @@
-﻿namespace TM_Simulator
+﻿namespace TM_Simulator.Menu.Statistics
 {
-    partial class TittlePage
+    partial class EventLogPage
     {
         /// <summary>
         /// Required designer variable.
@@ -29,27 +29,25 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            menu = new Button();
-            tittletimer = new System.Windows.Forms.Timer(components);
+            back = new Button();
             time = new Label();
             date = new Label();
+            progressBar1 = new ProgressBar();
+            timer1 = new System.Windows.Forms.Timer(components);
             SuspendLayout();
             // 
-            // menu
+            // back
             // 
-            menu.Location = new Point(312, 10);
-            menu.Margin = new Padding(2);
-            menu.Name = "menu";
-            menu.Size = new Size(96, 40);
-            menu.TabIndex = 1;
-            menu.Text = "меню";
-            menu.UseVisualStyleBackColor = true;
-            menu.Click += menu_Click;
-            // 
-            // tittletimer
-            // 
-            tittletimer.Enabled = true;
-            tittletimer.Tick += timer1_Tick;
+            back.Location = new Point(10, 10);
+            back.MaximumSize = new Size(96, 40);
+            back.MinimumSize = new Size(96, 40);
+            back.Name = "back";
+            back.Size = new Size(96, 40);
+            back.TabIndex = 0;
+            back.Text = "назад";
+            back.UseVisualStyleBackColor = true;
+            back.Click += back_Click;
+            back.KeyUp += back_KeyUp;
             // 
             // time
             // 
@@ -75,35 +73,50 @@
             date.TabIndex = 3;
             date.Text = "дата";
             // 
-            // TittlePage
+            // progressBar1
+            // 
+            progressBar1.BackColor = Color.White;
+            progressBar1.Location = new Point(575, 70);
+            progressBar1.Minimum = 1;
+            progressBar1.Name = "progressBar1";
+            progressBar1.Size = new Size(200, 25);
+            progressBar1.TabIndex = 3;
+            progressBar1.Value = 1;
+            // 
+            // timer1
+            // 
+            timer1.Enabled = true;
+            timer1.Tick += timer1_Tick;
+            // 
+            // EventLogPage
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
-            BackColor = Color.White;
-            BackgroundImage = Properties.Resources.MainScreen;
+            BackgroundImage = Properties.Resources.EventLogBackGround;
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(723, 441);
-            Controls.Add(time);
+            ClientSize = new Size(784, 471);
             Controls.Add(date);
-            Controls.Add(menu);
+            Controls.Add(time);
+            Controls.Add(back);
+            Controls.Add(progressBar1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
-            Margin = new Padding(2);
-            MaximumSize = new Size(739, 480);
-            MinimumSize = new Size(739, 480);
-            Name = "TittlePage";
+            KeyPreview = true;
+            MaximumSize = new Size(800, 510);
+            MinimumSize = new Size(800, 510);
+            Name = "EventLogPage";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form2";
-            FormClosing += Form2_FormClosing;
-            Click += TittlePage_Click;
-            KeyUp += TittlePage_KeyUp;
+            Text = "EventLog";
+            FormClosing += EventLogPage_FormClosing;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-        private Button menu;
+
+        private Button back;
         private Label time;
         private Label date;
-        public System.Windows.Forms.Timer tittletimer;
+        private ProgressBar progressBar1;
+        private System.Windows.Forms.Timer timer1;
     }
 }

@@ -34,7 +34,7 @@
             // back
             // 
             back.Location = new Point(10, 10);
-            back.Margin = new Padding(2, 2, 2, 2);
+            back.Margin = new Padding(2);
             back.MaximumSize = new Size(96, 40);
             back.MinimumSize = new Size(96, 40);
             back.Name = "back";
@@ -50,12 +50,12 @@
             AutoScaleMode = AutoScaleMode.Dpi;
             BackgroundImage = Properties.Resources.calibratepage;
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(723, 441);
+            ClientSize = new Size(784, 471);
             Controls.Add(back);
             FormBorderStyle = FormBorderStyle.FixedDialog;
-            Margin = new Padding(2, 2, 2, 2);
-            MaximumSize = new Size(739, 480);
-            MinimumSize = new Size(739, 480);
+            Margin = new Padding(2);
+            MaximumSize = new Size(800, 510);
+            MinimumSize = new Size(800, 510);
             Name = "CalibratePage";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "CalibratePage";

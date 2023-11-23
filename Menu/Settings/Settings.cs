@@ -16,6 +16,7 @@ namespace TM_Simulator
         public Settings()
         {
             InitializeComponent();
+            this.KeyPreview = true;
         }
         // ПОДКЛЮЧЕНИЕ ТАЙМЕРА
         private void Form3_Load(object sender, EventArgs e)
@@ -26,7 +27,7 @@ namespace TM_Simulator
         private void back_Click(object sender, EventArgs e)
         {
             cl = false;
-            SystemMenu sysmenu = new SystemMenu();
+            SystemMenu sysmenu = new();
             sysmenu.Show();
             this.Close();
         }
@@ -34,8 +35,8 @@ namespace TM_Simulator
         // ВЫВОД ВРЕМЕНИ
         private void timer1_Tick(object sender, EventArgs e)
         {
-            label1.Text = DateTime.Now.ToLongTimeString();
-            label2.Text = DateTime.Now.ToLongDateString();
+            time.Text = DateTime.Now.ToString("HH:mm");
+            date.Text = DateTime.Now.ToShortDateString();
         }
 
         private void Settings_FormClosing(object sender, FormClosingEventArgs e)
@@ -50,9 +51,17 @@ namespace TM_Simulator
         private void combinesettings_Click(object sender, EventArgs e)
         {
             cl = false;
-            CombineSettings form4 = new CombineSettings();
+            CombineSettings form4 = new();
             form4.Show();
             this.Close();
+        }
+
+        private void Settings_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                back_Click(this, e);
+            }
         }
     }
 }

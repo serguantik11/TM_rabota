@@ -23,5 +23,13 @@ namespace TM_Simulator
             tittle.Show();
             this.Visible = false;
         }
+
+        private void StartPage_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                StartPage_Click (this, e);
+            }
+        }
     }
 }

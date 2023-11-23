@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             back = new Button();
             statisticdata = new Button();
             help = new Button();
@@ -35,15 +36,19 @@
             kalibratepage = new Button();
             sensorsstatus = new Button();
             copydata = new Button();
+            timer1 = new System.Windows.Forms.Timer(components);
+            time = new Label();
+            date = new Label();
             SuspendLayout();
             // 
             // back
             // 
-            back.Location = new Point(12, 12);
-            back.MaximumSize = new Size(120, 50);
-            back.MinimumSize = new Size(120, 50);
+            back.Location = new Point(10, 10);
+            back.Margin = new Padding(2);
+            back.MaximumSize = new Size(96, 40);
+            back.MinimumSize = new Size(96, 40);
             back.Name = "back";
-            back.Size = new Size(120, 50);
+            back.Size = new Size(96, 40);
             back.TabIndex = 0;
             back.Text = "назад";
             back.UseVisualStyleBackColor = true;
@@ -51,11 +56,12 @@
             // 
             // statisticdata
             // 
-            statisticdata.Location = new Point(25, 142);
-            statisticdata.MaximumSize = new Size(850, 50);
-            statisticdata.MinimumSize = new Size(850, 50);
+            statisticdata.Location = new Point(55, 130);
+            statisticdata.Margin = new Padding(2);
+            statisticdata.MaximumSize = new Size(680, 40);
+            statisticdata.MinimumSize = new Size(680, 40);
             statisticdata.Name = "statisticdata";
-            statisticdata.Size = new Size(850, 50);
+            statisticdata.Size = new Size(680, 40);
             statisticdata.TabIndex = 1;
             statisticdata.Text = "Статистические данные";
             statisticdata.UseVisualStyleBackColor = true;
@@ -63,11 +69,12 @@
             // 
             // help
             // 
-            help.Location = new Point(25, 198);
-            help.MaximumSize = new Size(850, 50);
-            help.MinimumSize = new Size(850, 50);
+            help.Location = new Point(55, 175);
+            help.Margin = new Padding(2);
+            help.MaximumSize = new Size(680, 40);
+            help.MinimumSize = new Size(680, 40);
             help.Name = "help";
-            help.Size = new Size(850, 50);
+            help.Size = new Size(680, 40);
             help.TabIndex = 2;
             help.Text = "Помощь";
             help.UseVisualStyleBackColor = true;
@@ -75,11 +82,12 @@
             // 
             // Settings
             // 
-            Settings.Location = new Point(25, 253);
-            Settings.MaximumSize = new Size(850, 50);
-            Settings.MinimumSize = new Size(850, 50);
+            Settings.Location = new Point(55, 220);
+            Settings.Margin = new Padding(2);
+            Settings.MaximumSize = new Size(680, 40);
+            Settings.MinimumSize = new Size(680, 40);
             Settings.Name = "Settings";
-            Settings.Size = new Size(850, 50);
+            Settings.Size = new Size(680, 40);
             Settings.TabIndex = 3;
             Settings.Text = "Настройки";
             Settings.UseVisualStyleBackColor = true;
@@ -87,11 +95,12 @@
             // 
             // kalibratepage
             // 
-            kalibratepage.Location = new Point(25, 307);
-            kalibratepage.MaximumSize = new Size(850, 50);
-            kalibratepage.MinimumSize = new Size(850, 50);
+            kalibratepage.Location = new Point(55, 265);
+            kalibratepage.Margin = new Padding(2);
+            kalibratepage.MaximumSize = new Size(680, 40);
+            kalibratepage.MinimumSize = new Size(680, 40);
             kalibratepage.Name = "kalibratepage";
-            kalibratepage.Size = new Size(850, 50);
+            kalibratepage.Size = new Size(680, 40);
             kalibratepage.TabIndex = 4;
             kalibratepage.Text = "Калибровки";
             kalibratepage.UseVisualStyleBackColor = true;
@@ -99,33 +108,67 @@
             // 
             // sensorsstatus
             // 
-            sensorsstatus.Location = new Point(25, 360);
-            sensorsstatus.MaximumSize = new Size(850, 50);
-            sensorsstatus.MinimumSize = new Size(850, 50);
+            sensorsstatus.Location = new Point(55, 310);
+            sensorsstatus.Margin = new Padding(2);
+            sensorsstatus.MaximumSize = new Size(680, 40);
+            sensorsstatus.MinimumSize = new Size(680, 40);
             sensorsstatus.Name = "sensorsstatus";
-            sensorsstatus.Size = new Size(850, 50);
+            sensorsstatus.Size = new Size(680, 40);
             sensorsstatus.TabIndex = 5;
             sensorsstatus.Text = "Состояние датчиков";
             sensorsstatus.UseVisualStyleBackColor = true;
+            sensorsstatus.Click += this.sensorsstatus_Click;
             // 
             // copydata
             // 
-            copydata.Location = new Point(25, 415);
-            copydata.MaximumSize = new Size(850, 50);
-            copydata.MinimumSize = new Size(850, 50);
+            copydata.Location = new Point(55, 355);
+            copydata.Margin = new Padding(2);
+            copydata.MaximumSize = new Size(680, 40);
+            copydata.MinimumSize = new Size(680, 40);
             copydata.Name = "copydata";
-            copydata.Size = new Size(850, 50);
+            copydata.Size = new Size(680, 40);
             copydata.TabIndex = 6;
             copydata.Text = "Копирование данных";
             copydata.UseVisualStyleBackColor = true;
             // 
+            // timer1
+            // 
+            timer1.Enabled = true;
+            timer1.Tick += timer1_Tick;
+            // 
+            // time
+            // 
+            time.AutoSize = true;
+            time.BackColor = Color.Transparent;
+            time.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
+            time.Location = new Point(608, -4);
+            time.Margin = new Padding(2, 0, 2, 0);
+            time.Name = "time";
+            time.Size = new Size(110, 41);
+            time.TabIndex = 2;
+            time.Text = "время";
+            // 
+            // date
+            // 
+            date.AutoSize = true;
+            date.BackColor = Color.Transparent;
+            date.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            date.Location = new Point(600, 32);
+            date.Margin = new Padding(2, 0, 2, 0);
+            date.Name = "date";
+            date.Size = new Size(53, 25);
+            date.TabIndex = 3;
+            date.Text = "дата";
+            // 
             // SystemMenu
             // 
-            AutoScaleDimensions = new SizeF(120F, 120F);
+            AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
             BackgroundImage = Properties.Resources.SystemMenu;
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(902, 543);
+            ClientSize = new Size(784, 471);
+            Controls.Add(date);
+            Controls.Add(time);
             Controls.Add(copydata);
             Controls.Add(sensorsstatus);
             Controls.Add(kalibratepage);
@@ -134,14 +177,16 @@
             Controls.Add(statisticdata);
             Controls.Add(back);
             FormBorderStyle = FormBorderStyle.FixedDialog;
-            MaximumSize = new Size(920, 590);
-            MinimumSize = new Size(920, 590);
+            Margin = new Padding(2);
+            MaximumSize = new Size(800, 510);
+            MinimumSize = new Size(800, 510);
             Name = "SystemMenu";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "SystemMenu";
             FormClosing += SystemMenu_FormClosing;
             KeyUp += SystemMenu_KeyUp;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -153,5 +198,8 @@
         private Button kalibratepage;
         private Button sensorsstatus;
         private Button copydata;
+        private System.Windows.Forms.Timer timer1;
+        private Label time;
+        private Label date;
     }
 }

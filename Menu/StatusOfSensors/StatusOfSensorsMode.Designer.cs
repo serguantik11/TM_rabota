@@ -1,6 +1,6 @@
 ﻿namespace TM_Simulator
 {
-    partial class CombineSettings
+    partial class StatusOfSensorsMode
     {
         /// <summary>
         /// Required designer variable.
@@ -29,51 +29,43 @@
         private void InitializeComponent()
         {
             back = new Button();
-            comboBox1 = new ComboBox();
             SuspendLayout();
             // 
             // back
             // 
-            back.Location = new Point(12, 12);
+            back.Location = new Point(677, 11);
+            back.Margin = new Padding(2);
+            back.MaximumSize = new Size(96, 40);
+            back.MinimumSize = new Size(96, 40);
             back.Name = "back";
-            back.Size = new Size(120, 50);
+            back.Size = new Size(96, 40);
             back.TabIndex = 0;
-            back.Text = "назад";
+            back.Text = "Назад";
             back.UseVisualStyleBackColor = true;
-            back.Click += button1_Click;
+            back.Click += back_Click;
             // 
-            // comboBox1
+            // StatusOfSensors
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "обычный", "понижающий" });
-            comboBox1.Location = new Point(12, 161);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(225, 28);
-            comboBox1.TabIndex = 1;
-            // 
-            // CombineSettings
-            // 
-            AutoScaleDimensions = new SizeF(120F, 120F);
+            AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
-            BackgroundImage = Properties.Resources.combinesettings;
+            BackgroundImage = Properties.Resources.StatusOfSensors;
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(902, 543);
-            Controls.Add(comboBox1);
+            ClientSize = new Size(784, 471);
             Controls.Add(back);
             FormBorderStyle = FormBorderStyle.FixedDialog;
-            MaximumSize = new Size(920, 590);
-            MinimumSize = new Size(920, 590);
-            Name = "CombineSettings";
+            KeyPreview = true;
+            MaximumSize = new Size(800, 510);
+            MinimumSize = new Size(800, 510);
+            Name = "StatusOfSensors";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "combset";
-            FormClosing += combset_FormClosing;
-            Load += combset_Load;
+            Text = "StatusOfSensors";
+            FormClosing += StatusOfSensors_FormClosing;
+            KeyUp += StatusOfSensors_KeyUp;
             ResumeLayout(false);
         }
 
         #endregion
 
         private Button back;
-        private ComboBox comboBox1;
     }
 }

@@ -20,7 +20,7 @@ namespace TM_Simulator
             comboBox1.SelectedIndex = 0;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void back_Click(object sender, EventArgs e)
         {
             cl = false;
             Settings form3 = new();
@@ -39,6 +39,14 @@ namespace TM_Simulator
         private void combset_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void CombineSettings_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                back_Click(this, e);
+            }
         }
     }
 }
