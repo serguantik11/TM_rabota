@@ -51,8 +51,9 @@ namespace TM_Simulator
                 bt[i].Location = new Point(X,Y);
                 bt[i].Size = new Size(60, 60);
                 bt[i].Tag = i;
+                bt[i].Name = "btn" + i;
                 bt[i].Text = "Кнопка " + i;
-                bt[i].Click += ButtonOnClick;
+                bt[i].Click += ButtonAllClick;
                 Controls.Add(bt[i]);
                 X += 65;
                 if (i % 10 == 9)
@@ -63,9 +64,15 @@ namespace TM_Simulator
 
             }
         }
-        private void ButtonOnClick(object sender, EventArgs e)
+        private void ButtonAllClick(object sender, EventArgs e)
         {
-            back_Click(this, e);
+            var button = (Button)sender;
+            if (button != null)
+            {
+                string t = Convert.ToString(button.TabIndex);
+                MessageBox.Show(t);
+
+            }
         }
     }
 }
