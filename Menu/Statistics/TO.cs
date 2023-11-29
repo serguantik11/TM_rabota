@@ -13,6 +13,7 @@ namespace TM_Simulator.Menu.Statistics
     public partial class TO : Form
     {
         private bool cl = true;
+
         public TO()
         {
             InitializeComponent();
@@ -30,7 +31,7 @@ namespace TM_Simulator.Menu.Statistics
             StatisticData statdata = new();
             statdata.Show();
             this.Close();
-        }
+        } 
 
         private void TO_KeyUp(object sender, KeyEventArgs e)
         {

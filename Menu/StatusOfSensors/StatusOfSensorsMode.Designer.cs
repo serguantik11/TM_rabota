@@ -44,7 +44,7 @@
             back.UseVisualStyleBackColor = true;
             back.Click += back_Click;
             // 
-            // StatusOfSensors
+            // StatusOfSensorsMode
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
@@ -56,10 +56,11 @@
             KeyPreview = true;
             MaximumSize = new Size(800, 510);
             MinimumSize = new Size(800, 510);
-            Name = "StatusOfSensors";
+            Name = "StatusOfSensorsMode";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "StatusOfSensors";
             FormClosing += StatusOfSensors_FormClosing;
+            Load += StatusOfSensorsMode_Load;
             KeyUp += StatusOfSensors_KeyUp;
             ResumeLayout(false);
         }

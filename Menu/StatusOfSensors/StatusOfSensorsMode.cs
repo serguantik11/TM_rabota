@@ -13,6 +13,8 @@ namespace TM_Simulator
     public partial class StatusOfSensorsMode : Form
     {
         private bool cl = true;
+        public Button[] bt = new Button[60];
+        public int X=40, Y=40;
         public StatusOfSensorsMode()
         {
             InitializeComponent();
@@ -38,6 +40,32 @@ namespace TM_Simulator
             {
                 back_Click(this, e);
             }
+        }
+
+        private void StatusOfSensorsMode_Load(object sender, EventArgs e)
+        {
+            for (int i = 0; i < bt.Length; i++)
+            {
+
+                bt[i] = new Button();
+                bt[i].Location = new Point(X,Y);
+                bt[i].Size = new Size(60, 60);
+                bt[i].Tag = i;
+                bt[i].Text = "Кнопка " + i;
+                bt[i].Click += ButtonOnClick;
+                Controls.Add(bt[i]);
+                X += 65;
+                if (i % 10 == 9)
+                {
+                    X = 40;
+                    Y += 65;
+                }
+
+            }
+        }
+        private void ButtonOnClick(object sender, EventArgs e)
+        {
+            back_Click(this, e);
         }
     }
 }
