@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             back = new Button();
+            SensorName = new Label();
             SuspendLayout();
             // 
             // back
@@ -44,17 +45,30 @@
             back.UseVisualStyleBackColor = true;
             back.Click += back_Click;
             // 
+            // SensorName
+            // 
+            SensorName.AutoSize = true;
+            SensorName.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            SensorName.Location = new Point(38, 32);
+            SensorName.Name = "SensorName";
+            SensorName.Size = new Size(37, 20);
+            SensorName.TabIndex = 1;
+            SensorName.Text = "       ";
+            // 
             // StatusOfSensorsMode
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
-            BackgroundImage = Properties.Resources.StatusOfSensors;
+            BackgroundImage = Properties.Resources.sensorstatus;
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(784, 471);
+            Controls.Add(SensorName);
             Controls.Add(back);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             KeyPreview = true;
+            MaximizeBox = false;
             MaximumSize = new Size(800, 510);
+            MinimizeBox = false;
             MinimumSize = new Size(800, 510);
             Name = "StatusOfSensorsMode";
             StartPosition = FormStartPosition.CenterScreen;
@@ -63,10 +77,12 @@
             Load += StatusOfSensorsMode_Load;
             KeyUp += StatusOfSensors_KeyUp;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Button back;
+        private Label SensorName;
     }
 }

@@ -66,23 +66,32 @@ namespace TM_Simulator
 
             if (e.KeyCode == Keys.Down)
             {
-                background += 1;
-                if (background == 7)
-                    background = 6;
-                pictureBox.Image = (Image)Properties.Resources.ResourceManager.GetObject("help" + background);
-                page.Text = "Стр. " + background.ToString() + "/6";
+                buttonDown_Click(this, e);
             }
 
             if (e.KeyCode == Keys.Up)
             {
-                background -= 1;
-                if (background == 0)
-                    background = 1;
-                pictureBox.Image = (Image)Properties.Resources.ResourceManager.GetObject("help" + background);
-                page.Text = "Стр. " + background.ToString() + "/6";
+                buttonUp_Click(this, e);
             }
 
         }
 
+        private void buttonUp_Click(object sender, EventArgs e)
+        {
+            background -= 1;
+            if (background == 0)
+                background = 1;
+            pictureBox.Image = (Image)Properties.Resources.ResourceManager.GetObject("help" + background);
+            page.Text = "Стр. " + background.ToString() + "/6";
+        }
+
+        private void buttonDown_Click(object sender, EventArgs e)
+        {
+            background += 1;
+            if (background == 7)
+                background = 6;
+            pictureBox.Image = (Image)Properties.Resources.ResourceManager.GetObject("help" + background);
+            page.Text = "Стр. " + background.ToString() + "/6";
+        }
     }
 }

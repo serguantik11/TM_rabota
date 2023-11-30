@@ -32,6 +32,8 @@
             pictureBox = new PictureBox();
             label1 = new Label();
             page = new Label();
+            buttonUp = new Button();
+            buttonDown = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox).BeginInit();
             SuspendLayout();
             // 
@@ -52,7 +54,7 @@
             // 
             pictureBox.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox.Image = Properties.Resources.help1;
-            pictureBox.Location = new Point(1, 46);
+            pictureBox.Location = new Point(-10, 46);
             pictureBox.Name = "pictureBox";
             pictureBox.Size = new Size(781, 423);
             pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
@@ -80,6 +82,28 @@
             page.TabIndex = 4;
             page.Text = "Стр. 1/6";
             // 
+            // buttonUp
+            // 
+            buttonUp.BackgroundImage = Properties.Resources.buttonUp;
+            buttonUp.BackgroundImageLayout = ImageLayout.Zoom;
+            buttonUp.Location = new Point(759, 49);
+            buttonUp.Name = "buttonUp";
+            buttonUp.Size = new Size(25, 25);
+            buttonUp.TabIndex = 5;
+            buttonUp.UseVisualStyleBackColor = true;
+            buttonUp.Click += buttonUp_Click;
+            // 
+            // buttonDown
+            // 
+            buttonDown.BackgroundImage = Properties.Resources.buttonDown;
+            buttonDown.BackgroundImageLayout = ImageLayout.Zoom;
+            buttonDown.Location = new Point(759, 441);
+            buttonDown.Name = "buttonDown";
+            buttonDown.Size = new Size(25, 25);
+            buttonDown.TabIndex = 6;
+            buttonDown.UseVisualStyleBackColor = true;
+            buttonDown.Click += buttonDown_Click;
+            // 
             // HelpPage
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
@@ -87,6 +111,8 @@
             AutoScrollMargin = new Size(0, 500);
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(784, 471);
+            Controls.Add(buttonDown);
+            Controls.Add(buttonUp);
             Controls.Add(page);
             Controls.Add(label1);
             Controls.Add(pictureBox);
@@ -111,5 +137,7 @@
         private PictureBox pictureBox;
         private Label label1;
         private Label page;
+        private Button buttonUp;
+        private Button buttonDown;
     }
 }
