@@ -48,6 +48,7 @@
             // SensorName
             // 
             SensorName.AutoSize = true;
+            SensorName.BackColor = Color.Transparent;
             SensorName.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             SensorName.Location = new Point(38, 32);
             SensorName.Name = "SensorName";

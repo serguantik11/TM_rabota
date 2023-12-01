@@ -5,9 +5,14 @@ namespace TM_Simulator
     public partial class StartPage : Form
     {
         private bool cl = true;
+        public static bool[] controlstatus = new bool[60];
         public StartPage()
         {
             InitializeComponent();
+            for (int n = 0; n < controlstatus.Length; n++)
+            {
+                controlstatus[n] = false;
+            }
         }
 
         private void StartPage_FormClosing(object sender, FormClosingEventArgs e)
