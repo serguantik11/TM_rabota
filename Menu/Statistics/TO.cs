@@ -31,7 +31,7 @@ namespace TM_Simulator.Menu.Statistics
             StatisticData statdata = new();
             statdata.Show();
             this.Close();
-        } 
+        }
 
         private void TO_KeyUp(object sender, KeyEventArgs e)
         {
@@ -46,6 +46,34 @@ namespace TM_Simulator.Menu.Statistics
             if (cl)
             {
                 Application.Exit();
+            }
+        }
+
+        private void buttonzero1_Click(object sender, EventArgs e)
+        {
+            
+            DialogResult dr = MessageBox.Show("Сбросить ЕТО?", "СООБЩЕНИЕ", MessageBoxButtons.YesNo);
+            if (dr == DialogResult.Yes)
+            {
+                label1.Text = " 10 ч.";
+            }
+        }
+
+        private void buttonzero2_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = MessageBox.Show("Сбросить ТО-1?", "СООБЩЕНИЕ", MessageBoxButtons.YesNo);
+            if (dr == DialogResult.Yes)
+            {
+                label2.Text = " 60 ч.";
+            }
+        }
+
+        private void buttonzero3_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = MessageBox.Show("Сбросить ТО-2?", "СООБЩЕНИЕ", MessageBoxButtons.YesNo);
+            if (dr == DialogResult.Yes)
+            {
+                label3.Text = "240 ч.";
             }
         }
     }

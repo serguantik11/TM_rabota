@@ -33,11 +33,11 @@ namespace TM_Simulator.Menu.StatusOfSensors.StatusOfSensorsMode
             this.BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject("sensorhelp" + btn);
             if (!StartPage.controlstatus[btn])
             {
-                buttonOfControl.Text = "Поставить на контроль";
+                buttonOfControl.Text = "ПОСТАВИТЬ НА КОНТРОЛЬ";
             }
             else
             {
-                buttonOfControl.Text = "Снять с контроля";
+                buttonOfControl.Text = "СНЯТЬ С КОНТРОЛЯ";
             }
         }
 
@@ -67,7 +67,7 @@ namespace TM_Simulator.Menu.StatusOfSensors.StatusOfSensorsMode
         {
             if (!StartPage.controlstatus[btn])
             { 
-                DialogResult dr = MessageBox.Show("Поставить на контроль?", "СООБЩЕНИЕ", MessageBoxButtons.YesNo);
+                DialogResult dr = MessageBox.Show("Вы действительно хотите поставить датчик на контроль?", "СООБЩЕНИЕ", MessageBoxButtons.YesNo);
                 if (dr == DialogResult.Yes)
                 {
                     StartPage.controlstatus[btn]=true;
@@ -75,7 +75,7 @@ namespace TM_Simulator.Menu.StatusOfSensors.StatusOfSensorsMode
             }
             else
             {
-                DialogResult dr = MessageBox.Show("Снять с контроля?", "СООБЩЕНИЕ", MessageBoxButtons.YesNo);
+                DialogResult dr = MessageBox.Show("Вы действительно хотите снять датчик с контроля?", "СООБЩЕНИЕ", MessageBoxButtons.YesNo);
                 if (dr == DialogResult.Yes)
                 {
                     StartPage.controlstatus[btn]=false;

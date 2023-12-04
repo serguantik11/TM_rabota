@@ -103,6 +103,16 @@ namespace TM_Simulator.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap drumminggap {
+            get {
+                object obj = ResourceManager.GetObject("drumminggap", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap emergencystatistic {
             get {
                 object obj = ResourceManager.GetObject("emergencystatistic", resourceCulture);
@@ -186,6 +196,16 @@ namespace TM_Simulator.Properties {
         internal static System.Drawing.Bitmap help6 {
             get {
                 object obj = ResourceManager.GetObject("help6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lowersieves {
+            get {
+                object obj = ResourceManager.GetObject("lowersieves", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1386,6 +1406,26 @@ namespace TM_Simulator.Properties {
         internal static System.Drawing.Bitmap TO {
             get {
                 object obj = ResourceManager.GetObject("TO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TObook {
+            get {
+                object obj = ResourceManager.GetObject("TObook", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap uppersieves {
+            get {
+                object obj = ResourceManager.GetObject("uppersieves", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

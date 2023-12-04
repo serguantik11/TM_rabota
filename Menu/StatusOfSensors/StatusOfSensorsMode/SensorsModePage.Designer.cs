@@ -40,7 +40,7 @@
             back.Name = "back";
             back.Size = new Size(375, 35);
             back.TabIndex = 0;
-            back.Text = "Назад";
+            back.Text = "ESC. НАЗАД";
             back.UseVisualStyleBackColor = true;
             back.Click += back_Click;
             // 
@@ -60,7 +60,6 @@
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
-            BackgroundImage = Properties.Resources.sensorhelp0;
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(784, 471);
             Controls.Add(buttonOfControl);

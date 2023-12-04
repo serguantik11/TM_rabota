@@ -30,12 +30,12 @@
         {
             components = new System.ComponentModel.Container();
             back = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
-            button6 = new Button();
-            button7 = new Button();
+            buttonETO = new Button();
+            buttonTO1 = new Button();
+            buttonTO2 = new Button();
+            buttonzero1 = new Button();
+            buttonzero2 = new Button();
+            buttonzero3 = new Button();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
@@ -57,86 +57,98 @@
             back.UseVisualStyleBackColor = true;
             back.Click += back_Click;
             // 
-            // button2
+            // buttonETO
             // 
-            button2.Location = new Point(545, 174);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 1;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            buttonETO.BackgroundImage = Properties.Resources.TObook;
+            buttonETO.BackgroundImageLayout = ImageLayout.Zoom;
+            buttonETO.Location = new Point(520, 150);
+            buttonETO.Name = "buttonETO";
+            buttonETO.Size = new Size(65, 65);
+            buttonETO.TabIndex = 1;
+            buttonETO.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // buttonTO1
             // 
-            button3.Location = new Point(537, 256);
-            button3.Name = "button3";
-            button3.Size = new Size(75, 23);
-            button3.TabIndex = 2;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = true;
+            buttonTO1.BackgroundImage = Properties.Resources.TObook;
+            buttonTO1.BackgroundImageLayout = ImageLayout.Zoom;
+            buttonTO1.Location = new Point(520, 235);
+            buttonTO1.Name = "buttonTO1";
+            buttonTO1.Size = new Size(65, 65);
+            buttonTO1.TabIndex = 2;
+            buttonTO1.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // buttonTO2
             // 
-            button4.Location = new Point(534, 343);
-            button4.Name = "button4";
-            button4.Size = new Size(75, 23);
-            button4.TabIndex = 3;
-            button4.Text = "button4";
-            button4.UseVisualStyleBackColor = true;
+            buttonTO2.BackgroundImage = Properties.Resources.TObook;
+            buttonTO2.BackgroundImageLayout = ImageLayout.Zoom;
+            buttonTO2.Location = new Point(520, 320);
+            buttonTO2.Name = "buttonTO2";
+            buttonTO2.Size = new Size(65, 65);
+            buttonTO2.TabIndex = 3;
+            buttonTO2.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // buttonzero1
             // 
-            button5.Location = new Point(665, 172);
-            button5.Name = "button5";
-            button5.Size = new Size(75, 23);
-            button5.TabIndex = 4;
-            button5.Text = "button5";
-            button5.UseVisualStyleBackColor = true;
+            buttonzero1.Location = new Point(615, 150);
+            buttonzero1.Name = "buttonzero1";
+            buttonzero1.Size = new Size(140, 65);
+            buttonzero1.TabIndex = 4;
+            buttonzero1.Text = "Сбросить";
+            buttonzero1.UseVisualStyleBackColor = true;
+            buttonzero1.Click += buttonzero1_Click;
             // 
-            // button6
+            // buttonzero2
             // 
-            button6.Location = new Point(701, 267);
-            button6.Name = "button6";
-            button6.Size = new Size(75, 23);
-            button6.TabIndex = 5;
-            button6.Text = "button6";
-            button6.UseVisualStyleBackColor = true;
+            buttonzero2.Location = new Point(615, 235);
+            buttonzero2.Name = "buttonzero2";
+            buttonzero2.Size = new Size(140, 65);
+            buttonzero2.TabIndex = 5;
+            buttonzero2.Text = "Сбросить";
+            buttonzero2.UseVisualStyleBackColor = true;
+            buttonzero2.Click += buttonzero2_Click;
             // 
-            // button7
+            // buttonzero3
             // 
-            button7.Location = new Point(690, 339);
-            button7.Name = "button7";
-            button7.Size = new Size(75, 23);
-            button7.TabIndex = 6;
-            button7.Text = "button7";
-            button7.UseVisualStyleBackColor = true;
+            buttonzero3.Location = new Point(615, 320);
+            buttonzero3.Name = "buttonzero3";
+            buttonzero3.Size = new Size(140, 65);
+            buttonzero3.TabIndex = 6;
+            buttonzero3.Text = "Сбросить";
+            buttonzero3.UseVisualStyleBackColor = true;
+            buttonzero3.Click += buttonzero3_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(358, 176);
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(353, 167);
             label1.Name = "label1";
-            label1.Size = new Size(38, 15);
+            label1.Size = new Size(54, 25);
             label1.TabIndex = 7;
-            label1.Text = "label1";
+            label1.Text = "  6 ч.";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(353, 259);
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(353, 252);
             label2.Name = "label2";
-            label2.Size = new Size(38, 15);
+            label2.Size = new Size(60, 25);
             label2.TabIndex = 8;
-            label2.Text = "label2";
+            label2.Text = " 48 ч.";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(344, 340);
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(353, 337);
             label3.Name = "label3";
-            label3.Size = new Size(38, 15);
+            label3.Size = new Size(66, 25);
             label3.TabIndex = 9;
-            label3.Text = "label3";
+            label3.Text = "123 ч.";
             // 
             // time
             // 
@@ -179,12 +191,12 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(button7);
-            Controls.Add(button6);
-            Controls.Add(button5);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
+            Controls.Add(buttonzero3);
+            Controls.Add(buttonzero2);
+            Controls.Add(buttonzero1);
+            Controls.Add(buttonTO2);
+            Controls.Add(buttonTO1);
+            Controls.Add(buttonETO);
             Controls.Add(back);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             KeyPreview = true;
@@ -202,12 +214,12 @@
         #endregion
 
         private Button back;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private Button button5;
-        private Button button6;
-        private Button button7;
+        private Button buttonETO;
+        private Button buttonTO1;
+        private Button buttonTO2;
+        private Button buttonzero1;
+        private Button buttonzero2;
+        private Button buttonzero3;
         private Label label1;
         private Label label2;
         private Label label3;
