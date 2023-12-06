@@ -42,6 +42,8 @@
             time = new Label();
             date = new Label();
             timer1 = new System.Windows.Forms.Timer(components);
+            textBox1 = new TextBox();
+            PageName = new Label();
             SuspendLayout();
             // 
             // back
@@ -66,6 +68,7 @@
             buttonETO.Size = new Size(65, 65);
             buttonETO.TabIndex = 1;
             buttonETO.UseVisualStyleBackColor = true;
+            buttonETO.Click += buttonETO_Click;
             // 
             // buttonTO1
             // 
@@ -76,6 +79,7 @@
             buttonTO1.Size = new Size(65, 65);
             buttonTO1.TabIndex = 2;
             buttonTO1.UseVisualStyleBackColor = true;
+            buttonTO1.Click += buttonTO1_Click;
             // 
             // buttonTO2
             // 
@@ -86,6 +90,7 @@
             buttonTO2.Size = new Size(65, 65);
             buttonTO2.TabIndex = 3;
             buttonTO2.UseVisualStyleBackColor = true;
+            buttonTO2.Click += buttonTO2_Click;
             // 
             // buttonzero1
             // 
@@ -179,6 +184,31 @@
             timer1.Enabled = true;
             timer1.Tick += timer1_Tick;
             // 
+            // textBox1
+            // 
+            textBox1.BorderStyle = BorderStyle.None;
+            textBox1.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            textBox1.Location = new Point(0, 104);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.ReadOnly = true;
+            textBox1.ScrollBars = ScrollBars.Vertical;
+            textBox1.Size = new Size(785, 367);
+            textBox1.TabIndex = 10;
+            textBox1.Visible = false;
+            // 
+            // PageName
+            // 
+            PageName.BackColor = Color.Transparent;
+            PageName.Font = new Font("Segoe UI", 21F, FontStyle.Bold, GraphicsUnit.Point);
+            PageName.Location = new Point(103, 63);
+            PageName.Margin = new Padding(0);
+            PageName.Name = "PageName";
+            PageName.Size = new Size(588, 34);
+            PageName.TabIndex = 11;
+            PageName.Text = "ТЕХНИЧЕСКОЕ ОБСЛУЖИВАНИЕ";
+            PageName.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // TO
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
@@ -186,6 +216,8 @@
             BackgroundImage = Properties.Resources.TO;
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(784, 471);
+            Controls.Add(PageName);
+            Controls.Add(textBox1);
             Controls.Add(date);
             Controls.Add(time);
             Controls.Add(label3);
@@ -226,5 +258,7 @@
         private Label time;
         private Label date;
         private System.Windows.Forms.Timer timer1;
+        private TextBox textBox1;
+        private Label PageName;
     }
 }

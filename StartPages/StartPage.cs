@@ -4,9 +4,11 @@ namespace TM_Simulator
 {
     public partial class StartPage : Form
     {
+        public static bool EngineerMode = false;
         private bool cl = true;
         public static bool[] controlstatus = new bool[60];
         public static int[] drumminggap = new int[2];
+        public static int comboboxitem = 0;
         public static int[] lowersieves = new int[2];
         public static int[] uppersieves = new int[2];
         public StartPage()

@@ -45,13 +45,14 @@
             // 
             // comboBox1
             // 
-            comboBox1.FormattingEnabled = true;
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox1.Items.AddRange(new object[] { "обычный", "понижающий" });
             comboBox1.Location = new Point(11, 135);
             comboBox1.Margin = new Padding(2);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(181, 23);
             comboBox1.TabIndex = 1;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // CombineSettings
             // 

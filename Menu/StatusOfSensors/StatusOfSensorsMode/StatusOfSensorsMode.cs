@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TM_Simulator.Menu.StatusOfSensors.StatusOfSensorsMode;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrayNotify;
 
 namespace TM_Simulator
@@ -16,8 +17,10 @@ namespace TM_Simulator
     {
         private bool cl = true;
         public Button[] bt = new Button[60];
+        public static string[] SensorsName = new string[60];
         public int X=43, Y=55;
         private string btn_txt;
+
         public StatusOfSensorsMode()
         {
             InitializeComponent();
@@ -37,16 +40,47 @@ namespace TM_Simulator
                 Application.Exit();
         }
 
-        private void StatusOfSensors_KeyUp(object sender, KeyEventArgs e)
+        private void StatusOfSensors_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Escape)
             {
                 back_Click(this, e);
             }
+            if (StartPage.EngineerMode)
+            {
+                if (e.KeyCode == Keys.E)
+                {
+                    StartPage.EngineerMode = false;
+                    PageName.Text = "СОСТОЯНИЕ ДАТЧИКОВ";
+                    PageName.ForeColor = Color.Black;
+                }
+
+            }
+            else
+            {
+                if (e.KeyCode == Keys.E)
+                {
+                    StartPage.EngineerMode = true;
+                    PageName.Text = "СОСТОЯНИЕ ДАТЧИКОВ  <ENGINEER MODE>";
+                    PageName.ForeColor = Color.Lime;
+                }
+
+            }
+
         }
 
         private void StatusOfSensorsMode_Load(object sender, EventArgs e)
         {
+            if (StartPage.EngineerMode)
+            {
+                PageName.Text = "СОСТОЯНИЕ ДАТЧИКОВ  <ENGINEER MODE>";
+                PageName.ForeColor = Color.Lime;
+            }
+            else
+            {
+                PageName.Text = "СОСТОЯНИЕ ДАТЧИКОВ";
+                PageName.ForeColor = Color.Black;
+            }
             for (int i = 0; i < bt.Length; i++)
             {
                 if (i!=14 && i!=30 && i!=32 && i!=36 && i!=37 && i!=38 && i!=48)
@@ -70,31 +104,9 @@ namespace TM_Simulator
                     Y += 69;
                 }
             }
-        }
-
-            private void ButtonAllClick(object sender, EventArgs e)
-        {
-            var buttoncl = (Button)sender;
-            if (buttoncl != null)
+            for (int a = 0;a < 60;a++)
             {
-                cl = false;
-                TM_Simulator.Menu.StatusOfSensors.StatusOfSensorsMode.SensorsModePage sensmode = new();
-                sensmode.btn = Convert.ToInt32(buttoncl.Tag);
-                sensmode.Show();
-                this.Close();
-
-            }
-        }
-
-        private void ButtonAllHover(object sender, EventArgs e)
-        {
-
-            var button = (Button)sender;
-            if (button != null)
-            {
-                button.Focus();
-                //ВЫВОД названия датчиков
-                switch (button.Tag)
+                switch (a)
                 {
                     case 0:
                         btn_txt = "Аварийное давление масла в двигателе";
@@ -256,9 +268,40 @@ namespace TM_Simulator
                         btn_txt = "Уменьшение зазора положения нижних решет";
                         break;
                 }
-                this.SensorName.Text = "Датчик: " + btn_txt;
-                //if (bt[20].Focused) bt[40].Focus();
+                SensorsName[a] = btn_txt;
+            }
+        }
 
+            private void ButtonAllClick(object sender, EventArgs e)
+            {
+                var buttoncl = (Button)sender;
+                if (buttoncl != null)
+                {
+                    cl = false;
+                    TM_Simulator.Menu.StatusOfSensors.StatusOfSensorsMode.SensorsModePage sensmode = new();
+                    SensorsEngineerModePage sensorsEngineerModePage = new();
+                    sensorsEngineerModePage.Sensor = Convert.ToInt32(buttoncl.Tag);
+                    sensorsEngineerModePage.PageName = SensorsName[sensorsEngineerModePage.Sensor];
+                    sensmode.btn = Convert.ToInt32(buttoncl.Tag);
+                    if (StartPage.EngineerMode)
+                        sensorsEngineerModePage.Show();
+                    else
+                        sensmode.Show();
+                    this.Close();
+                }
+            }
+
+        private void ButtonAllHover(object sender, EventArgs e)
+        {
+
+            var button = (Button)sender;
+            if (button != null)
+            {
+                button.Focus();
+                //ВЫВОД названия датчиков
+                
+                this.SensorName.Text = "Датчик: " + SensorsName[Convert.ToInt32(button.Tag)];
+               
             }
         }
     }

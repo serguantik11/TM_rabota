@@ -120,9 +120,10 @@
             // 
             minvalue.AutoSize = true;
             minvalue.BackColor = Color.Transparent;
-            minvalue.Location = new Point(482, 143);
+            minvalue.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            minvalue.Location = new Point(482, 145);
             minvalue.Name = "minvalue";
-            minvalue.Size = new Size(38, 15);
+            minvalue.Size = new Size(54, 21);
             minvalue.TabIndex = 6;
             minvalue.Text = "label3";
             // 
@@ -130,9 +131,10 @@
             // 
             maxvalue.AutoSize = true;
             maxvalue.BackColor = Color.Transparent;
-            maxvalue.Location = new Point(482, 174);
+            maxvalue.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            maxvalue.Location = new Point(482, 176);
             maxvalue.Name = "maxvalue";
-            maxvalue.Size = new Size(38, 15);
+            maxvalue.Size = new Size(54, 21);
             maxvalue.TabIndex = 7;
             maxvalue.Text = "label4";
             // 
@@ -140,9 +142,10 @@
             // 
             currentvaluecalibratepage.AutoSize = true;
             currentvaluecalibratepage.BackColor = Color.Transparent;
-            currentvaluecalibratepage.Location = new Point(492, 234);
+            currentvaluecalibratepage.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            currentvaluecalibratepage.Location = new Point(487, 232);
             currentvaluecalibratepage.Name = "currentvaluecalibratepage";
-            currentvaluecalibratepage.Size = new Size(38, 15);
+            currentvaluecalibratepage.Size = new Size(54, 21);
             currentvaluecalibratepage.TabIndex = 8;
             currentvaluecalibratepage.Text = "label5";
             // 

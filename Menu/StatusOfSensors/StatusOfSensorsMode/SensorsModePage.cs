@@ -16,6 +16,7 @@ namespace TM_Simulator.Menu.StatusOfSensors.StatusOfSensorsMode
     {
         private bool cl = true;
         public int btn;
+        
 
         public SensorsModePage()
         {

@@ -86,6 +86,7 @@
             // 
             buttonUp.BackgroundImage = Properties.Resources.buttonUp;
             buttonUp.BackgroundImageLayout = ImageLayout.Zoom;
+            buttonUp.Cursor = Cursors.PanNorth;
             buttonUp.Location = new Point(759, 49);
             buttonUp.Name = "buttonUp";
             buttonUp.Size = new Size(25, 25);
@@ -97,6 +98,7 @@
             // 
             buttonDown.BackgroundImage = Properties.Resources.buttonDown;
             buttonDown.BackgroundImageLayout = ImageLayout.Zoom;
+            buttonDown.Cursor = Cursors.PanSouth;
             buttonDown.Location = new Point(759, 441);
             buttonDown.Name = "buttonDown";
             buttonDown.Size = new Size(25, 25);

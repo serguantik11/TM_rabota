@@ -1,6 +1,6 @@
-﻿namespace TM_Simulator
+﻿namespace TM_Simulator.Menu.StatusOfSensors.StatusOfSensorsMode
 {
-    partial class StatusOfSensorsMode
+    partial class SensorsEngineerModePage
     {
         /// <summary>
         /// Required designer variable.
@@ -28,14 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
+            SensorsPicture = new PictureBox();
+            SensorsName = new Label();
             back = new Button();
-            SensorName = new Label();
-            PageName = new Label();
+            ((System.ComponentModel.ISupportInitialize)SensorsPicture).BeginInit();
             SuspendLayout();
+            // 
+            // SensorsPicture
+            // 
+            SensorsPicture.BackgroundImageLayout = ImageLayout.Zoom;
+            SensorsPicture.Location = new Point(116, 6);
+            SensorsPicture.Name = "SensorsPicture";
+            SensorsPicture.Size = new Size(65, 65);
+            SensorsPicture.TabIndex = 0;
+            SensorsPicture.TabStop = false;
+            // 
+            // SensorsName
+            // 
+            SensorsName.BackColor = Color.Transparent;
+            SensorsName.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            SensorsName.ForeColor = SystemColors.ControlText;
+            SensorsName.Location = new Point(187, 6);
+            SensorsName.Name = "SensorsName";
+            SensorsName.Size = new Size(591, 65);
+            SensorsName.TabIndex = 1;
+            SensorsName.Text = "---------------------------------------";
+            SensorsName.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // back
             // 
-            back.Location = new Point(677, 11);
+            back.Location = new Point(10, 10);
             back.Margin = new Padding(2);
             back.MaximumSize = new Size(96, 40);
             back.MinimumSize = new Size(96, 40);
@@ -46,59 +68,32 @@
             back.UseVisualStyleBackColor = true;
             back.Click += back_Click;
             // 
-            // SensorName
-            // 
-            SensorName.AutoSize = true;
-            SensorName.BackColor = Color.White;
-            SensorName.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            SensorName.Location = new Point(40, 32);
-            SensorName.Name = "SensorName";
-            SensorName.Size = new Size(37, 20);
-            SensorName.TabIndex = 1;
-            SensorName.Text = "       ";
-            // 
-            // PageName
-            // 
-            PageName.BackColor = Color.Transparent;
-            PageName.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            PageName.ForeColor = Color.Black;
-            PageName.Location = new Point(12, -9);
-            PageName.Name = "PageName";
-            PageName.Size = new Size(659, 45);
-            PageName.TabIndex = 2;
-            PageName.Text = "СОСТОЯНИЕ ДАТЧИКОВ";
-            PageName.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // StatusOfSensorsMode
+            // SensorsEngineerModePage
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.White;
-            BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(784, 471);
-            Controls.Add(PageName);
-            Controls.Add(SensorName);
             Controls.Add(back);
+            Controls.Add(SensorsName);
+            Controls.Add(SensorsPicture);
             FormBorderStyle = FormBorderStyle.FixedDialog;
-            KeyPreview = true;
-            MaximizeBox = false;
             MaximumSize = new Size(800, 510);
-            MinimizeBox = false;
             MinimumSize = new Size(800, 510);
-            Name = "StatusOfSensorsMode";
+            Name = "SensorsEngineerModePage";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "StatusOfSensors";
-            FormClosing += StatusOfSensors_FormClosing;
-            Load += StatusOfSensorsMode_Load;
-            KeyDown += StatusOfSensors_KeyDown;
+            Text = "SensorsEngineerModePage";
+            FormClosing += SensorsEngineerModePage_FormClosing;
+            Load += SensorsEngineerModePage_Load;
+            KeyDown += SensorsEngineerModePage_KeyDown;
+            ((System.ComponentModel.ISupportInitialize)SensorsPicture).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
+        private PictureBox SensorsPicture;
+        private Label SensorsName;
         private Button back;
-        private Label SensorName;
-        private Label PageName;
     }
 }
