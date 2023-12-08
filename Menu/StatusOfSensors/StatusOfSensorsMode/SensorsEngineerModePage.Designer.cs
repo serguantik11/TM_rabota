@@ -42,6 +42,7 @@
             SensorsPicture.Size = new Size(65, 65);
             SensorsPicture.TabIndex = 0;
             SensorsPicture.TabStop = false;
+            SensorsPicture.Visible = false;
             // 
             // SensorsName
             // 
@@ -54,15 +55,13 @@
             SensorsName.TabIndex = 1;
             SensorsName.Text = "---------------------------------------";
             SensorsName.TextAlign = ContentAlignment.MiddleCenter;
+            SensorsName.Visible = false;
             // 
             // back
             // 
-            back.Location = new Point(10, 10);
-            back.Margin = new Padding(2);
-            back.MaximumSize = new Size(96, 40);
-            back.MinimumSize = new Size(96, 40);
+            back.Location = new Point(0, 0);
             back.Name = "back";
-            back.Size = new Size(96, 40);
+            back.Size = new Size(50, 30);
             back.TabIndex = 0;
             back.Text = "Назад";
             back.UseVisualStyleBackColor = true;
@@ -73,11 +72,13 @@
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.White;
+            BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(784, 471);
             Controls.Add(back);
             Controls.Add(SensorsName);
             Controls.Add(SensorsPicture);
             FormBorderStyle = FormBorderStyle.FixedDialog;
+            KeyPreview = true;
             MaximumSize = new Size(800, 510);
             MinimumSize = new Size(800, 510);
             Name = "SensorsEngineerModePage";

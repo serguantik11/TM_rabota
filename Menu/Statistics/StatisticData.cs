@@ -83,5 +83,13 @@ namespace TM_Simulator
             maintenance.Show();
             this.Close();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            cl = false;
+            MalfunctionsJ1939 malfunctionsJ1939 = new();
+            malfunctionsJ1939.Show();
+            this.Close();
+        }
     }
 }

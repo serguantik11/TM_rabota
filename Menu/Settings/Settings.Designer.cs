@@ -77,6 +77,7 @@
             systemsettings2.TabIndex = 1;
             systemsettings2.Text = "Настройки системы 2";
             systemsettings2.UseVisualStyleBackColor = true;
+            systemsettings2.Click += systemsettings2_Click;
             // 
             // terminalsettings
             // 
@@ -112,6 +113,7 @@
             systemsettings.TabIndex = 1;
             systemsettings.Text = "Настройки системы";
             systemsettings.UseVisualStyleBackColor = true;
+            systemsettings.Click += systemsettings_Click;
             // 
             // time
             // 

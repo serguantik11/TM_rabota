@@ -63,5 +63,21 @@ namespace TM_Simulator
                 back_Click(this, e);
             }
         }
+
+        private void systemsettings_Click(object sender, EventArgs e)
+        {
+            cl = false;
+            TM_Simulator.Menu.Settings.SystemSettings systemsettings = new();
+            systemsettings.Show();
+            this.Close();
+        }
+
+        private void systemsettings2_Click(object sender, EventArgs e)
+        {
+            cl = false;
+            TM_Simulator.Menu.Settings.SystemSettings2 systemsettings2 = new();
+            systemsettings2.Show();
+            this.Close();
+        }
     }
 }
