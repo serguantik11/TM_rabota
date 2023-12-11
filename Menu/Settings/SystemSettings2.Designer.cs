@@ -33,6 +33,9 @@
             date = new Label();
             back = new Button();
             timer1 = new System.Windows.Forms.Timer(components);
+            comboBox1 = new ComboBox();
+            comboBox2 = new ComboBox();
+            comboBox3 = new ComboBox();
             SuspendLayout();
             // 
             // time
@@ -77,6 +80,36 @@
             timer1.Enabled = true;
             timer1.Tick += timer1_Tick;
             // 
+            // comboBox1
+            // 
+            comboBox1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "выкл.", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60" });
+            comboBox1.Location = new Point(236, 173);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(97, 28);
+            comboBox1.TabIndex = 4;
+            // 
+            // comboBox2
+            // 
+            comboBox2.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Items.AddRange(new object[] { "выкл.", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "101", "102", "103", "104", "105" });
+            comboBox2.Location = new Point(236, 139);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(97, 28);
+            comboBox2.TabIndex = 5;
+            // 
+            // comboBox3
+            // 
+            comboBox3.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            comboBox3.FormattingEnabled = true;
+            comboBox3.Items.AddRange(new object[] { "Резистивный", "Резестивный Stage V", "Резистивный Cummins", "Электронный" });
+            comboBox3.Location = new Point(364, 139);
+            comboBox3.Name = "comboBox3";
+            comboBox3.Size = new Size(234, 28);
+            comboBox3.TabIndex = 6;
+            // 
             // SystemSettings2
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
@@ -84,6 +117,9 @@
             BackgroundImage = Properties.Resources.settings2;
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(784, 471);
+            Controls.Add(comboBox3);
+            Controls.Add(comboBox2);
+            Controls.Add(comboBox1);
             Controls.Add(back);
             Controls.Add(date);
             Controls.Add(time);
@@ -107,5 +143,8 @@
         private Label date;
         private Button back;
         private System.Windows.Forms.Timer timer1;
+        private ComboBox comboBox1;
+        private ComboBox comboBox2;
+        private ComboBox comboBox3;
     }
 }

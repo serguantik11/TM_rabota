@@ -52,5 +52,6 @@ namespace TM_Simulator.Menu.Settings
             time.Text = DateTime.Now.ToString("HH:mm");
             date.Text = DateTime.Now.ToShortDateString();
         }
+
     }
 }

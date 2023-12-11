@@ -29,7 +29,16 @@ namespace TM_Simulator
         private void StartPage_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (cl)
+            {
                 Application.Exit();
+                    //DialogResult result = MessageBox.Show("Сохранить изменения?", "Уведомление", MessageBoxButtons.YesNo);
+
+                    //if (result == DialogResult.No)
+                    //{
+                    //    e.Cancel = true;
+                    //}
+            }
+                
         }
 
         private void StartPage_Click(object sender, EventArgs e)

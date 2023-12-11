@@ -12,6 +12,10 @@ namespace TM_Simulator
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new StartPage());
+            Application.ApplicationExit += delegate {
+                //foreach (Form f in Application.OpenForms)
+                //    f.Close();
+            };
         }
     }
 }
