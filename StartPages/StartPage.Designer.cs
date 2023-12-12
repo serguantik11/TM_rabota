@@ -28,7 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
+            timer1 = new System.Windows.Forms.Timer(components);
             SuspendLayout();
+            // 
+            // timer1
+            // 
+            timer1.Enabled = true;
+            timer1.Tick += timer1_Tick;
             // 
             // StartPage
             // 
@@ -45,11 +52,14 @@
             Name = "StartPage";
             StartPosition = FormStartPosition.CenterScreen;
             FormClosing += StartPage_FormClosing;
+            Load += StartPage_Load;
             Click += StartPage_Click;
             KeyUp += StartPage_KeyUp;
             ResumeLayout(false);
         }
 
         #endregion
+
+        private System.Windows.Forms.Timer timer1;
     }
 }

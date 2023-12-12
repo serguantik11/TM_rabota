@@ -89,6 +89,7 @@
             terminalsettings.TabIndex = 1;
             terminalsettings.Text = "Настройки терминала";
             terminalsettings.UseVisualStyleBackColor = true;
+            terminalsettings.Click += terminalsettings_Click;
             // 
             // operatingmode
             // 

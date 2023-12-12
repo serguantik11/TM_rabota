@@ -56,8 +56,8 @@ namespace TM_Simulator
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            time.Text = DateTime.Now.ToString("HH:mm");
-            date.Text = DateTime.Now.ToShortDateString();
+            time.Text = StartPage.dateTime.ToString("HH:mm");
+            date.Text = StartPage.dateTime.ToShortDateString();
         }
 
         private void TittlePage_KeyUp(object sender, KeyEventArgs e)

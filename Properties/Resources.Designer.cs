@@ -623,6 +623,26 @@ namespace TM_Simulator.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap checkbox {
+            get {
+                object obj = ResourceManager.GetObject("checkbox", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap checkbox1 {
+            get {
+                object obj = ResourceManager.GetObject("checkbox1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap combinesettings {
             get {
                 object obj = ResourceManager.GetObject("combinesettings", resourceCulture);
@@ -1956,6 +1976,16 @@ namespace TM_Simulator.Properties {
         internal static System.Drawing.Bitmap systemsettings {
             get {
                 object obj = ResourceManager.GetObject("systemsettings", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap terminalSettings {
+            get {
+                object obj = ResourceManager.GetObject("terminalSettings", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

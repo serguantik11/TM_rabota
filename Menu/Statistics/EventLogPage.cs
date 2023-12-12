@@ -26,8 +26,8 @@ namespace TM_Simulator.Menu.Statistics
 
             if (max == 30)
                 progressBar1.Visible = false;
-            time.Text = DateTime.Now.ToString("HH:mm");
-            date.Text = DateTime.Now.ToShortDateString();
+            time.Text = StartPage.dateTime.ToString("HH:mm");
+            date.Text = StartPage.dateTime.ToShortDateString();
         }
 
         private void EventLogPage_FormClosing(object sender, FormClosingEventArgs e)

@@ -11,6 +11,8 @@ namespace TM_Simulator
         public static int comboboxitem = 0;
         public static int[] lowersieves = new int[2];
         public static int[] uppersieves = new int[2];
+        public static DateTime dateTime = DateTime.Now;
+        public static DateTime tempDateTime = DateTime.Now;
         public StartPage()
         {
             InitializeComponent();
@@ -31,14 +33,14 @@ namespace TM_Simulator
             if (cl)
             {
                 Application.Exit();
-                    //DialogResult result = MessageBox.Show("Сохранить изменения?", "Уведомление", MessageBoxButtons.YesNo);
+                //DialogResult result = MessageBox.Show("Сохранить изменения?", "Уведомление", MessageBoxButtons.YesNo);
 
-                    //if (result == DialogResult.No)
-                    //{
-                    //    e.Cancel = true;
-                    //}
+                //if (result == DialogResult.No)
+                //{
+                //    e.Cancel = true;
+                //}
             }
-                
+
         }
 
         private void StartPage_Click(object sender, EventArgs e)
@@ -53,8 +55,19 @@ namespace TM_Simulator
         {
             if (e.KeyCode == Keys.Enter)
             {
-                StartPage_Click (this, e);
+                StartPage_Click(this, e);
             }
+        }
+
+
+        private void StartPage_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            dateTime = dateTime.AddMilliseconds(100);
         }
     }
 }
