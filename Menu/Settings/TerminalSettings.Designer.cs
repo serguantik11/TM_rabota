@@ -76,7 +76,8 @@
             // trackBarVolume
             // 
             trackBarVolume.AutoSize = false;
-            trackBarVolume.Location = new Point(336, 151);
+            trackBarVolume.BackColor = Color.White;
+            trackBarVolume.Location = new Point(336, 150);
             trackBarVolume.Name = "trackBarVolume";
             trackBarVolume.Size = new Size(397, 32);
             trackBarVolume.TabIndex = 2;
@@ -85,7 +86,8 @@
             // trackBarBrightness
             // 
             trackBarBrightness.AutoSize = false;
-            trackBarBrightness.Location = new Point(336, 186);
+            trackBarBrightness.BackColor = Color.White;
+            trackBarBrightness.Location = new Point(336, 185);
             trackBarBrightness.Name = "trackBarBrightness";
             trackBarBrightness.Size = new Size(397, 32);
             trackBarBrightness.TabIndex = 2;

@@ -135,7 +135,7 @@ namespace TM_Simulator.Menu.Calibrate
                     }
                     break;
             }
-            MessageBox.Show("Калибровка выполнена успешно", "Информация        ");
+            MessageBox.Show("Калибровка выполнена успешно", "ИНФОРМАЦИЯ", MessageBoxButtons.OK);
         }
     }
 }
