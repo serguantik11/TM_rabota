@@ -17,7 +17,7 @@ namespace TM_Simulator
         public CombineSettings()
         {
             InitializeComponent();
-            comboBox1.SelectedIndex = StartPage.comboboxitem;
+            
         }
 
         private void back_Click(object sender, EventArgs e)
@@ -38,7 +38,7 @@ namespace TM_Simulator
 
         private void combset_Load(object sender, EventArgs e)
         {
-
+            comboBox1.SelectedIndex = StartPage.comboboxitem;
         }
 
         private void CombineSettings_KeyUp(object sender, KeyEventArgs e)

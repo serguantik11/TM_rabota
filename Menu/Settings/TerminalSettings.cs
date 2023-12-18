@@ -46,6 +46,8 @@ namespace TM_Simulator.Menu.Settings
             dateD.Value = Convert.ToInt32(StartPage.dateTime.ToString("dd"));
             datem.Value = Convert.ToInt32(StartPage.dateTime.ToString("MM"));
             dateY.Value = Convert.ToInt32(StartPage.dateTime.ToString("yyyy"));
+            comboBox1.SelectedIndex = 0;
+            comboBox2.SelectedIndex = 0;
         }
 
         private void TerminalSettings_FormClosing(object sender, FormClosingEventArgs e)

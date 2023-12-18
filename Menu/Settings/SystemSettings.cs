@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace TM_Simulator.Menu.Settings
 {
@@ -42,7 +43,10 @@ namespace TM_Simulator.Menu.Settings
 
         private void SystemSettings_Load(object sender, EventArgs e)
         {
-
+            combineType.SelectedIndex = 5;
+            harvesterType.SelectedIndex = 5;
+            engineType.SelectedIndex = 2;
+            fuelSensor.SelectedIndex = 0;
         }
 
         private void SystemSettings_FormClosing(object sender, FormClosingEventArgs e)

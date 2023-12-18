@@ -44,7 +44,9 @@ namespace TM_Simulator.Menu.Settings
 
         private void SystemSettings2_Load(object sender, EventArgs e)
         {
-
+            comboBox1.SelectedIndex = 3;
+            comboBox2.SelectedIndex = 5;
+            comboBox3.SelectedIndex = 2;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
