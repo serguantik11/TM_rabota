@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -12,7 +13,8 @@ namespace TM_Simulator
 {
     public partial class Settings : Form
     {
-        private bool cl = true;
+        public bool cl = true;
+
         public Settings()
         {
             InitializeComponent();
@@ -37,6 +39,32 @@ namespace TM_Simulator
         {
             time.Text = StartPage.dateTime.ToString("HH:mm");
             date.Text = StartPage.dateTime.ToShortDateString();
+            if (StartPage.PasswordVerification[0])
+            {
+
+                switch (StartPage.Menu)
+                {
+                    case "SysMenu 1":
+                        {
+                            cl = false;
+                            TM_Simulator.Menu.Settings.SystemSettings systemsettings = new();
+                            systemsettings.Show();
+                            this.Close();
+                        }
+                        break;
+                    case "SysMenu 2":
+                        {
+                            cl = false;
+                            TM_Simulator.Menu.Settings.SystemSettings2 systemsettings2 = new();
+                            systemsettings2.Show();
+                            this.Close();
+                        }
+                        break;
+                }
+                StartPage.PasswordVerification[0] = false;
+            }
+
+
         }
 
         private void Settings_FormClosing(object sender, FormClosingEventArgs e)
@@ -66,18 +94,18 @@ namespace TM_Simulator
 
         private void systemsettings_Click(object sender, EventArgs e)
         {
-            cl = false;
-            TM_Simulator.Menu.Settings.SystemSettings systemsettings = new();
-            systemsettings.Show();
-            this.Close();
+            StartPage.Menu = "SysMenu 1";
+            StartPage.Password = 1;
+            TM_Simulator.Menu.Settings.PasswordEnter passEnter = new();
+            passEnter.ShowDialog();
         }
 
         private void systemsettings2_Click(object sender, EventArgs e)
         {
-            cl = false;
-            TM_Simulator.Menu.Settings.SystemSettings2 systemsettings2 = new();
-            systemsettings2.Show();
-            this.Close();
+            StartPage.Menu = "SysMenu 2";
+            StartPage.Password = 1;
+            TM_Simulator.Menu.Settings.PasswordEnter passEnter = new();
+            passEnter.ShowDialog();
         }
 
         private void terminalsettings_Click(object sender, EventArgs e)

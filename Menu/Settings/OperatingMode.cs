@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TM_Simulator.Menu.Settings
 {
-    public partial class PasswordPage : Form
+    public partial class OperatingMode : Form
     {
-        public PasswordPage()
+        public OperatingMode()
         {
             InitializeComponent();
         }

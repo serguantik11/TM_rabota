@@ -13,6 +13,12 @@ namespace TM_Simulator
         public static int[] uppersieves = new int[2];
         public static DateTime dateTime = DateTime.Now;
         public static DateTime tempDateTime = DateTime.Now;
+        public static string Password1 = "0000";
+        public static string Password2 = "0001";
+        public static string Menu = "";
+        public static bool[] PasswordVerification = new bool[2];
+        public static int Password = 0;
+
         public StartPage()
         {
             InitializeComponent();
@@ -26,6 +32,8 @@ namespace TM_Simulator
                 lowersieves[v] = 0;
                 uppersieves[v] = 0;
             }
+            PasswordVerification[0] = false;
+            PasswordVerification[1] = false;
         }
 
         private void StartPage_FormClosing(object sender, FormClosingEventArgs e)

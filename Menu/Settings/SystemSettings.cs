@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -23,6 +24,35 @@ namespace TM_Simulator.Menu.Settings
         {
             time.Text = StartPage.dateTime.ToString("HH:mm");
             date.Text = StartPage.dateTime.ToShortDateString();
+            if (StartPage.PasswordVerification[1])
+            {
+                switch (StartPage.Menu)
+                {
+                    case "Default":
+                        {
+                            StartPage.PasswordVerification[1] = false;
+                            DialogResult dr = MessageBox.Show("Выполнить сброс до заводских установок?", "СООБЩЕНИЕ", MessageBoxButtons.YesNo);
+                            if (dr == DialogResult.Yes)
+                            {
+                                Application.Restart();
+                            }
+                        }
+                        break;
+                    case "Btn1":
+                        {
+                            StartPage.PasswordVerification[1] = false;
+                            MessageBox.Show("Суммарные значения сброшены!", "СООБЩЕНИЕ", MessageBoxButtons.OK);
+                        }
+                        break;
+                    case "Btn2":
+                        {
+                            StartPage.PasswordVerification[1] = false;
+                            MessageBox.Show("Аварийная статистика сброшена!", "СООБЩЕНИЕ", MessageBoxButtons.OK);
+                        }
+                        break;
+                }
+                
+            }
         }
 
         private void back_Click(object sender, EventArgs e)
@@ -55,6 +85,45 @@ namespace TM_Simulator.Menu.Settings
             {
                 Application.Exit();
             }
+        }
+
+        private void ChangePassword1_Click(object sender, EventArgs e)
+        {
+            ChangePasswordPage changePasswordPage = new();
+            changePasswordPage.NamePage = "1";
+            changePasswordPage.ShowDialog();
+        }
+
+        private void ChangePassword2_Click(object sender, EventArgs e)
+        {
+            ChangePasswordPage changePasswordPage = new();
+            changePasswordPage.NamePage = "2";
+            changePasswordPage.ShowDialog();
+        }
+
+        private void DefaultSettingsbutton_Click(object sender, EventArgs e)
+        {
+            StartPage.Menu = "Default";
+            TM_Simulator.Menu.Settings.PasswordEnter passEnter = new();
+            StartPage.Password = 2;
+            passEnter.ShowDialog();
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            StartPage.Menu = "Btn1";
+            TM_Simulator.Menu.Settings.PasswordEnter passEnter = new();
+            StartPage.Password = 2;
+            passEnter.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            StartPage.Menu = "Btn2";
+            TM_Simulator.Menu.Settings.PasswordEnter passEnter = new();
+            StartPage.Password = 2;
+            passEnter.ShowDialog();
         }
     }
 }

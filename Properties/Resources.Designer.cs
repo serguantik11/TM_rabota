@@ -813,6 +813,16 @@ namespace TM_Simulator.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap operatingMode {
+            get {
+                object obj = ResourceManager.GetObject("operatingMode", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap sensorhelp0 {
             get {
                 object obj = ResourceManager.GetObject("sensorhelp0", resourceCulture);

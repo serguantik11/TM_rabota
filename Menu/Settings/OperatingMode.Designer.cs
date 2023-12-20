@@ -1,6 +1,6 @@
 ﻿namespace TM_Simulator.Menu.Settings
 {
-    partial class PasswordPage
+    partial class OperatingMode
     {
         /// <summary>
         /// Required designer variable.
@@ -30,20 +30,15 @@
         {
             SuspendLayout();
             // 
-            // PasswordPage
+            // OperatingMode
             // 
-            AutoScaleDimensions = new SizeF(96F, 96F);
-            AutoScaleMode = AutoScaleMode.Dpi;
-            BackColor = Color.White;
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.operatingMode;
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(384, 361);
-            ControlBox = false;
-            Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            FormBorderStyle = FormBorderStyle.FixedDialog;
-            Margin = new Padding(4, 4, 4, 4);
-            Name = "PasswordPage";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Смена пароля 1";
+            ClientSize = new Size(800, 450);
+            Name = "OperatingMode";
+            Text = "OperatingMode";
             ResumeLayout(false);
         }
 

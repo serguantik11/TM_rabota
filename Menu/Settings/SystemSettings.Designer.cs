@@ -47,8 +47,8 @@
             DefaultSettingsbutton = new Button();
             button2 = new Button();
             button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
+            ChangePassword1 = new Button();
+            ChangePassword2 = new Button();
             SuspendLayout();
             // 
             // back
@@ -223,6 +223,7 @@
             DefaultSettingsbutton.TabIndex = 15;
             DefaultSettingsbutton.Text = "Сброс до заводских установок";
             DefaultSettingsbutton.UseVisualStyleBackColor = true;
+            DefaultSettingsbutton.Click += DefaultSettingsbutton_Click;
             // 
             // button2
             // 
@@ -232,6 +233,7 @@
             button2.TabIndex = 16;
             button2.Text = "Сброс суммарных значений";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
@@ -241,24 +243,27 @@
             button3.TabIndex = 17;
             button3.Text = "Сброс аварийной статистики";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
-            // button4
+            // ChangePassword1
             // 
-            button4.Location = new Point(496, 354);
-            button4.Name = "button4";
-            button4.Size = new Size(143, 45);
-            button4.TabIndex = 18;
-            button4.Text = "Смена пароля 1";
-            button4.UseVisualStyleBackColor = true;
+            ChangePassword1.Location = new Point(496, 354);
+            ChangePassword1.Name = "ChangePassword1";
+            ChangePassword1.Size = new Size(143, 45);
+            ChangePassword1.TabIndex = 18;
+            ChangePassword1.Text = "Смена пароля 1";
+            ChangePassword1.UseVisualStyleBackColor = true;
+            ChangePassword1.Click += ChangePassword1_Click;
             // 
-            // button5
+            // ChangePassword2
             // 
-            button5.Location = new Point(641, 354);
-            button5.Name = "button5";
-            button5.Size = new Size(142, 45);
-            button5.TabIndex = 19;
-            button5.Text = "Смена пароля 2";
-            button5.UseVisualStyleBackColor = true;
+            ChangePassword2.Location = new Point(641, 354);
+            ChangePassword2.Name = "ChangePassword2";
+            ChangePassword2.Size = new Size(142, 45);
+            ChangePassword2.TabIndex = 19;
+            ChangePassword2.Text = "Смена пароля 2";
+            ChangePassword2.UseVisualStyleBackColor = true;
+            ChangePassword2.Click += ChangePassword2_Click;
             // 
             // SystemSettings
             // 
@@ -267,8 +272,8 @@
             BackgroundImage = Properties.Resources.systemsettings;
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(784, 471);
-            Controls.Add(button5);
-            Controls.Add(button4);
+            Controls.Add(ChangePassword2);
+            Controls.Add(ChangePassword1);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(DefaultSettingsbutton);
@@ -320,7 +325,7 @@
         private Button DefaultSettingsbutton;
         private Button button2;
         private Button button3;
-        private Button button4;
-        private Button button5;
+        private Button ChangePassword1;
+        private Button ChangePassword2;
     }
 }
