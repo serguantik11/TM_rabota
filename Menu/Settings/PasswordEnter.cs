@@ -21,7 +21,7 @@ namespace TM_Simulator.Menu.Settings
 
         private void PasswordEnter_Load(object sender, EventArgs e)
         {
-            this.Text = "                         Введите пароль" + StartPage.Password.ToString();
+            this.Text = "                         Введите пароль " + StartPage.Password.ToString();
         }
 
         private void CancelBtn_Click(object sender, EventArgs e)
