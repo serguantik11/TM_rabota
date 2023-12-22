@@ -107,6 +107,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "EventLog";
             FormClosing += EventLogPage_FormClosing;
+            Load += EventLogPage_Load;
             ResumeLayout(false);
             PerformLayout();
         }

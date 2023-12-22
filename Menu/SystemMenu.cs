@@ -89,5 +89,17 @@ namespace TM_Simulator
             time.Text = StartPage.dateTime.ToString("HH:mm");
             date.Text = StartPage.dateTime.ToShortDateString();
         }
+
+        private void SystemMenu_Load(object sender, EventArgs e)
+        {
+            PictureBox CultureBox = new PictureBox();
+            CultureBox.BackgroundImageLayout = ImageLayout.Zoom;
+            CultureBox.Image = StartPage.image;
+            CultureBox.Location = new Point(0, 409);
+            CultureBox.Name = "pictureBox1";
+            CultureBox.Size = new Size(77, 62);
+            CultureBox.TabStop = false;
+            this.Controls.Add(CultureBox);
+        }
     }
 }

@@ -95,6 +95,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "WorkingBodies";
             FormClosing += WorkingBodies_FormClosing;
+            Load += WorkingBodies_Load;
             KeyUp += WorkingBodies_KeyUp;
             ResumeLayout(false);
             PerformLayout();

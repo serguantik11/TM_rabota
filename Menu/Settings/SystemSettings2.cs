@@ -47,6 +47,15 @@ namespace TM_Simulator.Menu.Settings
             comboBox1.SelectedIndex = 3;
             comboBox2.SelectedIndex = 5;
             comboBox3.SelectedIndex = 2;
+
+            PictureBox CultureBox = new PictureBox();
+            CultureBox.BackgroundImageLayout = ImageLayout.Zoom;
+            CultureBox.Image = StartPage.image;
+            CultureBox.Location = new Point(0, 409);
+            CultureBox.Name = "pictureBox1";
+            CultureBox.Size = new Size(77, 62);
+            CultureBox.TabStop = false;
+            this.Controls.Add(CultureBox);
         }
 
         private void timer1_Tick(object sender, EventArgs e)

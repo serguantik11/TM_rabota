@@ -107,11 +107,18 @@ namespace TM_Simulator.Статистика
             box1.Image = (Image)Properties.Resources.ResourceManager.GetObject("emstatistic");
             box1.SizeMode = PictureBoxSizeMode.Zoom;
             panel1.Controls.Add(box1);//панель в которую заносится изображение
-            //if (Y != 0)
-            //{
-            //    box1.Dispose();
-            //}
-
+                                      //if (Y != 0)
+                                      //{
+                                      //    box1.Dispose();
+                                      //}
+            PictureBox CultureBox = new PictureBox();
+            CultureBox.BackgroundImageLayout = ImageLayout.Zoom;
+            CultureBox.Image = StartPage.image;
+            CultureBox.Location = new Point(0, 409);
+            CultureBox.Name = "pictureBox1";
+            CultureBox.Size = new Size(77, 62);
+            CultureBox.TabStop = false;
+            this.Controls.Add(CultureBox);
 
         }
        

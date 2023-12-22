@@ -24,6 +24,15 @@ namespace TM_Simulator
         private void Form3_Load(object sender, EventArgs e)
         {
             timer1.Enabled = true;
+
+            PictureBox CultureBox = new PictureBox();
+            CultureBox.BackgroundImageLayout = ImageLayout.Zoom;
+            CultureBox.Image = StartPage.image;
+            CultureBox.Location = new Point(0, 409);
+            CultureBox.Name = "pictureBox1";
+            CultureBox.Size = new Size(77, 62);
+            CultureBox.TabStop = false;
+            this.Controls.Add(CultureBox);
         }
         // НАЗАД
         private void back_Click(object sender, EventArgs e)
@@ -111,8 +120,16 @@ namespace TM_Simulator
         private void terminalsettings_Click(object sender, EventArgs e)
         {
             cl = false;
-            TM_Simulator.Menu.Settings.TerminalSettings terminalSettings= new();
+            TM_Simulator.Menu.Settings.TerminalSettings terminalSettings = new();
             terminalSettings.Show();
+            this.Close();
+        }
+
+        private void Operatingmode_Click(object sender, EventArgs e)
+        {
+            cl = false;
+            TM_Simulator.Menu.Settings.OperatingMode operatingMode = new();
+            operatingMode.Show();
             this.Close();
         }
     }

@@ -48,6 +48,15 @@ namespace TM_Simulator.Menu.Settings
             dateY.Value = Convert.ToInt32(StartPage.dateTime.ToString("yyyy"));
             comboBox1.SelectedIndex = 0;
             comboBox2.SelectedIndex = 0;
+
+            PictureBox CultureBox = new PictureBox();
+            CultureBox.BackgroundImageLayout = ImageLayout.Zoom;
+            CultureBox.Image = StartPage.image;
+            CultureBox.Location = new Point(0, 409);
+            CultureBox.Name = "pictureBox1";
+            CultureBox.Size = new Size(77, 62);
+            CultureBox.TabStop = false;
+            this.Controls.Add(CultureBox);
         }
 
         private void TerminalSettings_FormClosing(object sender, FormClosingEventArgs e)

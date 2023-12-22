@@ -39,6 +39,15 @@ namespace TM_Simulator
         private void combset_Load(object sender, EventArgs e)
         {
             comboBox1.SelectedIndex = StartPage.comboboxitem;
+
+            PictureBox CultureBox = new PictureBox();
+            CultureBox.BackgroundImageLayout = ImageLayout.Zoom;
+            CultureBox.Image = StartPage.image;
+            CultureBox.Location = new Point(0, 409);
+            CultureBox.Name = "pictureBox1";
+            CultureBox.Size = new Size(77, 62);
+            CultureBox.TabStop = false;
+            this.Controls.Add(CultureBox);
         }
 
         private void CombineSettings_KeyUp(object sender, KeyEventArgs e)

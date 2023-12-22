@@ -95,6 +95,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "MalfunctionsJ1939";
             FormClosing += MalfunctionsJ1939_FormClosing;
+            Load += MalfunctionsJ1939_Load;
             KeyDown += MalfunctionsJ1939_KeyDown;
             ResumeLayout(false);
             PerformLayout();

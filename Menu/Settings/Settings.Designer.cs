@@ -102,6 +102,7 @@
             operatingmode.TabIndex = 1;
             operatingmode.Text = "Режим работы";
             operatingmode.UseVisualStyleBackColor = true;
+            operatingmode.Click += Operatingmode_Click;
             // 
             // systemsettings
             // 

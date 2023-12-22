@@ -103,7 +103,7 @@
             timer1.Enabled = true;
             timer1.Tick += timer1_Tick;
             // 
-            // StatusOfSensors
+            // StatusOfSensorsPage
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
@@ -119,10 +119,11 @@
             KeyPreview = true;
             MaximumSize = new Size(800, 510);
             MinimumSize = new Size(800, 510);
-            Name = "StatusOfSensors";
+            Name = "StatusOfSensorsPage";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "StatusOfSensors";
             FormClosing += StatusOfSensors_FormClosing;
+            Load += StatusOfSensorsPage_Load;
             KeyUp += StatusOfSensors_KeyUp;
             ResumeLayout(false);
             PerformLayout();

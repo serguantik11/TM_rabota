@@ -53,5 +53,17 @@ namespace TM_Simulator.Menu.Statistics
                 back_Click(this, e);
             }
         }
+
+        private void EventLogPage_Load(object sender, EventArgs e)
+        {
+            PictureBox CultureBox = new PictureBox();
+            CultureBox.BackgroundImageLayout = ImageLayout.Zoom;
+            CultureBox.Image = StartPage.image;
+            CultureBox.Location = new Point(0, 409);
+            CultureBox.Name = "pictureBox1";
+            CultureBox.Size = new Size(77, 62);
+            CultureBox.TabStop = false;
+            this.Controls.Add(CultureBox);
+        }
     }
 }

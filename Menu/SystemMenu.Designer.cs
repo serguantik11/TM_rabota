@@ -117,7 +117,7 @@
             sensorsstatus.TabIndex = 5;
             sensorsstatus.Text = "Состояние датчиков";
             sensorsstatus.UseVisualStyleBackColor = true;
-            sensorsstatus.Click += this.sensorsstatus_Click;
+            sensorsstatus.Click += sensorsstatus_Click;
             // 
             // copydata
             // 
@@ -184,6 +184,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "SystemMenu";
             FormClosing += SystemMenu_FormClosing;
+            Load += SystemMenu_Load;
             KeyUp += SystemMenu_KeyUp;
             ResumeLayout(false);
             PerformLayout();

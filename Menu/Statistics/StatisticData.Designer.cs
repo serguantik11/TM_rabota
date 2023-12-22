@@ -165,6 +165,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "StatisticData";
             FormClosing += StatisticData_FormClosing;
+            Load += StatisticData_Load;
             KeyUp += StatisticData_KeyUp;
             ResumeLayout(false);
             PerformLayout();

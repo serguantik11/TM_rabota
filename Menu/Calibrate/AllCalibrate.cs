@@ -81,8 +81,17 @@ namespace TM_Simulator.Menu.Calibrate
                         maxvalue.Text = StartPage.uppersieves[1].ToString();
                     }
                     break;
+                
 
             }
+            PictureBox CultureBox = new PictureBox();
+            CultureBox.BackgroundImageLayout = ImageLayout.Zoom;
+            CultureBox.Image = StartPage.image;
+            CultureBox.Location = new Point(0, 409);
+            CultureBox.Name = "pictureBox1";
+            CultureBox.Size = new Size(77, 62);
+            CultureBox.TabStop = false;
+            this.Controls.Add(CultureBox);
         }
 
         private void minus_Click(object sender, EventArgs e)

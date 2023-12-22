@@ -238,6 +238,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Мaintenance";
             FormClosing += TO_FormClosing;
+            Load += TO_Load;
             KeyUp += TO_KeyUp;
             ResumeLayout(false);
             PerformLayout();

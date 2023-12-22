@@ -131,6 +131,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "CalibratePage";
             FormClosing += CalibratePage_FormClosing;
+            Load += CalibratePage_Load;
             KeyUp += CalibratePage_KeyUp;
             ResumeLayout(false);
             PerformLayout();

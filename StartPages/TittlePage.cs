@@ -70,13 +70,25 @@ namespace TM_Simulator
             if (e.KeyCode == Keys.Left)
             {
                 switch (background)
-                { 
+                {
                     case 1: background = 2; break;
                     case 2: background = 0; break;
                     case 0: background = 1; break;
                 }
                 TittlePage_Click(this, e);
             }
+        }
+
+        private void TittlePage_Load(object sender, EventArgs e)
+        {
+            PictureBox CultureBox = new PictureBox();
+            CultureBox.BackgroundImageLayout = ImageLayout.Zoom;
+            CultureBox.Image = StartPage.image;
+            CultureBox.Location = new Point(0, 409);
+            CultureBox.Name = "pictureBox1";
+            CultureBox.Size = new Size(77, 62);
+            CultureBox.TabStop = false;
+            this.Controls.Add(CultureBox);
         }
     }
 }

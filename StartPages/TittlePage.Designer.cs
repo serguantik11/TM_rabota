@@ -94,6 +94,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form2";
             FormClosing += Form2_FormClosing;
+            Load += TittlePage_Load;
             Click += TittlePage_Click;
             KeyUp += TittlePage_KeyUp;
             ResumeLayout(false);

@@ -1,4 +1,5 @@
 using System.Threading;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrayNotify;
 
 namespace TM_Simulator
 {
@@ -77,5 +78,26 @@ namespace TM_Simulator
         {
             dateTime = dateTime.AddMilliseconds(100);
         }
+
+        //массив для РЕЖИМА РАБОТЫ
+        public static int[,] culture = 
+        {
+            { 725, 5, 725, 12, 8, 2, 2 },//пшеница
+            { 600, 6, 625, 12, 8, 1, 1 },//овёс
+            { 976, 4, 480, 7, 3, 0, 0 },//люцерна
+            { 428, 15, 455, 10, 6, 1, 1 },//гречиха
+            { 428, 14, 450, 12, 7, 4, 4},//кукуруза
+            { 650, 5, 625, 12, 8, 2, 2 },//ячмень
+            { 775, 5, 675, 12, 8, 2, 2 },//рожь
+            { 976, 4, 480, 7, 3, 0, 0 },//клевер
+            { 575, 6, 500, 9, 5, 0, 0 },//рапс
+            { 450, 22, 725, 16, 11, 1, 1 },//соя
+            { 407, 22, 785, 13, 11, 2, 2 },//нут
+            { 250, 27, 785, 11, 8, 2, 2 }//подсолнух
+        };
+        public static Image image = (Image)Properties.Resources.ResourceManager.GetObject("culture" + cultureImage);
+        public static int cultureImage = 0;
+
+
     }
 }
