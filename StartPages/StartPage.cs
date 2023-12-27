@@ -20,6 +20,9 @@ namespace TM_Simulator
         public static bool[] PasswordVerification = new bool[2];
         public static int Password = 0;
 
+        public static bool USB = false;
+
+
         public StartPage()
         {
             InitializeComponent();
@@ -77,6 +80,31 @@ namespace TM_Simulator
         private void timer1_Tick(object sender, EventArgs e)
         {
             dateTime = dateTime.AddMilliseconds(100);
+                    //подключение ФЛЕШКИ
+       
+        }
+
+        protected override void WndProc(ref Message m)
+        {
+            const int WM_DEVICECHANGE = 0x0219;
+
+            const int ADD_DEVICE = 0x8000;
+
+            const int REMOVE_DEVICE = 0x8004;
+
+            if (m.Msg == WM_DEVICECHANGE)
+            {
+                switch ((int)m.WParam)
+                {
+                    case ADD_DEVICE:
+                        USB = true;
+                        break;
+                    case REMOVE_DEVICE:
+                        USB = false;
+                        break;
+                }
+            }
+            base.WndProc(ref m); // Переопределение оконной процедуры
         }
 
         //массив для РЕЖИМА РАБОТЫ

@@ -129,7 +129,7 @@
             MinimumSize = new Size(800, 510);
             Name = "CalibratePage";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "CalibratePage";
+            Text = "TM_Simulator";
             FormClosing += CalibratePage_FormClosing;
             Load += CalibratePage_Load;
             KeyUp += CalibratePage_KeyUp;

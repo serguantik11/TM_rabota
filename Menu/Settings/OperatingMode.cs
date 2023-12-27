@@ -42,7 +42,7 @@ namespace TM_Simulator.Menu.Settings
             cultureBox.SelectedIndex = StartPage.cultureImage;
             modeBox.SelectedIndex = 0;
             comboBox3.SelectedIndex = 0;
-            ModeBox_SelectedIndexChanged(sender, e );
+            ModeBox_SelectedIndexChanged(sender, e);
 
             CultureBox.BackgroundImageLayout = ImageLayout.Zoom;
             CultureBox.Image = StartPage.image;
@@ -108,20 +108,60 @@ namespace TM_Simulator.Menu.Settings
                     {
                         label21.Text = label22.Text = "ОК";
                         DownText.Visible = true;
+                        checkBox1.Visible = false;
+                        checkBox2.Visible = false;
+                        checkBox3.Visible = false;
+                        checkBox4.Visible = false;
+                        checkBox5.Visible = false;
                     }
                     break;
                 case 1:
                     {
                         label21.Text = label22.Text = "ОК";
                         DownText.Visible = true;
+                        checkBox1.Visible = true;
+                        checkBox2.Visible = true;
+                        checkBox3.Visible = true;
+                        checkBox4.Visible = true;
+                        checkBox5.Visible = true;
                     }
                     break;
                 case 2:
                     {
                         label21.Text = label22.Text = "ждите";
                         DownText.Visible = false;
+                        checkBox1.Visible = true;
+                        checkBox2.Visible = true;
+                        checkBox3.Visible = true;
+                        checkBox4.Visible = true;
+                        checkBox5.Visible = true;
                     }
                     break;
+            }
+        }
+
+        private void AllCheckChangad(object sender, EventArgs e)
+        {
+            var checkBox = (CheckBox)sender;
+            if (checkBox != null)
+            {
+                if (checkBox.Checked)
+                {
+                    checkBox.Text = "Вкл.";
+                }
+                else
+                {
+                    checkBox.Text = "Выкл.";
+                }
+            }
+        }
+
+        private void AllFieldEnter(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (!Char.IsDigit(ch) && ch != 8 && ch != 16)
+            {
+                e.Handled = true;
             }
         }
     }

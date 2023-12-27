@@ -236,7 +236,7 @@
             MinimumSize = new Size(800, 510);
             Name = "TO";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Мaintenance";
+            Text = "TM_Simulator";
             FormClosing += TO_FormClosing;
             Load += TO_Load;
             KeyUp += TO_KeyUp;

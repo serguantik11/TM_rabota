@@ -1,6 +1,6 @@
-﻿namespace TM_Simulator.Menu.Statistics
+﻿namespace TM_Simulator.Menu.CopyMenu
 {
-    partial class EventLogPage
+    partial class CopyMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -32,22 +32,24 @@
             back = new Button();
             time = new Label();
             date = new Label();
-            progressBar1 = new ProgressBar();
             timer1 = new System.Windows.Forms.Timer(components);
+            label1 = new Label();
+            FuelConsumption = new Button();
+            EventLog = new Button();
             SuspendLayout();
             // 
             // back
             // 
             back.Location = new Point(10, 10);
+            back.Margin = new Padding(2);
             back.MaximumSize = new Size(96, 40);
             back.MinimumSize = new Size(96, 40);
             back.Name = "back";
             back.Size = new Size(96, 40);
             back.TabIndex = 0;
-            back.Text = "назад";
+            back.Text = "Назад";
             back.UseVisualStyleBackColor = true;
-            back.Click += back_Click;
-            back.KeyUp += back_KeyUp;
+            back.Click += Back_Click;
             // 
             // time
             // 
@@ -73,41 +75,65 @@
             date.TabIndex = 3;
             date.Text = "дата";
             // 
-            // progressBar1
-            // 
-            progressBar1.BackColor = Color.White;
-            progressBar1.Location = new Point(575, 70);
-            progressBar1.Minimum = 1;
-            progressBar1.Name = "progressBar1";
-            progressBar1.Size = new Size(200, 25);
-            progressBar1.TabIndex = 3;
-            progressBar1.Value = 1;
-            // 
             // timer1
             // 
             timer1.Enabled = true;
-            timer1.Tick += timer1_Tick;
+            timer1.Tick += Timer1_Tick;
             // 
-            // EventLogPage
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.White;
+            label1.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(218, 78);
+            label1.Name = "label1";
+            label1.Size = new Size(356, 37);
+            label1.TabIndex = 3;
+            label1.Text = "КОПИРОВАНИЕ ДАННЫХ";
+            // 
+            // FuelConsumption
+            // 
+            FuelConsumption.Location = new Point(30, 130);
+            FuelConsumption.Name = "FuelConsumption";
+            FuelConsumption.Size = new Size(720, 40);
+            FuelConsumption.TabIndex = 4;
+            FuelConsumption.Text = "Расход топлива";
+            FuelConsumption.UseVisualStyleBackColor = true;
+            FuelConsumption.Click += FuelConsumption_Click;
+            // 
+            // EventLog
+            // 
+            EventLog.Location = new Point(30, 182);
+            EventLog.Name = "EventLog";
+            EventLog.Size = new Size(720, 40);
+            EventLog.TabIndex = 5;
+            EventLog.Text = "Журнал событий";
+            EventLog.UseVisualStyleBackColor = true;
+            EventLog.Click += EventLog_Click;
+            // 
+            // CopyMenu
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
-            BackgroundImage = Properties.Resources.EventLogBackGround;
+            BackgroundImage = Properties.Resources.CopyMenuImage;
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(784, 471);
+            Controls.Add(EventLog);
+            Controls.Add(FuelConsumption);
+            Controls.Add(label1);
             Controls.Add(date);
             Controls.Add(time);
             Controls.Add(back);
-            Controls.Add(progressBar1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             KeyPreview = true;
             MaximumSize = new Size(800, 510);
             MinimumSize = new Size(800, 510);
-            Name = "EventLogPage";
+            Name = "CopyMenu";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "TM_Simulator";
-            FormClosing += EventLogPage_FormClosing;
-            Load += EventLogPage_Load;
+            FormClosing += CopyMenu_FormClosing;
+            Load += CopyMenu_Load;
+            KeyDown += CopyMenu_KeyDown;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -117,7 +143,9 @@
         private Button back;
         private Label time;
         private Label date;
-        private ProgressBar progressBar1;
         private System.Windows.Forms.Timer timer1;
+        private Label label1;
+        private Button FuelConsumption;
+        private Button EventLog;
     }
 }

@@ -207,7 +207,7 @@
             MinimumSize = new Size(800, 510);
             Name = "AllCalibrate";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "AllCalibrate";
+            Text = "TM_Simulator";
             FormClosing += AllCalibrate_FormClosing;
             Load += AllCalibrate_Load;
             KeyUp += AllCalibrate_KeyUp;

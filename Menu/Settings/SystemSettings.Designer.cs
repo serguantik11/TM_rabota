@@ -297,7 +297,7 @@
             MinimumSize = new Size(800, 510);
             Name = "SystemSettings";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "SystemSettings";
+            Text = "TM_Simulator";
             FormClosing += SystemSettings_FormClosing;
             Load += SystemSettings_Load;
             KeyDown += SystemSettings_KeyDown;

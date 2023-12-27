@@ -312,6 +312,7 @@
             textBox1.BorderStyle = BorderStyle.FixedSingle;
             textBox1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             textBox1.Location = new Point(483, 132);
+            textBox1.MaxLength = 4;
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(69, 27);
             textBox1.TabIndex = 14;
@@ -319,6 +320,7 @@
             textBox1.Text = "0498";
             textBox1.TextAlign = HorizontalAlignment.Center;
             textBox1.Enter += AllTextBoxEnter;
+            textBox1.KeyPress += AllFieldEnter;
             textBox1.Leave += AllTextBoxLeave;
             // 
             // textBox2
@@ -326,6 +328,7 @@
             textBox2.BorderStyle = BorderStyle.FixedSingle;
             textBox2.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             textBox2.Location = new Point(483, 165);
+            textBox2.MaxLength = 4;
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(69, 27);
             textBox2.TabIndex = 14;
@@ -333,6 +336,7 @@
             textBox2.Text = "0005";
             textBox2.TextAlign = HorizontalAlignment.Center;
             textBox2.Enter += AllTextBoxEnter;
+            textBox2.KeyPress += AllFieldEnter;
             textBox2.Leave += AllTextBoxLeave;
             // 
             // textBox3
@@ -340,6 +344,7 @@
             textBox3.BorderStyle = BorderStyle.FixedSingle;
             textBox3.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             textBox3.Location = new Point(483, 198);
+            textBox3.MaxLength = 4;
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(69, 27);
             textBox3.TabIndex = 14;
@@ -347,6 +352,7 @@
             textBox3.Text = "0498";
             textBox3.TextAlign = HorizontalAlignment.Center;
             textBox3.Enter += AllTextBoxEnter;
+            textBox3.KeyPress += AllFieldEnter;
             textBox3.Leave += AllTextBoxLeave;
             // 
             // textBox4
@@ -354,6 +360,7 @@
             textBox4.BorderStyle = BorderStyle.FixedSingle;
             textBox4.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             textBox4.Location = new Point(483, 230);
+            textBox4.MaxLength = 4;
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(69, 27);
             textBox4.TabIndex = 14;
@@ -361,6 +368,7 @@
             textBox4.Text = "0012";
             textBox4.TextAlign = HorizontalAlignment.Center;
             textBox4.Enter += AllTextBoxEnter;
+            textBox4.KeyPress += AllFieldEnter;
             textBox4.Leave += AllTextBoxLeave;
             // 
             // textBox5
@@ -368,6 +376,7 @@
             textBox5.BorderStyle = BorderStyle.FixedSingle;
             textBox5.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             textBox5.Location = new Point(483, 262);
+            textBox5.MaxLength = 4;
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(69, 27);
             textBox5.TabIndex = 14;
@@ -375,6 +384,7 @@
             textBox5.Text = "0008";
             textBox5.TextAlign = HorizontalAlignment.Center;
             textBox5.Enter += AllTextBoxEnter;
+            textBox5.KeyPress += AllFieldEnter;
             textBox5.Leave += AllTextBoxLeave;
             // 
             // textBox6
@@ -382,6 +392,7 @@
             textBox6.BorderStyle = BorderStyle.FixedSingle;
             textBox6.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             textBox6.Location = new Point(483, 300);
+            textBox6.MaxLength = 4;
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(69, 27);
             textBox6.TabIndex = 14;
@@ -389,6 +400,7 @@
             textBox6.Text = "0002";
             textBox6.TextAlign = HorizontalAlignment.Center;
             textBox6.Enter += AllTextBoxEnter;
+            textBox6.KeyPress += AllFieldEnter;
             textBox6.Leave += AllTextBoxLeave;
             // 
             // textBox7
@@ -396,6 +408,7 @@
             textBox7.BorderStyle = BorderStyle.FixedSingle;
             textBox7.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             textBox7.Location = new Point(483, 334);
+            textBox7.MaxLength = 4;
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(69, 27);
             textBox7.TabIndex = 14;
@@ -403,6 +416,7 @@
             textBox7.Text = "0002";
             textBox7.TextAlign = HorizontalAlignment.Center;
             textBox7.Enter += AllTextBoxEnter;
+            textBox7.KeyPress += AllFieldEnter;
             textBox7.Leave += AllTextBoxLeave;
             // 
             // NameEnter
@@ -506,61 +520,73 @@
             // checkBox1
             // 
             checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(247, 132);
+            checkBox1.BackColor = Color.White;
+            checkBox1.Location = new Point(247, 136);
             checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(83, 19);
+            checkBox1.Size = new Size(58, 19);
             checkBox1.TabIndex = 17;
-            checkBox1.Text = "checkBox1";
-            checkBox1.UseVisualStyleBackColor = true;
+            checkBox1.Text = "Выкл.";
+            checkBox1.UseVisualStyleBackColor = false;
+            checkBox1.CheckedChanged += AllCheckChangad;
             // 
             // label8
             // 
-            label8.AutoSize = true;
-            label8.Location = new Point(247, 339);
+            label8.BackColor = Color.White;
+            label8.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.Location = new Point(245, 337);
             label8.Name = "label8";
-            label8.Size = new Size(38, 15);
+            label8.Size = new Size(37, 20);
             label8.TabIndex = 18;
-            label8.Text = "label8";
+            label8.Text = "0";
+            label8.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // checkBox2
             // 
             checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(247, 161);
+            checkBox2.BackColor = Color.White;
+            checkBox2.Location = new Point(247, 167);
             checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(83, 19);
+            checkBox2.Size = new Size(58, 19);
             checkBox2.TabIndex = 19;
-            checkBox2.Text = "checkBox2";
-            checkBox2.UseVisualStyleBackColor = true;
+            checkBox2.Text = "Выкл.";
+            checkBox2.UseVisualStyleBackColor = false;
+            checkBox2.CheckedChanged += AllCheckChangad;
             // 
             // checkBox3
             // 
             checkBox3.AutoSize = true;
-            checkBox3.Location = new Point(247, 196);
+            checkBox3.BackColor = Color.White;
+            checkBox3.Location = new Point(247, 202);
             checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(83, 19);
+            checkBox3.Size = new Size(58, 19);
             checkBox3.TabIndex = 20;
-            checkBox3.Text = "checkBox3";
-            checkBox3.UseVisualStyleBackColor = true;
+            checkBox3.Text = "Выкл.";
+            checkBox3.UseVisualStyleBackColor = false;
+            checkBox3.CheckedChanged += AllCheckChangad;
             // 
             // checkBox4
             // 
             checkBox4.AutoSize = true;
-            checkBox4.Location = new Point(254, 231);
+            checkBox4.BackColor = Color.White;
+            checkBox4.Location = new Point(247, 235);
             checkBox4.Name = "checkBox4";
-            checkBox4.Size = new Size(83, 19);
+            checkBox4.Size = new Size(58, 19);
             checkBox4.TabIndex = 21;
-            checkBox4.Text = "checkBox4";
-            checkBox4.UseVisualStyleBackColor = true;
+            checkBox4.Text = "Выкл.";
+            checkBox4.UseVisualStyleBackColor = false;
+            checkBox4.CheckedChanged += AllCheckChangad;
             // 
             // checkBox5
             // 
             checkBox5.AutoSize = true;
-            checkBox5.Location = new Point(250, 265);
+            checkBox5.BackColor = Color.White;
+            checkBox5.Location = new Point(247, 267);
             checkBox5.Name = "checkBox5";
-            checkBox5.Size = new Size(83, 19);
+            checkBox5.Size = new Size(58, 19);
             checkBox5.TabIndex = 22;
-            checkBox5.Text = "checkBox5";
-            checkBox5.UseVisualStyleBackColor = true;
+            checkBox5.Text = "Выкл.";
+            checkBox5.UseVisualStyleBackColor = false;
+            checkBox5.CheckedChanged += AllCheckChangad;
             // 
             // OperatingMode
             // 
@@ -617,7 +643,7 @@
             MinimumSize = new Size(800, 510);
             Name = "OperatingMode";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "OperatingMode";
+            Text = "TM_Simulator";
             FormClosing += OperatingMode_FormClosing;
             Load += OperatingMode_Load;
             KeyDown += OperatingMode_KeyDown;

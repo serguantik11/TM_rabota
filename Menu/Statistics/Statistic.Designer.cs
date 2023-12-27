@@ -214,7 +214,7 @@
             MinimumSize = new Size(800, 510);
             Name = "Statistic";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Statistic";
+            Text = "TM_Simulator";
             FormClosing += Statistic_FormClosing;
             Load += Statistic_Load;
             KeyUp += Statistic_KeyUp;

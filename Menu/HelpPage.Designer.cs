@@ -125,7 +125,7 @@
             MinimumSize = new Size(800, 510);
             Name = "HelpPage";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "HelpPage";
+            Text = "TM_Simulator";
             FormClosing += HelpPage_FormClosing;
             KeyUp += HelpPage_KeyUp;
             ((System.ComponentModel.ISupportInitialize)pictureBox).EndInit();

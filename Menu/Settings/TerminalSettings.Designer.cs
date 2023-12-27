@@ -241,7 +241,7 @@
             MinimumSize = new Size(800, 510);
             Name = "TerminalSettings";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "TerminalSettings";
+            Text = "TM_Simulator";
             FormClosing += TerminalSettings_FormClosing;
             Load += TerminalSettings_Load;
             ((System.ComponentModel.ISupportInitialize)trackBarVolume).EndInit();

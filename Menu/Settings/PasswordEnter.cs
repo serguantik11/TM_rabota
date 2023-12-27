@@ -58,10 +58,6 @@ namespace TM_Simulator.Menu.Settings
             {
                 e.Handled = true;
             }
-
-            if (ch != 27)
-            {
-            }
         }
     }
 }

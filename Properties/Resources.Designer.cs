@@ -653,6 +653,16 @@ namespace TM_Simulator.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CopyMenuImage {
+            get {
+                object obj = ResourceManager.GetObject("CopyMenuImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap culture0 {
             get {
                 object obj = ResourceManager.GetObject("culture0", resourceCulture);

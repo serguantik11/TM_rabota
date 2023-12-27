@@ -101,5 +101,13 @@ namespace TM_Simulator
             CultureBox.TabStop = false;
             this.Controls.Add(CultureBox);
         }
+
+        private void Copydata_Click(object sender, EventArgs e)
+        {
+            cl = false;
+            TM_Simulator.Menu.CopyMenu.CopyMenu copyMenu = new();
+            copyMenu.Show();
+            this.Close();
+        }
     }
 }

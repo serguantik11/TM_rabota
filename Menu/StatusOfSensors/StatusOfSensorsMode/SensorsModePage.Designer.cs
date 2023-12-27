@@ -70,7 +70,7 @@
             MinimumSize = new Size(800, 510);
             Name = "SensorsModePage";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "SensorsMode";
+            Text = "TM_Simulator";
             FormClosing += SensorsMode_FormClosing;
             Load += SensorsMode_Load;
             KeyUp += SensorsMode_KeyUp;

@@ -70,7 +70,7 @@
             MinimumSize = new Size(800, 510);
             Name = "CombineSettings";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "combset";
+            Text = "TM_Simulator";
             FormClosing += combset_FormClosing;
             Load += combset_Load;
             KeyUp += CombineSettings_KeyUp;

@@ -121,7 +121,7 @@
             MinimumSize = new Size(800, 510);
             Name = "StatusOfSensorsPage";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "StatusOfSensors";
+            Text = "TM_Simulator";
             FormClosing += StatusOfSensors_FormClosing;
             Load += StatusOfSensorsPage_Load;
             KeyUp += StatusOfSensors_KeyUp;

@@ -93,7 +93,7 @@
             MinimumSize = new Size(800, 510);
             Name = "MalfunctionsJ1939";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "MalfunctionsJ1939";
+            Text = "TM_Simulator";
             FormClosing += MalfunctionsJ1939_FormClosing;
             Load += MalfunctionsJ1939_Load;
             KeyDown += MalfunctionsJ1939_KeyDown;

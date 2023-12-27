@@ -130,6 +130,7 @@
             copydata.TabIndex = 6;
             copydata.Text = "Копирование данных";
             copydata.UseVisualStyleBackColor = true;
+            copydata.Click += Copydata_Click;
             // 
             // timer1
             // 
@@ -182,7 +183,7 @@
             MinimumSize = new Size(800, 510);
             Name = "SystemMenu";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "SystemMenu";
+            Text = "TM_Simulator";
             FormClosing += SystemMenu_FormClosing;
             Load += SystemMenu_Load;
             KeyUp += SystemMenu_KeyUp;

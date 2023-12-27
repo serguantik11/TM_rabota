@@ -103,7 +103,7 @@
             MinimumSize = new Size(800, 510);
             Name = "EmergencyStatistic";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "EmergencyStatistic";
+            Text = "TM_Simulator";
             FormClosing += EmergencyStatistic_FormClosing;
             Load += EmergencyStatistic_Load;
             KeyUp += EmergencyStatistic_KeyUp;

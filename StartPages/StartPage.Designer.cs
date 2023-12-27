@@ -51,6 +51,7 @@
             MinimumSize = new Size(800, 510);
             Name = "StartPage";
             StartPosition = FormStartPosition.CenterScreen;
+            Text = "TM_Simulator";
             FormClosing += StartPage_FormClosing;
             Load += StartPage_Load;
             Click += StartPage_Click;

@@ -93,7 +93,7 @@
             MinimumSize = new Size(800, 510);
             Name = "WorkingBodies";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "WorkingBodies";
+            Text = "TM_Simulator";
             FormClosing += WorkingBodies_FormClosing;
             Load += WorkingBodies_Load;
             KeyUp += WorkingBodies_KeyUp;
