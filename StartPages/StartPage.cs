@@ -1,4 +1,6 @@
 using System.Threading;
+using System.Windows.Forms;
+using System.Xml.Serialization;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrayNotify;
 
 namespace TM_Simulator
@@ -19,25 +21,16 @@ namespace TM_Simulator
         public static string Menu = "";
         public static bool[] PasswordVerification = new bool[2];
         public static int Password = 0;
-
         public static bool USB = false;
-
+        public static int cultureImage = 0;
+        public static Image image;
+        public static int[] SystemSettings1Item = new int[4];
+        public static int[] SystemSettings2Item = new int[3];
 
         public StartPage()
         {
             InitializeComponent();
-            for (int n = 0; n < controlstatus.Length; n++)
-            {
-                controlstatus[n] = false;
-            }
-            for (int v = 0; v < 2; v++)
-            {
-                drumminggap[v] = 0;
-                lowersieves[v] = 0;
-                uppersieves[v] = 0;
-            }
-            PasswordVerification[0] = false;
-            PasswordVerification[1] = false;
+            Application.ApplicationExit += new EventHandler(this.OnApplicationExit);
         }
 
         private void StartPage_FormClosing(object sender, FormClosingEventArgs e)
@@ -45,12 +38,6 @@ namespace TM_Simulator
             if (cl)
             {
                 Application.Exit();
-                //DialogResult result = MessageBox.Show("Сохранить изменения?", "Уведомление", MessageBoxButtons.YesNo);
-
-                //if (result == DialogResult.No)
-                //{
-                //    e.Cancel = true;
-                //}
             }
 
         }
@@ -74,16 +61,40 @@ namespace TM_Simulator
 
         private void StartPage_Load(object sender, EventArgs e)
         {
+            for (int n = 0; n < controlstatus.Length; n++)
+            {
+                controlstatus[n] = false;
+            }
+            for (int v = 0; v < 2; v++)
+            {
+                drumminggap[v] = 0;
+                lowersieves[v] = 0;
+                uppersieves[v] = 0;
+            }
+            for (int n = 0; n < SystemSettings1Item.Length; n++)
+            {
+                SystemSettings1Item[n] = 1;
+            }
+            for (int n = 0; n < SystemSettings2Item.Length; n++)
+            {
+                SystemSettings2Item[n] = 1;
+            }
+            PasswordVerification[0] = false;
+            PasswordVerification[1] = false;
 
+            LoadData();
+            image = (Image)Properties.Resources.ResourceManager.GetObject("culture" + cultureImage);
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             dateTime = dateTime.AddMilliseconds(100);
-                    //подключение ФЛЕШКИ
+                    
        
         }
 
+
+        //подключение ФЛЕШКИ
         protected override void WndProc(ref Message m)
         {
             const int WM_DEVICECHANGE = 0x0219;
@@ -123,9 +134,88 @@ namespace TM_Simulator
             { 407, 22, 785, 13, 11, 2, 2 },//нут
             { 250, 27, 785, 11, 8, 2, 2 }//подсолнух
         };
-        public static Image image = (Image)Properties.Resources.ResourceManager.GetObject("culture" + cultureImage);
-        public static int cultureImage = 0;
+        
+        
+        public void SaveData()
+        {
+            SaveDataClass savedata = new();
+            controlstatus.CopyTo(savedata.SensorStatus, 0);
+            drumminggap.CopyTo(savedata.drumminggap, 0);
+            lowersieves.CopyTo(savedata.lowersieves, 0);
+            uppersieves.CopyTo(savedata.uppersieves, 0);
+            savedata.dateTime = DateTime.Now;
+            savedata.newDateTime = dateTime;
+            savedata.Password1 = Password1;
+            savedata.Password2 = Password2;
+            savedata.combineItem = comboboxitem;
+            savedata.culture = cultureImage;
+            SystemSettings1Item.CopyTo(savedata.SystemSettings1Item, 0);
+            SystemSettings2Item.CopyTo(savedata.SystemSettings2Item, 0);
+            //запись в файл
+            XmlSerializer xs = new XmlSerializer(typeof(SaveDataClass));
+            using (FileStream fs = new FileStream("Data.xml", FileMode.Create))
+            {
+                xs.Serialize(fs, savedata);
+            }
+        }
 
+        public void LoadData()
+        {
+            SaveDataClass savedata = new();
+            string path = "Data.xml";
+            if (File.Exists(path))
+            {
+                //чтение из файла
+                XmlSerializer xs = new XmlSerializer(typeof(SaveDataClass));
+                using (FileStream fs = new FileStream("Data.xml", FileMode.Open))
+                {
+                        savedata = xs.Deserialize(fs) as SaveDataClass;
+                }
 
+                if (savedata != null)
+                {
+                    savedata.SensorStatus.CopyTo(controlstatus, 0);
+                    savedata.drumminggap.CopyTo(drumminggap, 0);
+                    savedata.lowersieves.CopyTo(lowersieves, 0);
+                    savedata.uppersieves.CopyTo(uppersieves, 0);
+                    TimeSpan timeSpan = DateTime.Now - savedata.dateTime;
+                    dateTime = savedata.newDateTime.Add(timeSpan);
+                    Password1 = savedata.Password1;
+                    Password2 = savedata.Password2;
+                    comboboxitem = savedata.combineItem;
+                    cultureImage = savedata.culture;
+                    savedata.SystemSettings1Item.CopyTo(SystemSettings1Item, 0);
+                    savedata.SystemSettings2Item.CopyTo(SystemSettings2Item, 0);
+
+                }
+            }
+
+        }
+
+        private void OnApplicationExit(object sender, EventArgs e)
+        {
+            SaveData();
+        }
+
+    }
+    public class SaveDataClass
+    {
+        public bool[] SensorStatus = new bool[60];//контроль датчиков
+        //калибровки
+        public int[] drumminggap = new int[2];
+        public int[] lowersieves = new int[2];
+        public int[] uppersieves = new int[2];
+        //время
+        public DateTime dateTime;
+        public DateTime newDateTime;
+        //пароли
+        public string Password1;
+        public string Password2;
+        //выбор в списках
+        public int combineItem;
+        public int[] SystemSettings1Item = new int[4];
+        public int[] SystemSettings2Item = new int[3];
+        //выбор культуры
+        public int culture;
     }
 }

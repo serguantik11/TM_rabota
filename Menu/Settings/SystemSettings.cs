@@ -51,7 +51,7 @@ namespace TM_Simulator.Menu.Settings
                         }
                         break;
                 }
-                
+
             }
         }
 
@@ -73,10 +73,6 @@ namespace TM_Simulator.Menu.Settings
 
         private void SystemSettings_Load(object sender, EventArgs e)
         {
-            combineType.SelectedIndex = 5;
-            harvesterType.SelectedIndex = 5;
-            engineType.SelectedIndex = 2;
-            fuelSensor.SelectedIndex = 0;
 
             PictureBox CultureBox = new PictureBox();
             CultureBox.BackgroundImageLayout = ImageLayout.Zoom;
@@ -86,6 +82,11 @@ namespace TM_Simulator.Menu.Settings
             CultureBox.Size = new Size(77, 62);
             CultureBox.TabStop = false;
             this.Controls.Add(CultureBox);
+
+            combineType.SelectedIndex = StartPage.SystemSettings1Item[0];
+            harvesterType.SelectedIndex = StartPage.SystemSettings1Item[1];
+            engineType.SelectedIndex = StartPage.SystemSettings1Item[2];
+            fuelSensor.SelectedIndex = StartPage.SystemSettings1Item[3];
         }
 
         private void SystemSettings_FormClosing(object sender, FormClosingEventArgs e)
@@ -133,6 +134,26 @@ namespace TM_Simulator.Menu.Settings
             TM_Simulator.Menu.Settings.PasswordEnter passEnter = new();
             StartPage.Password = 2;
             passEnter.ShowDialog();
+        }
+
+        private void CombineType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            StartPage.SystemSettings1Item[0] = combineType.SelectedIndex;
+        }
+
+        private void HarvesterType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            StartPage.SystemSettings1Item[1] = harvesterType.SelectedIndex;
+        }
+
+        private void EngineType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            StartPage.SystemSettings1Item[2] = engineType.SelectedIndex;
+        }
+
+        private void FuelSensor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            StartPage.SystemSettings1Item[3] = fuelSensor.SelectedIndex;
         }
     }
 }

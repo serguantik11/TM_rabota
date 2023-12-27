@@ -95,7 +95,7 @@
             // 
             // combineType
             // 
-            combineType.DropDownHeight = 100;
+            combineType.DropDownHeight = 102;
             combineType.DropDownStyle = ComboBoxStyle.DropDownList;
             combineType.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             combineType.FormattingEnabled = true;
@@ -108,10 +108,11 @@
             combineType.Name = "combineType";
             combineType.Size = new Size(169, 28);
             combineType.TabIndex = 4;
+            combineType.SelectedIndexChanged += CombineType_SelectedIndexChanged;
             // 
             // harvesterType
             // 
-            harvesterType.DropDownHeight = 100;
+            harvesterType.DropDownHeight = 102;
             harvesterType.DropDownStyle = ComboBoxStyle.DropDownList;
             harvesterType.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             harvesterType.FormattingEnabled = true;
@@ -119,31 +120,41 @@
             harvesterType.ItemHeight = 20;
             harvesterType.Items.AddRange(new object[] { "1.0 метров", "1.1 метров", "1.2 метров", "1.3 метров", "1.4 метров", "1.5 метров", "1.6 метров", "1.7 метров", "1.8 метров", "1.9 метров", "2.0 метров", "2.1 метров", "2.2 метров", "2.3 метров", "2.4 метров", "2.5 метров", "2.6 метров", "2.6 метров", "2.7 метров", "2.8 метров", "2.9 метров", "3.0 метров", "3.1 метров", "3.2 метров", "3.3 метров", "3.4 метров", "3.5 метров", "3.6 метров", "3.7 метров", "3.8 метров", "3.9 метров", "4.0 метров", "4.1 метров", "4.2 метров", "4.3 метров", "4.4 метров", "4.5 метров", "4.6 метров", "4.7 метров", "4.8 метров", "4.9 метров", "5.0 метров", "5.1 метров", "5.2 метров", "5.3 метров", "5.4 метров", "5.5 метров", "5.6 метров", "5.7 метров", "5.8 метров", "5.9 метров", "6.0 метров", "6.1 метров", "6.2 метров", "6.3 метров", "6.4 метров", "6.5 метров", "6.6 метров", "6.7 метров", "6.8 метров", "6.9 метров", "7.0 метров", "7.1 метров", "7.2 метров", "7.3 метров", "7.4 метров", "7.5 метров", "7.6 метров", "7.7 метров", "7.8 метров", "6.9 метров", "7.0 метров", "7.1 метров", "7.2 метров", "7.3 метров", "7.4 метров", "7.5 метров", "7.6 метров", "7.7 метров", "7.8 метров", "7.9 метров", "8.0 метров", "8.1 метров", "8.2 метров", "8.3 метров", "8.4 метров", "8.5 метров", "8.6 метров", "8.7 метров", "8.8 метров", "8.9 метров", "9.0 метров", "9.1 метров", "9.2 метров", "9.3 метров", "9.4 метров", "9.5 метров", "9.6 метров", "9.7 метров", "9.8 метров", "10.9 метров", "10.0 метров", "10.1 метров", "10.2 метров", "10.3 метров", "10.4 метров", "10.5 метров", "10.6 метров", "10.7 метров", "10.8 метров", "10.9 метров", "11.0 метров", "11.1 метров", "11.2 метров", "11.3 метров", "11.4 метров", "11.5 метров", "11.6 метров", "11.7 метров", "11.8 метров", "11.9 метров", "12.0 метров" });
             harvesterType.Location = new Point(15, 200);
+            harvesterType.MaxLength = 7;
             harvesterType.Name = "harvesterType";
             harvesterType.Size = new Size(170, 28);
             harvesterType.TabIndex = 5;
+            harvesterType.SelectedIndexChanged += HarvesterType_SelectedIndexChanged;
             // 
             // engineType
             // 
+            engineType.DropDownHeight = 102;
             engineType.DropDownStyle = ComboBoxStyle.DropDownList;
             engineType.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             engineType.FormattingEnabled = true;
+            engineType.IntegralHeight = false;
             engineType.Items.AddRange(new object[] { "Без электронного управления", "С электронным управлением", "Stage 5" });
             engineType.Location = new Point(389, 141);
+            engineType.MaxLength = 7;
             engineType.Name = "engineType";
             engineType.Size = new Size(383, 28);
             engineType.TabIndex = 6;
+            engineType.SelectedIndexChanged += EngineType_SelectedIndexChanged;
             // 
             // fuelSensor
             // 
+            fuelSensor.DropDownHeight = 102;
             fuelSensor.DropDownStyle = ComboBoxStyle.DropDownList;
             fuelSensor.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             fuelSensor.FormattingEnabled = true;
+            fuelSensor.IntegralHeight = false;
             fuelSensor.Items.AddRange(new object[] { "Резистивный", "Емкостной" });
             fuelSensor.Location = new Point(389, 257);
+            fuelSensor.MaxLength = 7;
             fuelSensor.Name = "fuelSensor";
             fuelSensor.Size = new Size(383, 28);
             fuelSensor.TabIndex = 7;
+            fuelSensor.SelectedIndexChanged += FuelSensor_SelectedIndexChanged;
             // 
             // textBox1
             // 

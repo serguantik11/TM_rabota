@@ -82,7 +82,7 @@
             // 
             // comboBox1
             // 
-            comboBox1.DropDownHeight = 100;
+            comboBox1.DropDownHeight = 102;
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             comboBox1.FormattingEnabled = true;
@@ -92,10 +92,11 @@
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(97, 28);
             comboBox1.TabIndex = 4;
+            comboBox1.SelectedIndexChanged += ComboBox1_SelectedIndexChanged;
             // 
             // comboBox2
             // 
-            comboBox2.DropDownHeight = 100;
+            comboBox2.DropDownHeight = 102;
             comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox2.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             comboBox2.FormattingEnabled = true;
@@ -105,17 +106,21 @@
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(97, 28);
             comboBox2.TabIndex = 5;
+            comboBox2.SelectedIndexChanged += ComboBox2_SelectedIndexChanged;
             // 
             // comboBox3
             // 
+            comboBox3.DropDownHeight = 102;
             comboBox3.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox3.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             comboBox3.FormattingEnabled = true;
+            comboBox3.IntegralHeight = false;
             comboBox3.Items.AddRange(new object[] { "Резистивный", "Резестивный Stage V", "Резистивный Cummins", "Электронный" });
             comboBox3.Location = new Point(364, 139);
             comboBox3.Name = "comboBox3";
             comboBox3.Size = new Size(234, 28);
             comboBox3.TabIndex = 6;
+            comboBox3.SelectedIndexChanged += ComboBox3_SelectedIndexChanged;
             // 
             // SystemSettings2
             // 

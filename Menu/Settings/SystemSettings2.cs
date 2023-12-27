@@ -44,9 +44,9 @@ namespace TM_Simulator.Menu.Settings
 
         private void SystemSettings2_Load(object sender, EventArgs e)
         {
-            comboBox1.SelectedIndex = 3;
-            comboBox2.SelectedIndex = 5;
-            comboBox3.SelectedIndex = 2;
+            comboBox1.SelectedIndex = StartPage.SystemSettings2Item[0];
+            comboBox2.SelectedIndex = StartPage.SystemSettings2Item[1];
+            comboBox3.SelectedIndex = StartPage.SystemSettings2Item[2];
 
             PictureBox CultureBox = new PictureBox();
             CultureBox.BackgroundImageLayout = ImageLayout.Zoom;
@@ -64,5 +64,19 @@ namespace TM_Simulator.Menu.Settings
             date.Text = StartPage.dateTime.ToShortDateString();
         }
 
+        private void ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            StartPage.SystemSettings2Item[1] = comboBox2.SelectedIndex;
+        }
+
+        private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            StartPage.SystemSettings2Item[0] = comboBox1.SelectedIndex;
+        }
+
+        private void ComboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            StartPage.SystemSettings2Item[2] = comboBox3.SelectedIndex;
+        }
     }
 }

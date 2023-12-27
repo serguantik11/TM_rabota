@@ -158,59 +158,69 @@
             // 
             // timeH
             // 
+            timeH.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             timeH.InterceptArrowKeys = false;
-            timeH.Location = new Point(343, 227);
+            timeH.Location = new Point(343, 223);
             timeH.Maximum = new decimal(new int[] { 23, 0, 0, 0 });
             timeH.Name = "timeH";
             timeH.ReadOnly = true;
-            timeH.Size = new Size(38, 23);
+            timeH.Size = new Size(38, 27);
             timeH.TabIndex = 11;
+            timeH.TextAlign = HorizontalAlignment.Center;
             // 
             // timeM
             // 
+            timeM.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             timeM.InterceptArrowKeys = false;
-            timeM.Location = new Point(403, 227);
+            timeM.Location = new Point(403, 223);
             timeM.Maximum = new decimal(new int[] { 59, 0, 0, 0 });
             timeM.Name = "timeM";
             timeM.ReadOnly = true;
-            timeM.Size = new Size(38, 23);
+            timeM.Size = new Size(38, 27);
             timeM.TabIndex = 11;
+            timeM.TextAlign = HorizontalAlignment.Center;
             // 
             // dateD
             // 
+            dateD.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             dateD.InterceptArrowKeys = false;
-            dateD.Location = new Point(343, 261);
+            dateD.Location = new Point(343, 257);
             dateD.Maximum = new decimal(new int[] { 31, 0, 0, 0 });
             dateD.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             dateD.Name = "dateD";
             dateD.ReadOnly = true;
-            dateD.Size = new Size(38, 23);
+            dateD.Size = new Size(38, 27);
             dateD.TabIndex = 11;
+            dateD.TextAlign = HorizontalAlignment.Center;
             dateD.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
             // datem
             // 
+            datem.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             datem.InterceptArrowKeys = false;
-            datem.Location = new Point(403, 261);
+            datem.Location = new Point(403, 257);
             datem.Maximum = new decimal(new int[] { 12, 0, 0, 0 });
             datem.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             datem.Name = "datem";
             datem.ReadOnly = true;
-            datem.Size = new Size(38, 23);
+            datem.Size = new Size(38, 27);
             datem.TabIndex = 11;
+            datem.TextAlign = HorizontalAlignment.Center;
             datem.Value = new decimal(new int[] { 1, 0, 0, 0 });
             datem.ValueChanged += datem_ValueChanged;
             // 
             // dateY
             // 
+            dateY.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             dateY.InterceptArrowKeys = false;
-            dateY.Location = new Point(461, 261);
+            dateY.Location = new Point(461, 257);
             dateY.Maximum = new decimal(new int[] { 2050, 0, 0, 0 });
             dateY.Minimum = new decimal(new int[] { 1980, 0, 0, 0 });
             dateY.Name = "dateY";
             dateY.ReadOnly = true;
-            dateY.Size = new Size(78, 23);
+            dateY.Size = new Size(61, 27);
             dateY.TabIndex = 11;
+            dateY.TextAlign = HorizontalAlignment.Center;
             dateY.Value = new decimal(new int[] { 1980, 0, 0, 0 });
             dateY.ValueChanged += dateY_ValueChanged;
             // 
