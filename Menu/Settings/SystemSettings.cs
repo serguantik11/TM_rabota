@@ -34,7 +34,7 @@ namespace TM_Simulator.Menu.Settings
                             DialogResult dr = MessageBox.Show("Выполнить сброс до заводских установок?", "СООБЩЕНИЕ", MessageBoxButtons.YesNo);
                             if (dr == DialogResult.Yes)
                             {
-                                Application.Restart();
+                                StartPage.defaulttMode = true;
                             }
                         }
                         break;

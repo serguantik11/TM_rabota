@@ -26,6 +26,7 @@ namespace TM_Simulator
         public static Image image;
         public static int[] SystemSettings1Item = new int[4];
         public static int[] SystemSettings2Item = new int[3];
+        public static bool defaulttMode = false;
 
         public StartPage()
         {
@@ -81,7 +82,7 @@ namespace TM_Simulator
             }
             PasswordVerification[0] = false;
             PasswordVerification[1] = false;
-
+            
             LoadData();
             image = (Image)Properties.Resources.ResourceManager.GetObject("culture" + cultureImage);
         }
@@ -89,7 +90,12 @@ namespace TM_Simulator
         private void timer1_Tick(object sender, EventArgs e)
         {
             dateTime = dateTime.AddMilliseconds(100);
-                    
+            if (defaulttMode)
+            {
+                defaulttMode = false;
+                DefaultLoadData();
+                Application.Restart();
+            }
        
         }
 
@@ -186,7 +192,37 @@ namespace TM_Simulator
                     cultureImage = savedata.culture;
                     savedata.SystemSettings1Item.CopyTo(SystemSettings1Item, 0);
                     savedata.SystemSettings2Item.CopyTo(SystemSettings2Item, 0);
+                }
+            }
 
+        }
+        public void DefaultLoadData()
+        {
+            SaveDataClass savedata = new();
+            string path = "Default.xml";
+            if (File.Exists(path))
+            {
+                //чтение из файла
+                XmlSerializer xs = new XmlSerializer(typeof(SaveDataClass));
+                using (FileStream fs = new FileStream("Default.xml", FileMode.Open))
+                {
+                    savedata = xs.Deserialize(fs) as SaveDataClass;
+                }
+
+                if (savedata != null)
+                {
+                    savedata.SensorStatus.CopyTo(controlstatus, 0);
+                    savedata.drumminggap.CopyTo(drumminggap, 0);
+                    savedata.lowersieves.CopyTo(lowersieves, 0);
+                    savedata.uppersieves.CopyTo(uppersieves, 0);
+                    TimeSpan timeSpan = DateTime.Now - savedata.dateTime;
+                    dateTime = savedata.newDateTime.Add(timeSpan);
+                    Password1 = savedata.Password1;
+                    Password2 = savedata.Password2;
+                    comboboxitem = savedata.combineItem;
+                    cultureImage = savedata.culture;
+                    savedata.SystemSettings1Item.CopyTo(SystemSettings1Item, 0);
+                    savedata.SystemSettings2Item.CopyTo(SystemSettings2Item, 0);
                 }
             }
 

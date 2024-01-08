@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StartPage));
             timer1 = new System.Windows.Forms.Timer(components);
             SuspendLayout();
             // 
@@ -45,6 +46,7 @@
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(784, 471);
             FormBorderStyle = FormBorderStyle.FixedDialog;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             KeyPreview = true;
             Margin = new Padding(2);
             MaximumSize = new Size(800, 510);
