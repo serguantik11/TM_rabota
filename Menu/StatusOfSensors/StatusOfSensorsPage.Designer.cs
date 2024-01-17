@@ -39,6 +39,7 @@
             // 
             // back
             // 
+            back.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             back.Location = new Point(10, 10);
             back.Margin = new Padding(2);
             back.MaximumSize = new Size(96, 40);
@@ -52,6 +53,7 @@
             // 
             // workingbodiesbutton
             // 
+            workingbodiesbutton.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             workingbodiesbutton.Location = new Point(55, 140);
             workingbodiesbutton.MaximumSize = new Size(680, 40);
             workingbodiesbutton.MinimumSize = new Size(680, 40);
@@ -64,6 +66,7 @@
             // 
             // sensstatusbutton
             // 
+            sensstatusbutton.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             sensstatusbutton.Location = new Point(55, 190);
             sensstatusbutton.MaximumSize = new Size(680, 40);
             sensstatusbutton.MinimumSize = new Size(680, 40);

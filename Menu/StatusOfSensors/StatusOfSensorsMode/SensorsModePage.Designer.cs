@@ -34,6 +34,7 @@
             // 
             // back
             // 
+            back.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             back.Location = new Point(10, 420);
             back.MaximumSize = new Size(375, 35);
             back.MinimumSize = new Size(375, 35);
@@ -46,6 +47,7 @@
             // 
             // buttonOfControl
             // 
+            buttonOfControl.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             buttonOfControl.Location = new Point(400, 420);
             buttonOfControl.MaximumSize = new Size(375, 35);
             buttonOfControl.MinimumSize = new Size(375, 35);

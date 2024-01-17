@@ -37,6 +37,7 @@
             // 
             // menu
             // 
+            menu.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             menu.Location = new Point(346, 11);
             menu.Margin = new Padding(2);
             menu.Name = "menu";

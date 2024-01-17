@@ -46,6 +46,7 @@
             // 
             // back
             // 
+            back.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             back.Location = new Point(10, 10);
             back.MaximumSize = new Size(96, 40);
             back.MinimumSize = new Size(96, 40);
@@ -58,6 +59,7 @@
             // 
             // zerostatus
             // 
+            zerostatus.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             zerostatus.Location = new Point(396, 353);
             zerostatus.MaximumSize = new Size(355, 40);
             zerostatus.MinimumSize = new Size(355, 40);

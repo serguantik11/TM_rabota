@@ -43,6 +43,7 @@
             // 
             // back
             // 
+            back.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             back.Location = new Point(10, 10);
             back.Margin = new Padding(2);
             back.MaximumSize = new Size(96, 40);
@@ -56,6 +57,7 @@
             // 
             // statisticdata
             // 
+            statisticdata.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             statisticdata.Location = new Point(55, 130);
             statisticdata.Margin = new Padding(2);
             statisticdata.MaximumSize = new Size(680, 40);
@@ -69,6 +71,7 @@
             // 
             // help
             // 
+            help.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             help.Location = new Point(55, 175);
             help.Margin = new Padding(2);
             help.MaximumSize = new Size(680, 40);
@@ -82,6 +85,7 @@
             // 
             // Settings
             // 
+            Settings.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             Settings.Location = new Point(55, 220);
             Settings.Margin = new Padding(2);
             Settings.MaximumSize = new Size(680, 40);
@@ -95,6 +99,7 @@
             // 
             // kalibratepage
             // 
+            kalibratepage.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             kalibratepage.Location = new Point(55, 265);
             kalibratepage.Margin = new Padding(2);
             kalibratepage.MaximumSize = new Size(680, 40);
@@ -108,6 +113,7 @@
             // 
             // sensorsstatus
             // 
+            sensorsstatus.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             sensorsstatus.Location = new Point(55, 310);
             sensorsstatus.Margin = new Padding(2);
             sensorsstatus.MaximumSize = new Size(680, 40);
@@ -121,6 +127,7 @@
             // 
             // copydata
             // 
+            copydata.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             copydata.Location = new Point(55, 355);
             copydata.Margin = new Padding(2);
             copydata.MaximumSize = new Size(680, 40);

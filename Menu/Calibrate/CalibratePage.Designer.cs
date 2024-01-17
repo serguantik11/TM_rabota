@@ -40,6 +40,7 @@
             // 
             // back
             // 
+            back.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             back.Location = new Point(10, 10);
             back.Margin = new Padding(2);
             back.MaximumSize = new Size(96, 40);
@@ -53,6 +54,7 @@
             // 
             // button1
             // 
+            button1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             button1.Location = new Point(25, 135);
             button1.Name = "button1";
             button1.Size = new Size(730, 40);
@@ -63,6 +65,7 @@
             // 
             // button2
             // 
+            button2.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             button2.Location = new Point(25, 183);
             button2.Name = "button2";
             button2.Size = new Size(730, 40);
@@ -73,6 +76,7 @@
             // 
             // button3
             // 
+            button3.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             button3.Location = new Point(25, 229);
             button3.Name = "button3";
             button3.Size = new Size(730, 40);

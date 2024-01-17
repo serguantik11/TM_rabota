@@ -38,6 +38,7 @@
             // 
             // back
             // 
+            back.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             back.Location = new Point(10, 10);
             back.MaximumSize = new Size(96, 40);
             back.MinimumSize = new Size(96, 40);

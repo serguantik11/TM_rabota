@@ -40,6 +40,7 @@
             // 
             // back
             // 
+            back.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             back.Location = new Point(10, 10);
             back.Margin = new Padding(2);
             back.MaximumSize = new Size(96, 40);
@@ -93,6 +94,7 @@
             // 
             // FuelConsumption
             // 
+            FuelConsumption.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             FuelConsumption.Location = new Point(30, 130);
             FuelConsumption.Name = "FuelConsumption";
             FuelConsumption.Size = new Size(720, 40);
@@ -103,6 +105,7 @@
             // 
             // EventLog
             // 
+            EventLog.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             EventLog.Location = new Point(30, 182);
             EventLog.Name = "EventLog";
             EventLog.Size = new Size(720, 40);

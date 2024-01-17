@@ -76,6 +76,7 @@
             // 
             // back
             // 
+            back.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             back.Location = new Point(10, 10);
             back.Margin = new Padding(2);
             back.MaximumSize = new Size(96, 40);
@@ -424,9 +425,9 @@
             NameEnter.BackColor = Color.Transparent;
             NameEnter.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             NameEnter.ForeColor = Color.DodgerBlue;
-            NameEnter.Location = new Point(338, 382);
+            NameEnter.Location = new Point(425, 382);
             NameEnter.Name = "NameEnter";
-            NameEnter.Size = new Size(435, 22);
+            NameEnter.Size = new Size(348, 22);
             NameEnter.TabIndex = 15;
             NameEnter.Text = "                  ";
             // 
@@ -510,10 +511,10 @@
             // DownText
             // 
             DownText.BackColor = Color.Transparent;
-            DownText.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            DownText.Location = new Point(4, 364);
+            DownText.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            DownText.Location = new Point(4, 363);
             DownText.Name = "DownText";
-            DownText.Size = new Size(773, 34);
+            DownText.Size = new Size(773, 40);
             DownText.TabIndex = 16;
             DownText.Text = "Для СТАРТА режима АВТОМАТИЧЕСКОЙ НАСТРОЙКИ рабочих органов на заданную культуру, необходимо поднять обороты двигателя до номинальных и включить МОЛОТИЛКУ";
             // 

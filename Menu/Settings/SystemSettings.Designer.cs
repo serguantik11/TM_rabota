@@ -53,6 +53,7 @@
             // 
             // back
             // 
+            back.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             back.Location = new Point(10, 10);
             back.Margin = new Padding(2);
             back.MaximumSize = new Size(96, 40);
@@ -228,6 +229,7 @@
             // 
             // DefaultSettingsbutton
             // 
+            DefaultSettingsbutton.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             DefaultSettingsbutton.Location = new Point(388, 300);
             DefaultSettingsbutton.Name = "DefaultSettingsbutton";
             DefaultSettingsbutton.Size = new Size(384, 35);
@@ -238,6 +240,7 @@
             // 
             // button2
             // 
+            button2.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             button2.Location = new Point(2, 354);
             button2.Name = "button2";
             button2.Size = new Size(240, 45);
@@ -248,6 +251,7 @@
             // 
             // button3
             // 
+            button3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             button3.Location = new Point(245, 354);
             button3.Name = "button3";
             button3.Size = new Size(248, 45);
@@ -258,6 +262,7 @@
             // 
             // ChangePassword1
             // 
+            ChangePassword1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             ChangePassword1.Location = new Point(496, 354);
             ChangePassword1.Name = "ChangePassword1";
             ChangePassword1.Size = new Size(143, 45);
@@ -268,6 +273,7 @@
             // 
             // ChangePassword2
             // 
+            ChangePassword2.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             ChangePassword2.Location = new Point(641, 354);
             ChangePassword2.Name = "ChangePassword2";
             ChangePassword2.Size = new Size(142, 45);

@@ -60,6 +60,7 @@
             // 
             // CancelBtn
             // 
+            CancelBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             CancelBtn.Location = new Point(12, 220);
             CancelBtn.Name = "CancelBtn";
             CancelBtn.Size = new Size(125, 35);
@@ -70,6 +71,7 @@
             // 
             // SaveBtn
             // 
+            SaveBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             SaveBtn.Location = new Point(146, 220);
             SaveBtn.Name = "SaveBtn";
             SaveBtn.Size = new Size(125, 35);

@@ -18,7 +18,7 @@ namespace TM_Simulator
         private bool cl = true;
         public Button[] bt = new Button[60];
         public static string[] SensorsName = new string[60];
-        public int X=43, Y=55;
+        public int X = 43, Y = 55;
         private string btn_txt;
 
         public StatusOfSensorsMode()
@@ -46,27 +46,30 @@ namespace TM_Simulator
             {
                 back_Click(this, e);
             }
+
+            if (e.KeyCode == Keys.E)
+            {
+                this.EngineerModeBtn_Click(this, e);
+            }
+
+
+
+        }
+
+        private void EngineerModeBtn_Click(object sender, EventArgs e)
+        {
             if (StartPage.EngineerMode)
             {
-                if (e.KeyCode == Keys.E)
-                {
                     StartPage.EngineerMode = false;
                     PageName.Text = "СОСТОЯНИЕ ДАТЧИКОВ";
                     PageName.ForeColor = Color.Black;
-                }
-
             }
             else
             {
-                if (e.KeyCode == Keys.E)
-                {
                     StartPage.EngineerMode = true;
                     PageName.Text = "СОСТОЯНИЕ ДАТЧИКОВ  <ENGINEER MODE>";
                     PageName.ForeColor = Color.Lime;
-                }
-
             }
-
         }
 
         private void StatusOfSensorsMode_Load(object sender, EventArgs e)
@@ -83,7 +86,7 @@ namespace TM_Simulator
             }
             for (int i = 0; i < bt.Length; i++)
             {
-                if (i!=14 && i!=30 && i!=32 && i!=36 && i!=37 && i!=38 && i!=48)
+                if (i != 14 && i != 30 && i != 32 && i != 36 && i != 37 && i != 38 && i != 48)
                 {
                     bt[i] = new Button();
                     bt[i].Location = new Point(X, Y);
@@ -104,7 +107,7 @@ namespace TM_Simulator
                     Y += 69;
                 }
             }
-            for (int a = 0;a < 60;a++)
+            for (int a = 0; a < 60; a++)
             {
                 switch (a)
                 {
@@ -272,24 +275,24 @@ namespace TM_Simulator
             }
         }
 
-            private void ButtonAllClick(object sender, EventArgs e)
+        private void ButtonAllClick(object sender, EventArgs e)
+        {
+            var buttoncl = (Button)sender;
+            if (buttoncl != null)
             {
-                var buttoncl = (Button)sender;
-                if (buttoncl != null)
-                {
-                    cl = false;
-                    TM_Simulator.Menu.StatusOfSensors.StatusOfSensorsMode.SensorsModePage sensmode = new();
-                    SensorsEngineerModePage sensorsEngineerModePage = new();
-                    sensorsEngineerModePage.Sensor = Convert.ToInt32(buttoncl.Tag);
-                    sensorsEngineerModePage.PageName = SensorsName[sensorsEngineerModePage.Sensor];
-                    sensmode.btn = Convert.ToInt32(buttoncl.Tag);
-                    if (StartPage.EngineerMode)
-                        sensorsEngineerModePage.Show();
-                    else
-                        sensmode.Show();
-                    this.Close();
-                }
+                cl = false;
+                TM_Simulator.Menu.StatusOfSensors.StatusOfSensorsMode.SensorsModePage sensmode = new();
+                SensorsEngineerModePage sensorsEngineerModePage = new();
+                sensorsEngineerModePage.Sensor = Convert.ToInt32(buttoncl.Tag);
+                sensorsEngineerModePage.PageName = SensorsName[sensorsEngineerModePage.Sensor];
+                sensmode.btn = Convert.ToInt32(buttoncl.Tag);
+                if (StartPage.EngineerMode)
+                    sensorsEngineerModePage.Show();
+                else
+                    sensmode.Show();
+                this.Close();
             }
+        }
 
         private void ButtonAllHover(object sender, EventArgs e)
         {
@@ -299,10 +302,12 @@ namespace TM_Simulator
             {
                 button.Focus();
                 //ВЫВОД названия датчиков
-                
+
                 this.SensorName.Text = "Датчик: " + SensorsName[Convert.ToInt32(button.Tag)];
-               
+
             }
         }
+
+        
     }
 }

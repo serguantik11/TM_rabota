@@ -59,9 +59,10 @@
             // 
             // back
             // 
-            back.Location = new Point(0, 0);
+            back.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            back.Location = new Point(716, -1);
             back.Name = "back";
-            back.Size = new Size(50, 30);
+            back.Size = new Size(69, 33);
             back.TabIndex = 0;
             back.Text = "Назад";
             back.UseVisualStyleBackColor = true;

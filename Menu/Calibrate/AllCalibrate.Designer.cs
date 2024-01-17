@@ -46,6 +46,7 @@
             // 
             // back
             // 
+            back.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             back.Location = new Point(10, 10);
             back.Margin = new Padding(2);
             back.MaximumSize = new Size(96, 40);
@@ -88,6 +89,7 @@
             // 
             // savemin
             // 
+            savemin.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             savemin.Location = new Point(20, 270);
             savemin.Name = "savemin";
             savemin.Size = new Size(360, 40);
@@ -98,6 +100,7 @@
             // 
             // savemax
             // 
+            savemax.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             savemax.Location = new Point(400, 270);
             savemax.Name = "savemax";
             savemax.Size = new Size(360, 40);
@@ -108,6 +111,7 @@
             // 
             // saveAll
             // 
+            saveAll.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             saveAll.Location = new Point(20, 360);
             saveAll.Name = "saveAll";
             saveAll.Size = new Size(740, 40);
@@ -151,10 +155,10 @@
             // 
             // minus
             // 
-            minus.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            minus.Location = new Point(435, 230);
+            minus.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            minus.Location = new Point(437, 226);
             minus.Name = "minus";
-            minus.Size = new Size(20, 20);
+            minus.Size = new Size(26, 27);
             minus.TabIndex = 9;
             minus.Text = "-";
             minus.UseVisualStyleBackColor = true;
@@ -162,10 +166,10 @@
             // 
             // plus
             // 
-            plus.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            plus.Location = new Point(565, 230);
+            plus.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            plus.Location = new Point(565, 226);
             plus.Name = "plus";
-            plus.Size = new Size(20, 20);
+            plus.Size = new Size(27, 27);
             plus.TabIndex = 10;
             plus.Text = "+";
             plus.UseVisualStyleBackColor = true;

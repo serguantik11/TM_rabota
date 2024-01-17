@@ -31,10 +31,12 @@
             back = new Button();
             SensorName = new Label();
             PageName = new Label();
+            EngineerModeBtn = new Button();
             SuspendLayout();
             // 
             // back
             // 
+            back.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             back.Location = new Point(677, 11);
             back.Margin = new Padding(2);
             back.MaximumSize = new Size(96, 40);
@@ -69,6 +71,17 @@
             PageName.Text = "СОСТОЯНИЕ ДАТЧИКОВ";
             PageName.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // EngineerModeBtn
+            // 
+            EngineerModeBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            EngineerModeBtn.Location = new Point(676, 56);
+            EngineerModeBtn.Name = "EngineerModeBtn";
+            EngineerModeBtn.Size = new Size(106, 53);
+            EngineerModeBtn.TabIndex = 3;
+            EngineerModeBtn.Text = "ENGINEER MODE";
+            EngineerModeBtn.UseVisualStyleBackColor = true;
+            EngineerModeBtn.Click += EngineerModeBtn_Click;
+            // 
             // StatusOfSensorsMode
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
@@ -76,6 +89,7 @@
             BackColor = Color.White;
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(784, 471);
+            Controls.Add(EngineerModeBtn);
             Controls.Add(PageName);
             Controls.Add(SensorName);
             Controls.Add(back);
@@ -100,5 +114,6 @@
         private Button back;
         private Label SensorName;
         private Label PageName;
+        private Button EngineerModeBtn;
     }
 }

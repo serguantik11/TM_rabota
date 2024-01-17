@@ -39,6 +39,7 @@
             // 
             // back
             // 
+            back.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             back.Location = new Point(13, 4);
             back.Margin = new Padding(2);
             back.MaximumSize = new Size(96, 40);
@@ -75,10 +76,10 @@
             // page
             // 
             page.AutoSize = true;
-            page.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            page.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             page.Location = new Point(700, 17);
             page.Name = "page";
-            page.Size = new Size(62, 20);
+            page.Size = new Size(67, 20);
             page.TabIndex = 4;
             page.Text = "Стр. 1/6";
             // 

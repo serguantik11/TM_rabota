@@ -42,6 +42,7 @@
             // 
             // back
             // 
+            back.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             back.Location = new Point(10, 10);
             back.Margin = new Padding(2);
             back.MaximumSize = new Size(96, 40);
@@ -55,6 +56,7 @@
             // 
             // combinesettings
             // 
+            combinesettings.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             combinesettings.Location = new Point(55, 315);
             combinesettings.Margin = new Padding(2);
             combinesettings.MaximumSize = new Size(680, 40);
@@ -68,6 +70,7 @@
             // 
             // systemsettings2
             // 
+            systemsettings2.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             systemsettings2.Location = new Point(55, 270);
             systemsettings2.Margin = new Padding(2);
             systemsettings2.MaximumSize = new Size(680, 40);
@@ -81,6 +84,7 @@
             // 
             // terminalsettings
             // 
+            terminalsettings.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             terminalsettings.Location = new Point(55, 225);
             terminalsettings.Margin = new Padding(2);
             terminalsettings.MaximumSize = new Size(680, 40);
@@ -93,6 +97,7 @@
             // 
             // operatingmode
             // 
+            operatingmode.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             operatingmode.Location = new Point(55, 180);
             operatingmode.Margin = new Padding(2);
             operatingmode.MaximumSize = new Size(680, 40);
@@ -106,6 +111,7 @@
             // 
             // systemsettings
             // 
+            systemsettings.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             systemsettings.Location = new Point(55, 135);
             systemsettings.Margin = new Padding(2);
             systemsettings.MaximumSize = new Size(680, 40);
