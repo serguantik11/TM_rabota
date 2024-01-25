@@ -216,7 +216,7 @@
             AutoScaleMode = AutoScaleMode.Dpi;
             BackgroundImage = Properties.Resources.TO;
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(784, 471);
+            ClientSize = new Size(1134, 681);
             Controls.Add(PageName);
             Controls.Add(textBox1);
             Controls.Add(date);
@@ -233,8 +233,8 @@
             Controls.Add(back);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             KeyPreview = true;
-            MaximumSize = new Size(800, 510);
-            MinimumSize = new Size(800, 510);
+            MaximumSize = new Size(1150, 720);
+            MinimumSize = new Size(1150, 720);
             Name = "TO";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "TM_Simulator";

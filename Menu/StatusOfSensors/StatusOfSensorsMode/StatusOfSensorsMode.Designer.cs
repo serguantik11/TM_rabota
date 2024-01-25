@@ -88,7 +88,7 @@
             AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.White;
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(784, 471);
+            ClientSize = new Size(1134, 681);
             Controls.Add(EngineerModeBtn);
             Controls.Add(PageName);
             Controls.Add(SensorName);
@@ -96,9 +96,9 @@
             FormBorderStyle = FormBorderStyle.FixedDialog;
             KeyPreview = true;
             MaximizeBox = false;
-            MaximumSize = new Size(800, 510);
+            MaximumSize = new Size(1150, 720);
             MinimizeBox = false;
-            MinimumSize = new Size(800, 510);
+            MinimumSize = new Size(1150, 720);
             Name = "StatusOfSensorsMode";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "TM_Simulator";

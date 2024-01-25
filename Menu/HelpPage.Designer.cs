@@ -113,7 +113,7 @@
             AutoScaleMode = AutoScaleMode.Dpi;
             AutoScrollMargin = new Size(0, 500);
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(784, 471);
+            ClientSize = new Size(1134, 681);
             Controls.Add(buttonDown);
             Controls.Add(buttonUp);
             Controls.Add(page);
@@ -122,8 +122,8 @@
             Controls.Add(back);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Margin = new Padding(2);
-            MaximumSize = new Size(800, 510);
-            MinimumSize = new Size(800, 510);
+            MaximumSize = new Size(1150, 720);
+            MinimumSize = new Size(1150, 720);
             Name = "HelpPage";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "TM_Simulator";

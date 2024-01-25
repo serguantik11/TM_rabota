@@ -46,7 +46,7 @@
             // 
             // back
             // 
-            back.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            back.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             back.Location = new Point(10, 10);
             back.MaximumSize = new Size(96, 40);
             back.MinimumSize = new Size(96, 40);
@@ -197,7 +197,7 @@
             AutoScaleMode = AutoScaleMode.Dpi;
             BackgroundImage = Properties.Resources.statistic;
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(784, 471);
+            ClientSize = new Size(1134, 681);
             Controls.Add(label14);
             Controls.Add(label13);
             Controls.Add(label11);
@@ -212,8 +212,8 @@
             Controls.Add(back);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             KeyPreview = true;
-            MaximumSize = new Size(800, 510);
-            MinimumSize = new Size(800, 510);
+            MaximumSize = new Size(1150, 720);
+            MinimumSize = new Size(1150, 720);
             Name = "Statistic";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "TM_Simulator";

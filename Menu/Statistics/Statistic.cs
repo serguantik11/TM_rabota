@@ -50,8 +50,7 @@ namespace TM_Simulator
 
         private void zerostatus_Click(object sender, EventArgs e)
         {
-            DialogResult dr = MessageBox.Show("ОБНУЛИТЬ текущие значения?",
-                      "СООБЩЕНИЕ", MessageBoxButtons.YesNo);
+            DialogResult dr = MessageBox.Show("ОБНУЛИТЬ текущие значения?", "СООБЩЕНИЕ", MessageBoxButtons.YesNo);
             if (dr == DialogResult.Yes)
             {
                 label11.Text = " 0";
@@ -63,7 +62,6 @@ namespace TM_Simulator
                 label23.Text = " 0";
                 label24.Text = " 0";
             }
-
         }
 
         private void Statistic_Load(object sender, EventArgs e)

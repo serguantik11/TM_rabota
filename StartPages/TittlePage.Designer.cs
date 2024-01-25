@@ -83,14 +83,14 @@
             BackColor = Color.White;
             BackgroundImage = Properties.Resources.MainScreen;
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(784, 471);
+            ClientSize = new Size(1134, 681);
             Controls.Add(time);
             Controls.Add(date);
             Controls.Add(menu);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Margin = new Padding(2);
-            MaximumSize = new Size(800, 510);
-            MinimumSize = new Size(800, 510);
+            MaximumSize = new Size(1150, 720);
+            MinimumSize = new Size(1150, 720);
             Name = "TittlePage";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "TM_Simulator";

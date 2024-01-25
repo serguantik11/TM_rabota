@@ -173,8 +173,8 @@
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
             BackgroundImage = Properties.Resources.SystemMenu;
-            BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(784, 471);
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(1134, 681);
             Controls.Add(date);
             Controls.Add(time);
             Controls.Add(copydata);
@@ -186,8 +186,8 @@
             Controls.Add(back);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Margin = new Padding(2);
-            MaximumSize = new Size(800, 510);
-            MinimumSize = new Size(800, 510);
+            MaximumSize = new Size(1150, 720);
+            MinimumSize = new Size(1150, 720);
             Name = "SystemMenu";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "TM_Simulator";

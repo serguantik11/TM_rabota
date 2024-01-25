@@ -595,7 +595,7 @@
             AutoScaleMode = AutoScaleMode.Dpi;
             BackgroundImage = Properties.Resources.operatingMode;
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(784, 471);
+            ClientSize = new Size(1134, 681);
             Controls.Add(checkBox5);
             Controls.Add(checkBox4);
             Controls.Add(checkBox3);
@@ -640,8 +640,8 @@
             Controls.Add(back);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             KeyPreview = true;
-            MaximumSize = new Size(800, 510);
-            MinimumSize = new Size(800, 510);
+            MaximumSize = new Size(1150, 720);
+            MinimumSize = new Size(1150, 720);
             Name = "OperatingMode";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "TM_Simulator";
