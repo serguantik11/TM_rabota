@@ -34,13 +34,15 @@
             // 
             // back
             // 
-            back.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            back.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             back.Location = new Point(10, 10);
             back.Margin = new Padding(2);
+            back.MaximumSize = new Size(130, 70);
+            back.MinimumSize = new Size(130, 70);
             back.Name = "back";
-            back.Size = new Size(96, 40);
+            back.Size = new Size(130, 70);
             back.TabIndex = 0;
-            back.Text = "назад";
+            back.Text = "Назад";
             back.UseVisualStyleBackColor = true;
             back.Click += back_Click;
             // 

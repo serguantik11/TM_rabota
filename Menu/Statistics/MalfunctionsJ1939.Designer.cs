@@ -40,6 +40,8 @@
             back.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             back.Location = new Point(10, 10);
             back.Margin = new Padding(2);
+            back.MaximumSize = new Size(130, 70);
+            back.MinimumSize = new Size(130, 70);
             back.Name = "back";
             back.Size = new Size(130, 70);
             back.TabIndex = 0;
@@ -49,27 +51,27 @@
             // 
             // time
             // 
-            time.AutoSize = true;
             time.BackColor = Color.Transparent;
             time.Font = new Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point);
-            time.Location = new Point(941, -1);
+            time.Location = new Point(958, -3);
             time.Margin = new Padding(2, 0, 2, 0);
             time.Name = "time";
-            time.Size = new Size(128, 47);
+            time.Size = new Size(129, 52);
             time.TabIndex = 2;
             time.Text = "время";
+            time.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // date
             // 
-            date.AutoSize = true;
             date.BackColor = Color.Transparent;
-            date.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            date.Location = new Point(929, 46);
+            date.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            date.Location = new Point(932, 42);
             date.Margin = new Padding(2, 0, 2, 0);
             date.Name = "date";
-            date.Size = new Size(66, 32);
+            date.Size = new Size(176, 37);
             date.TabIndex = 3;
             date.Text = "дата";
+            date.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // timer1
             // 

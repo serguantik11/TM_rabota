@@ -40,37 +40,37 @@
             // 
             // time
             // 
-            time.AutoSize = true;
             time.BackColor = Color.Transparent;
-            time.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
-            time.Location = new Point(624, -4);
+            time.Font = new Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point);
+            time.Location = new Point(958, -3);
             time.Margin = new Padding(2, 0, 2, 0);
             time.Name = "time";
-            time.Size = new Size(110, 41);
+            time.Size = new Size(129, 52);
             time.TabIndex = 2;
             time.Text = "время";
+            time.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // date
             // 
-            date.AutoSize = true;
             date.BackColor = Color.Transparent;
-            date.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            date.Location = new Point(616, 32);
+            date.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            date.Location = new Point(932, 42);
             date.Margin = new Padding(2, 0, 2, 0);
             date.Name = "date";
-            date.Size = new Size(53, 25);
+            date.Size = new Size(176, 37);
             date.TabIndex = 3;
             date.Text = "дата";
+            date.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // back
             // 
-            back.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            back.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             back.Location = new Point(10, 10);
             back.Margin = new Padding(2);
-            back.MaximumSize = new Size(96, 40);
-            back.MinimumSize = new Size(96, 40);
+            back.MaximumSize = new Size(130, 70);
+            back.MinimumSize = new Size(130, 70);
             back.Name = "back";
-            back.Size = new Size(96, 40);
+            back.Size = new Size(130, 70);
             back.TabIndex = 0;
             back.Text = "назад";
             back.UseVisualStyleBackColor = true;

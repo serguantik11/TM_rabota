@@ -30,9 +30,8 @@ namespace TM_Simulator.Menu.CopyMenu
             PictureBox CultureBox = new PictureBox();
             CultureBox.BackgroundImageLayout = ImageLayout.Zoom;
             CultureBox.Image = StartPage.image;
-            CultureBox.Location = new Point(0, 409);
-            CultureBox.Name = "pictureBox";
-            CultureBox.Size = new Size(77, 62);
+            CultureBox.Location = new Point(0, 600);
+            CultureBox.Size = new Size(105, 85);
             CultureBox.TabStop = false;
             this.Controls.Add(CultureBox);
         }

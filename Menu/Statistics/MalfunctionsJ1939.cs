@@ -51,12 +51,11 @@ namespace TM_Simulator.Menu.Statistics
         private void MalfunctionsJ1939_Load(object sender, EventArgs e)
         {
             PictureBox CultureBox = new PictureBox();
-
-            CultureBox.Image = StartPage.image;
-            CultureBox.Location = new Point(15, 605);
-            CultureBox.Name = "pictureBox1";
-            CultureBox.Size = new Size(80, 65);
             CultureBox.BackgroundImageLayout = ImageLayout.Zoom;
+            CultureBox.Image = StartPage.image;
+            CultureBox.Location = new Point(0, 600);
+            CultureBox.Size = new Size(105, 85);
+            CultureBox.TabStop = false;
             this.Controls.Add(CultureBox);
         }
     }

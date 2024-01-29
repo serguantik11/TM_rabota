@@ -37,11 +37,11 @@
             // 
             // menu
             // 
-            menu.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            menu.Location = new Point(346, 11);
+            menu.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            menu.Location = new Point(509, 11);
             menu.Margin = new Padding(2);
             menu.Name = "menu";
-            menu.Size = new Size(96, 40);
+            menu.Size = new Size(130, 62);
             menu.TabIndex = 1;
             menu.Text = "меню";
             menu.UseVisualStyleBackColor = true;
@@ -54,27 +54,27 @@
             // 
             // time
             // 
-            time.AutoSize = true;
             time.BackColor = Color.Transparent;
-            time.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
-            time.Location = new Point(608, -4);
+            time.Font = new Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point);
+            time.Location = new Point(958, -3);
             time.Margin = new Padding(2, 0, 2, 0);
             time.Name = "time";
-            time.Size = new Size(110, 41);
+            time.Size = new Size(129, 52);
             time.TabIndex = 2;
             time.Text = "время";
+            time.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // date
             // 
-            date.AutoSize = true;
             date.BackColor = Color.Transparent;
-            date.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            date.Location = new Point(600, 32);
+            date.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            date.Location = new Point(932, 42);
             date.Margin = new Padding(2, 0, 2, 0);
             date.Name = "date";
-            date.Size = new Size(53, 25);
+            date.Size = new Size(176, 37);
             date.TabIndex = 3;
             date.Text = "дата";
+            date.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // TittlePage
             // 
@@ -99,7 +99,6 @@
             Click += TittlePage_Click;
             KeyUp += TittlePage_KeyUp;
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
