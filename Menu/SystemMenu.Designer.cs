@@ -57,13 +57,13 @@
             // 
             // statisticdata
             // 
-            statisticdata.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            statisticdata.Location = new Point(55, 130);
+            statisticdata.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            statisticdata.Location = new Point(115, 180);
             statisticdata.Margin = new Padding(2);
-            statisticdata.MaximumSize = new Size(680, 40);
-            statisticdata.MinimumSize = new Size(680, 40);
+            statisticdata.MaximumSize = new Size(900, 60);
+            statisticdata.MinimumSize = new Size(900, 60);
             statisticdata.Name = "statisticdata";
-            statisticdata.Size = new Size(680, 40);
+            statisticdata.Size = new Size(900, 60);
             statisticdata.TabIndex = 1;
             statisticdata.Text = "Статистические данные";
             statisticdata.UseVisualStyleBackColor = true;
@@ -71,13 +71,13 @@
             // 
             // help
             // 
-            help.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            help.Location = new Point(55, 175);
+            help.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            help.Location = new Point(115, 245);
             help.Margin = new Padding(2);
-            help.MaximumSize = new Size(680, 40);
-            help.MinimumSize = new Size(680, 40);
+            help.MaximumSize = new Size(900, 60);
+            help.MinimumSize = new Size(900, 60);
             help.Name = "help";
-            help.Size = new Size(680, 40);
+            help.Size = new Size(900, 60);
             help.TabIndex = 2;
             help.Text = "Помощь";
             help.UseVisualStyleBackColor = true;
@@ -85,13 +85,13 @@
             // 
             // Settings
             // 
-            Settings.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            Settings.Location = new Point(55, 220);
+            Settings.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            Settings.Location = new Point(115, 310);
             Settings.Margin = new Padding(2);
-            Settings.MaximumSize = new Size(680, 40);
-            Settings.MinimumSize = new Size(680, 40);
+            Settings.MaximumSize = new Size(900, 60);
+            Settings.MinimumSize = new Size(900, 60);
             Settings.Name = "Settings";
-            Settings.Size = new Size(680, 40);
+            Settings.Size = new Size(900, 60);
             Settings.TabIndex = 3;
             Settings.Text = "Настройки";
             Settings.UseVisualStyleBackColor = true;
@@ -99,13 +99,13 @@
             // 
             // kalibratepage
             // 
-            kalibratepage.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            kalibratepage.Location = new Point(55, 265);
+            kalibratepage.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            kalibratepage.Location = new Point(115, 375);
             kalibratepage.Margin = new Padding(2);
-            kalibratepage.MaximumSize = new Size(680, 40);
-            kalibratepage.MinimumSize = new Size(680, 40);
+            kalibratepage.MaximumSize = new Size(900, 60);
+            kalibratepage.MinimumSize = new Size(900, 60);
             kalibratepage.Name = "kalibratepage";
-            kalibratepage.Size = new Size(680, 40);
+            kalibratepage.Size = new Size(900, 60);
             kalibratepage.TabIndex = 4;
             kalibratepage.Text = "Калибровки";
             kalibratepage.UseVisualStyleBackColor = true;
@@ -113,13 +113,13 @@
             // 
             // sensorsstatus
             // 
-            sensorsstatus.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            sensorsstatus.Location = new Point(55, 310);
+            sensorsstatus.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            sensorsstatus.Location = new Point(115, 440);
             sensorsstatus.Margin = new Padding(2);
-            sensorsstatus.MaximumSize = new Size(680, 40);
-            sensorsstatus.MinimumSize = new Size(680, 40);
+            sensorsstatus.MaximumSize = new Size(900, 60);
+            sensorsstatus.MinimumSize = new Size(900, 60);
             sensorsstatus.Name = "sensorsstatus";
-            sensorsstatus.Size = new Size(680, 40);
+            sensorsstatus.Size = new Size(900, 60);
             sensorsstatus.TabIndex = 5;
             sensorsstatus.Text = "Состояние датчиков";
             sensorsstatus.UseVisualStyleBackColor = true;
@@ -127,13 +127,13 @@
             // 
             // copydata
             // 
-            copydata.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            copydata.Location = new Point(55, 355);
+            copydata.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            copydata.Location = new Point(115, 505);
             copydata.Margin = new Padding(2);
-            copydata.MaximumSize = new Size(680, 40);
-            copydata.MinimumSize = new Size(680, 40);
+            copydata.MaximumSize = new Size(900, 60);
+            copydata.MinimumSize = new Size(900, 60);
             copydata.Name = "copydata";
-            copydata.Size = new Size(680, 40);
+            copydata.Size = new Size(900, 60);
             copydata.TabIndex = 6;
             copydata.Text = "Копирование данных";
             copydata.UseVisualStyleBackColor = true;
@@ -195,7 +195,6 @@
             Load += SystemMenu_Load;
             KeyUp += SystemMenu_KeyUp;
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion

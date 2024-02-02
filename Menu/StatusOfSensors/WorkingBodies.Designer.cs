@@ -33,6 +33,7 @@
             time = new Label();
             date = new Label();
             timer1 = new System.Windows.Forms.Timer(components);
+            EnterBtn = new Button();
             SuspendLayout();
             // 
             // back
@@ -78,6 +79,17 @@
             timer1.Enabled = true;
             timer1.Tick += timer1_Tick;
             // 
+            // EnterBtn
+            // 
+            EnterBtn.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            EnterBtn.Location = new Point(573, 525);
+            EnterBtn.Name = "EnterBtn";
+            EnterBtn.Size = new Size(549, 52);
+            EnterBtn.TabIndex = 4;
+            EnterBtn.Text = "ENTER. СОХРАНИТЬ ОБОРОТЫ";
+            EnterBtn.UseVisualStyleBackColor = true;
+            EnterBtn.Click += EnterBtn_Click;
+            // 
             // WorkingBodies
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
@@ -85,6 +97,7 @@
             BackgroundImage = Properties.Resources.MainScreen3;
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(1134, 681);
+            Controls.Add(EnterBtn);
             Controls.Add(date);
             Controls.Add(time);
             Controls.Add(back);
@@ -99,7 +112,6 @@
             Load += WorkingBodies_Load;
             KeyUp += WorkingBodies_KeyUp;
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -108,5 +120,6 @@
         private Label time;
         private Label date;
         private System.Windows.Forms.Timer timer1;
+        private Button EnterBtn;
     }
 }

@@ -1,6 +1,7 @@
 using System.Threading;
 using System.Windows.Forms;
 using System.Xml.Serialization;
+using TM_Simulator.Properties;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrayNotify;
 
 namespace TM_Simulator
@@ -27,6 +28,7 @@ namespace TM_Simulator
         public static int[] SystemSettings1Item = new int[4];
         public static int[] SystemSettings2Item = new int[3];
         public static bool defaulttMode = false;
+        public static Bitmap[] CultureImage = new Bitmap[12];
 
         public StartPage()
         {
@@ -62,6 +64,20 @@ namespace TM_Simulator
 
         private void StartPage_Load(object sender, EventArgs e)
         {
+            CultureImage[0] = Resources.culture0;
+            CultureImage[1] = Resources.culture1;
+            CultureImage[2] = Resources.culture2;
+            CultureImage[3] = Resources.culture3;
+            CultureImage[4] = Resources.culture4;
+            CultureImage[5] = Resources.culture5;
+            CultureImage[6] = Resources.culture6;
+            CultureImage[7] = Resources.culture7;
+            CultureImage[8] = Resources.culture8;
+            CultureImage[9] = Resources.culture9;
+            CultureImage[10] = Resources.culture10;
+            CultureImage[11] = Resources.culture11;
+
+
             for (int n = 0; n < controlstatus.Length; n++)
             {
                 controlstatus[n] = false;
@@ -84,7 +100,7 @@ namespace TM_Simulator
             PasswordVerification[1] = false;
             
             LoadData();
-            image = (Image)Properties.Resources.ResourceManager.GetObject("culture" + cultureImage);
+            image = CultureImage[cultureImage];
         }
 
         private void timer1_Tick(object sender, EventArgs e)

@@ -85,12 +85,12 @@
             // 
             // button1
             // 
-            button1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(55, 130);
-            button1.MaximumSize = new Size(680, 40);
-            button1.MinimumSize = new Size(680, 40);
+            button1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.Location = new Point(115, 200);
+            button1.MaximumSize = new Size(900, 60);
+            button1.MinimumSize = new Size(900, 60);
             button1.Name = "button1";
-            button1.Size = new Size(680, 40);
+            button1.Size = new Size(900, 60);
             button1.TabIndex = 4;
             button1.Text = "Статистика";
             button1.UseVisualStyleBackColor = true;
@@ -98,12 +98,12 @@
             // 
             // button2
             // 
-            button2.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.Location = new Point(55, 175);
-            button2.MaximumSize = new Size(680, 40);
-            button2.MinimumSize = new Size(680, 40);
+            button2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            button2.Location = new Point(115, 265);
+            button2.MaximumSize = new Size(900, 60);
+            button2.MinimumSize = new Size(900, 60);
             button2.Name = "button2";
-            button2.Size = new Size(680, 40);
+            button2.Size = new Size(900, 60);
             button2.TabIndex = 5;
             button2.Text = "Аварийная статистика";
             button2.UseVisualStyleBackColor = true;
@@ -111,12 +111,12 @@
             // 
             // button3
             // 
-            button3.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            button3.Location = new Point(55, 220);
-            button3.MaximumSize = new Size(680, 40);
-            button3.MinimumSize = new Size(680, 40);
+            button3.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            button3.Location = new Point(115, 330);
+            button3.MaximumSize = new Size(900, 60);
+            button3.MinimumSize = new Size(900, 60);
             button3.Name = "button3";
-            button3.Size = new Size(680, 40);
+            button3.Size = new Size(900, 60);
             button3.TabIndex = 6;
             button3.Text = "Журнал событий";
             button3.UseVisualStyleBackColor = true;
@@ -124,12 +124,12 @@
             // 
             // button4
             // 
-            button4.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            button4.Location = new Point(55, 265);
-            button4.MaximumSize = new Size(680, 40);
-            button4.MinimumSize = new Size(680, 40);
+            button4.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            button4.Location = new Point(115, 395);
+            button4.MaximumSize = new Size(900, 60);
+            button4.MinimumSize = new Size(900, 60);
             button4.Name = "button4";
-            button4.Size = new Size(680, 40);
+            button4.Size = new Size(900, 60);
             button4.TabIndex = 7;
             button4.Text = "Техническое обслуживание";
             button4.UseVisualStyleBackColor = true;
@@ -137,12 +137,12 @@
             // 
             // button5
             // 
-            button5.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            button5.Location = new Point(55, 310);
-            button5.MaximumSize = new Size(680, 40);
-            button5.MinimumSize = new Size(680, 40);
+            button5.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            button5.Location = new Point(115, 460);
+            button5.MaximumSize = new Size(900, 60);
+            button5.MinimumSize = new Size(900, 60);
             button5.Name = "button5";
-            button5.Size = new Size(680, 40);
+            button5.Size = new Size(900, 60);
             button5.TabIndex = 8;
             button5.Text = "Активные неисправности J1939";
             button5.UseVisualStyleBackColor = true;
@@ -174,7 +174,6 @@
             Load += StatisticData_Load;
             KeyUp += StatisticData_KeyUp;
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion

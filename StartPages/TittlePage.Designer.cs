@@ -38,12 +38,12 @@
             // menu
             // 
             menu.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            menu.Location = new Point(509, 11);
+            menu.Location = new Point(500, 10);
             menu.Margin = new Padding(2);
             menu.Name = "menu";
-            menu.Size = new Size(130, 62);
+            menu.Size = new Size(130, 60);
             menu.TabIndex = 1;
-            menu.Text = "меню";
+            menu.Text = "Меню";
             menu.UseVisualStyleBackColor = true;
             menu.Click += menu_Click;
             // 

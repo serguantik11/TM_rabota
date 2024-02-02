@@ -64,9 +64,9 @@
             // 
             buttonETO.BackgroundImage = Properties.Resources.TObook;
             buttonETO.BackgroundImageLayout = ImageLayout.Zoom;
-            buttonETO.Location = new Point(520, 150);
+            buttonETO.Location = new Point(753, 219);
             buttonETO.Name = "buttonETO";
-            buttonETO.Size = new Size(65, 65);
+            buttonETO.Size = new Size(90, 90);
             buttonETO.TabIndex = 1;
             buttonETO.UseVisualStyleBackColor = true;
             buttonETO.Click += buttonETO_Click;
@@ -75,9 +75,9 @@
             // 
             buttonTO1.BackgroundImage = Properties.Resources.TObook;
             buttonTO1.BackgroundImageLayout = ImageLayout.Zoom;
-            buttonTO1.Location = new Point(520, 235);
+            buttonTO1.Location = new Point(753, 334);
             buttonTO1.Name = "buttonTO1";
-            buttonTO1.Size = new Size(65, 65);
+            buttonTO1.Size = new Size(90, 90);
             buttonTO1.TabIndex = 2;
             buttonTO1.UseVisualStyleBackColor = true;
             buttonTO1.Click += buttonTO1_Click;
@@ -86,18 +86,19 @@
             // 
             buttonTO2.BackgroundImage = Properties.Resources.TObook;
             buttonTO2.BackgroundImageLayout = ImageLayout.Zoom;
-            buttonTO2.Location = new Point(520, 320);
+            buttonTO2.Location = new Point(753, 453);
             buttonTO2.Name = "buttonTO2";
-            buttonTO2.Size = new Size(65, 65);
+            buttonTO2.Size = new Size(90, 90);
             buttonTO2.TabIndex = 3;
             buttonTO2.UseVisualStyleBackColor = true;
             buttonTO2.Click += buttonTO2_Click;
             // 
             // buttonzero1
             // 
-            buttonzero1.Location = new Point(615, 150);
+            buttonzero1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonzero1.Location = new Point(958, 214);
             buttonzero1.Name = "buttonzero1";
-            buttonzero1.Size = new Size(140, 65);
+            buttonzero1.Size = new Size(140, 90);
             buttonzero1.TabIndex = 4;
             buttonzero1.Text = "Сбросить";
             buttonzero1.UseVisualStyleBackColor = true;
@@ -105,9 +106,10 @@
             // 
             // buttonzero2
             // 
-            buttonzero2.Location = new Point(615, 235);
+            buttonzero2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonzero2.Location = new Point(958, 329);
             buttonzero2.Name = "buttonzero2";
-            buttonzero2.Size = new Size(140, 65);
+            buttonzero2.Size = new Size(140, 90);
             buttonzero2.TabIndex = 5;
             buttonzero2.Text = "Сбросить";
             buttonzero2.UseVisualStyleBackColor = true;
@@ -115,9 +117,10 @@
             // 
             // buttonzero3
             // 
-            buttonzero3.Location = new Point(615, 320);
+            buttonzero3.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonzero3.Location = new Point(958, 453);
             buttonzero3.Name = "buttonzero3";
-            buttonzero3.Size = new Size(140, 65);
+            buttonzero3.Size = new Size(140, 90);
             buttonzero3.TabIndex = 6;
             buttonzero3.Text = "Сбросить";
             buttonzero3.UseVisualStyleBackColor = true;
@@ -127,10 +130,10 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(353, 167);
+            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(524, 248);
             label1.Name = "label1";
-            label1.Size = new Size(54, 25);
+            label1.Size = new Size(70, 32);
             label1.TabIndex = 7;
             label1.Text = "  6 ч.";
             // 
@@ -138,10 +141,10 @@
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(353, 252);
+            label2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(521, 361);
             label2.Name = "label2";
-            label2.Size = new Size(60, 25);
+            label2.Size = new Size(77, 32);
             label2.TabIndex = 8;
             label2.Text = " 48 ч.";
             // 
@@ -149,10 +152,10 @@
             // 
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
-            label3.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(353, 337);
+            label3.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(524, 482);
             label3.Name = "label3";
-            label3.Size = new Size(66, 25);
+            label3.Size = new Size(84, 32);
             label3.TabIndex = 9;
             label3.Text = "123 ч.";
             // 
@@ -187,25 +190,27 @@
             // 
             // textBox1
             // 
+            textBox1.BackColor = Color.White;
             textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox1.Location = new Point(0, 104);
+            textBox1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            textBox1.ForeColor = Color.Black;
+            textBox1.Location = new Point(2, 95);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.ReadOnly = true;
             textBox1.ScrollBars = ScrollBars.Vertical;
-            textBox1.Size = new Size(785, 367);
+            textBox1.Size = new Size(1132, 588);
             textBox1.TabIndex = 10;
             textBox1.Visible = false;
             // 
             // PageName
             // 
             PageName.BackColor = Color.Transparent;
-            PageName.Font = new Font("Segoe UI", 21F, FontStyle.Bold, GraphicsUnit.Point);
-            PageName.Location = new Point(103, 63);
+            PageName.Font = new Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point);
+            PageName.Location = new Point(205, 16);
             PageName.Margin = new Padding(0);
             PageName.Name = "PageName";
-            PageName.Size = new Size(588, 34);
+            PageName.Size = new Size(683, 56);
             PageName.TabIndex = 11;
             PageName.Text = "ТЕХНИЧЕСКОЕ ОБСЛУЖИВАНИЕ";
             PageName.TextAlign = ContentAlignment.MiddleCenter;

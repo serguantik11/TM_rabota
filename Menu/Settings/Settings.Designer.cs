@@ -56,13 +56,13 @@
             // 
             // combinesettings
             // 
-            combinesettings.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            combinesettings.Location = new Point(55, 315);
+            combinesettings.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            combinesettings.Location = new Point(115, 480);
             combinesettings.Margin = new Padding(2);
-            combinesettings.MaximumSize = new Size(680, 40);
+            combinesettings.MaximumSize = new Size(900, 60);
             combinesettings.MinimumSize = new Size(680, 40);
             combinesettings.Name = "combinesettings";
-            combinesettings.Size = new Size(680, 40);
+            combinesettings.Size = new Size(900, 60);
             combinesettings.TabIndex = 1;
             combinesettings.Text = "Настройки комбайна";
             combinesettings.UseVisualStyleBackColor = true;
@@ -70,13 +70,13 @@
             // 
             // systemsettings2
             // 
-            systemsettings2.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            systemsettings2.Location = new Point(55, 270);
+            systemsettings2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            systemsettings2.Location = new Point(115, 410);
             systemsettings2.Margin = new Padding(2);
-            systemsettings2.MaximumSize = new Size(680, 40);
+            systemsettings2.MaximumSize = new Size(900, 60);
             systemsettings2.MinimumSize = new Size(680, 40);
             systemsettings2.Name = "systemsettings2";
-            systemsettings2.Size = new Size(680, 40);
+            systemsettings2.Size = new Size(900, 60);
             systemsettings2.TabIndex = 1;
             systemsettings2.Text = "Настройки системы 2";
             systemsettings2.UseVisualStyleBackColor = true;
@@ -84,12 +84,12 @@
             // 
             // terminalsettings
             // 
-            terminalsettings.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            terminalsettings.Location = new Point(55, 225);
+            terminalsettings.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            terminalsettings.Location = new Point(115, 340);
             terminalsettings.Margin = new Padding(2);
-            terminalsettings.MaximumSize = new Size(680, 40);
+            terminalsettings.MaximumSize = new Size(900, 60);
             terminalsettings.Name = "terminalsettings";
-            terminalsettings.Size = new Size(680, 40);
+            terminalsettings.Size = new Size(900, 60);
             terminalsettings.TabIndex = 1;
             terminalsettings.Text = "Настройки терминала";
             terminalsettings.UseVisualStyleBackColor = true;
@@ -97,13 +97,13 @@
             // 
             // operatingmode
             // 
-            operatingmode.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            operatingmode.Location = new Point(55, 180);
+            operatingmode.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            operatingmode.Location = new Point(115, 270);
             operatingmode.Margin = new Padding(2);
-            operatingmode.MaximumSize = new Size(680, 40);
+            operatingmode.MaximumSize = new Size(900, 60);
             operatingmode.MinimumSize = new Size(680, 40);
             operatingmode.Name = "operatingmode";
-            operatingmode.Size = new Size(680, 40);
+            operatingmode.Size = new Size(900, 60);
             operatingmode.TabIndex = 1;
             operatingmode.Text = "Режим работы";
             operatingmode.UseVisualStyleBackColor = true;
@@ -111,13 +111,13 @@
             // 
             // systemsettings
             // 
-            systemsettings.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            systemsettings.Location = new Point(55, 135);
+            systemsettings.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            systemsettings.Location = new Point(115, 200);
             systemsettings.Margin = new Padding(2);
-            systemsettings.MaximumSize = new Size(680, 40);
+            systemsettings.MaximumSize = new Size(900, 60);
             systemsettings.MinimumSize = new Size(680, 40);
             systemsettings.Name = "systemsettings";
-            systemsettings.Size = new Size(680, 40);
+            systemsettings.Size = new Size(900, 60);
             systemsettings.TabIndex = 1;
             systemsettings.Text = "Настройки системы";
             systemsettings.UseVisualStyleBackColor = true;
@@ -135,6 +135,11 @@
             time.Text = "время";
             time.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // timer1
+            // 
+            timer1.Enabled = true;
+            timer1.Tick += timer1_Tick;
+            // 
             // date
             // 
             date.BackColor = Color.Transparent;
@@ -146,11 +151,6 @@
             date.TabIndex = 3;
             date.Text = "дата";
             date.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // timer1
-            // 
-            timer1.Enabled = true;
-            timer1.Tick += timer1_Tick;
             // 
             // Settings
             // 
@@ -178,7 +178,6 @@
             Load += Form3_Load;
             KeyUp += Settings_KeyUp;
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion

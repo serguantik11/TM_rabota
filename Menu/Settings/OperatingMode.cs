@@ -44,7 +44,6 @@ namespace TM_Simulator.Menu.Settings
             comboBox3.SelectedIndex = 0;
             ModeBox_SelectedIndexChanged(sender, e);
 
-            PictureBox CultureBox = new PictureBox();
             CultureBox.BackgroundImageLayout = ImageLayout.Zoom;
             CultureBox.Image = StartPage.image;
             CultureBox.Location = new Point(0, 600);
@@ -69,6 +68,11 @@ namespace TM_Simulator.Menu.Settings
 
         private void CultureBox_SelectedIndexChanged(object sender, EventArgs e)
         {
+            StartPage.cultureImage = cultureBox.SelectedIndex;
+            StartPage.image = StartPage.CultureImage[StartPage.cultureImage];
+            CultureBox.Image = StartPage.image;
+
+
             l0.Text = StartPage.culture[cultureBox.SelectedIndex, 0].ToString();
             l1.Text = StartPage.culture[cultureBox.SelectedIndex, 1].ToString();
             l2.Text = StartPage.culture[cultureBox.SelectedIndex, 2].ToString();
@@ -76,9 +80,8 @@ namespace TM_Simulator.Menu.Settings
             l4.Text = StartPage.culture[cultureBox.SelectedIndex, 4].ToString();
             l5.Text = StartPage.culture[cultureBox.SelectedIndex, 5].ToString();
             l6.Text = StartPage.culture[cultureBox.SelectedIndex, 6].ToString();
-            StartPage.cultureImage = cultureBox.SelectedIndex;
-            StartPage.image = (Image)Properties.Resources.ResourceManager.GetObject("culture" + StartPage.cultureImage);
-            CultureBox.Image = StartPage.image;
+
+
         }
         private string[] name = { "Обороты молотильного барабана", "Зазор подбарабанья", "Обороты вентилятора очистки", "Верхние решета", "Нижние решета", "Потери по каналу очистка", "Потери по каналу соломотряса" };
 

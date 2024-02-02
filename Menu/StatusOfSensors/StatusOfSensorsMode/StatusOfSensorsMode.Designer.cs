@@ -32,12 +32,13 @@
             SensorName = new Label();
             PageName = new Label();
             EngineerModeBtn = new Button();
+            panelBtn = new Panel();
             SuspendLayout();
             // 
             // back
             // 
             back.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            back.Location = new Point(677, 11);
+            back.Location = new Point(7, 8);
             back.Margin = new Padding(2);
             back.MaximumSize = new Size(130, 70);
             back.MinimumSize = new Size(130, 70);
@@ -50,37 +51,45 @@
             // 
             // SensorName
             // 
-            SensorName.AutoSize = true;
             SensorName.BackColor = Color.White;
-            SensorName.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            SensorName.Location = new Point(40, 32);
+            SensorName.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            SensorName.Location = new Point(65, 80);
             SensorName.Name = "SensorName";
-            SensorName.Size = new Size(37, 20);
+            SensorName.Size = new Size(1024, 31);
             SensorName.TabIndex = 1;
             SensorName.Text = "       ";
             // 
             // PageName
             // 
             PageName.BackColor = Color.Transparent;
-            PageName.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            PageName.Font = new Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point);
             PageName.ForeColor = Color.Black;
-            PageName.Location = new Point(12, -9);
+            PageName.Location = new Point(191, 16);
             PageName.Name = "PageName";
-            PageName.Size = new Size(659, 45);
+            PageName.Size = new Size(735, 49);
             PageName.TabIndex = 2;
             PageName.Text = "СОСТОЯНИЕ ДАТЧИКОВ";
             PageName.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // EngineerModeBtn
             // 
-            EngineerModeBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            EngineerModeBtn.Location = new Point(676, 56);
+            EngineerModeBtn.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            EngineerModeBtn.ForeColor = SystemColors.ControlText;
+            EngineerModeBtn.Location = new Point(993, 8);
             EngineerModeBtn.Name = "EngineerModeBtn";
-            EngineerModeBtn.Size = new Size(106, 53);
+            EngineerModeBtn.Size = new Size(130, 70);
             EngineerModeBtn.TabIndex = 3;
             EngineerModeBtn.Text = "ENGINEER MODE";
             EngineerModeBtn.UseVisualStyleBackColor = true;
             EngineerModeBtn.Click += EngineerModeBtn_Click;
+            // 
+            // panelBtn
+            // 
+            panelBtn.Location = new Point(0, 0);
+            panelBtn.Name = "panelBtn";
+            panelBtn.Size = new Size(1134, 682);
+            panelBtn.TabIndex = 4;
+            panelBtn.Paint += PanelBtn_Paint;
             // 
             // StatusOfSensorsMode
             // 
@@ -93,6 +102,7 @@
             Controls.Add(PageName);
             Controls.Add(SensorName);
             Controls.Add(back);
+            Controls.Add(panelBtn);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             KeyPreview = true;
             MaximizeBox = false;
@@ -106,7 +116,6 @@
             Load += StatusOfSensorsMode_Load;
             KeyDown += StatusOfSensors_KeyDown;
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -115,5 +124,6 @@
         private Label SensorName;
         private Label PageName;
         private Button EngineerModeBtn;
+        private Panel panelBtn;
     }
 }

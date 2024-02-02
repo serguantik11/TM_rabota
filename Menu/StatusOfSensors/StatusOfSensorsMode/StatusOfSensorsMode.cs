@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TM_Simulator.Menu.StatusOfSensors.StatusOfSensorsMode;
+using Windows.Devices.Radios;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrayNotify;
 
 namespace TM_Simulator
@@ -18,9 +19,9 @@ namespace TM_Simulator
         private bool cl = true;
         public Button[] bt = new Button[60];
         public static string[] SensorsName = new string[60];
-        public int X = 43, Y = 55;
+        public int X = 65, Y = 110;
         private string btn_txt;
-
+        bool show;
         public StatusOfSensorsMode()
         {
             InitializeComponent();
@@ -29,8 +30,8 @@ namespace TM_Simulator
         private void back_Click(object sender, EventArgs e)
         {
             cl = false;
-            StatusOfSensorsPage sensmenu = new();
-            sensmenu.Show();
+            StatusOfSensorsPage sensmenupage = new();
+            sensmenupage.Show();
             this.Close();
         }
 
@@ -60,15 +61,21 @@ namespace TM_Simulator
         {
             if (StartPage.EngineerMode)
             {
-                    StartPage.EngineerMode = false;
-                    PageName.Text = "СОСТОЯНИЕ ДАТЧИКОВ";
-                    PageName.ForeColor = Color.Black;
+                StartPage.EngineerMode = false;
+                PageName.Text = "СОСТОЯНИЕ ДАТЧИКОВ";
+                PageName.ForeColor = Color.Black;
+                EngineerModeBtn.ForeColor = Color.Black;
+                this.Invalidate();
+                this.Refresh();
             }
             else
             {
-                    StartPage.EngineerMode = true;
-                    PageName.Text = "СОСТОЯНИЕ ДАТЧИКОВ  <ENGINEER MODE>";
-                    PageName.ForeColor = Color.Lime;
+                StartPage.EngineerMode = true;
+                PageName.Text = "СОСТОЯНИЕ ДАТЧИКОВ  <ENGINEER MODE>";
+                PageName.ForeColor = Color.Lime;
+                EngineerModeBtn.ForeColor = Color.Lime;
+                this.Invalidate();
+                this.Refresh();
             }
         }
 
@@ -78,11 +85,13 @@ namespace TM_Simulator
             {
                 PageName.Text = "СОСТОЯНИЕ ДАТЧИКОВ  <ENGINEER MODE>";
                 PageName.ForeColor = Color.Lime;
+                EngineerModeBtn.ForeColor = Color.Lime;
             }
             else
             {
                 PageName.Text = "СОСТОЯНИЕ ДАТЧИКОВ";
                 PageName.ForeColor = Color.Black;
+                EngineerModeBtn.ForeColor = Color.Black;
             }
             for (int i = 0; i < bt.Length; i++)
             {
@@ -90,7 +99,7 @@ namespace TM_Simulator
                 {
                     bt[i] = new Button();
                     bt[i].Location = new Point(X, Y);
-                    bt[i].Size = new Size(65, 65);
+                    bt[i].Size = new Size(90, 90);
                     bt[i].Tag = i;
                     bt[i].Name = "btn" + i;
                     bt[i].BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject("status" + i);
@@ -98,13 +107,14 @@ namespace TM_Simulator
                     bt[i].Click += ButtonAllClick;
                     bt[i].MouseHover += ButtonAllHover;
                     bt[i].Enter += ButtonAllHover;
-                    Controls.Add(bt[i]);
+                    bt[i].Paint += new PaintEventHandler(PanelBtn_Paint);
+                    panelBtn.Controls.Add(bt[i]);
                 }
-                X += 70;
+                X += 100;
                 if (i % 10 == 9)
                 {
-                    X = 43;
-                    Y += 69;
+                    X = 65;
+                    Y += 95;
                 }
             }
             for (int a = 0; a < 60; a++)
@@ -275,6 +285,7 @@ namespace TM_Simulator
             }
         }
 
+
         private void ButtonAllClick(object sender, EventArgs e)
         {
             var buttoncl = (Button)sender;
@@ -308,6 +319,68 @@ namespace TM_Simulator
             }
         }
 
-        
+        private void PanelBtn_Paint(object sender, PaintEventArgs e)
+        {
+            if (!StartPage.EngineerMode)
+            {
+                if (sender is Button)
+                {
+                    
+                    var button = (Button)sender;
+                    int btn = Convert.ToInt32(button.Tag);
+                    if (btn != 28 && btn != 29 && btn != 39 && btn != 42 && btn != 41 && btn != 40)
+                    {
+                        if (!StartPage.controlstatus[btn])
+                        {
+                            if (button != null)
+                            {
+                                Point p1 = new Point(button.Location.X, button.Location.Y);// первая точка
+                                Point p2 = new Point(button.Location.X + 90, button.Location.Y + 90);// вторая точка
+                                Point p3 = new Point(button.Location.X, button.Location.Y + 90);// первая точка
+                                Point p4 = new Point(button.Location.X + 90, button.Location.Y);// вторая точка
+                                if (sender is Button)
+                                {
+                                    // offset line so it's drawn over the button where
+                                    // the line on the panel is drawn
+                                    p1.X -= button.Left;
+                                    p1.Y -= button.Top;
+                                    p2.X -= button.Left;
+                                    p2.Y -= button.Top;
+                                    p3.X -= button.Left;
+                                    p3.Y -= button.Top;
+                                    p4.X -= button.Left;
+                                    p4.Y -= button.Top;
+                                }
+                                e.Graphics.DrawLine(new Pen(Color.Red, 4.0F), p1, p2);
+                                e.Graphics.DrawLine(new Pen(Color.Red, 4.0F), p3, p4);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        //private void StatusOfSensorsMode_Paint(object sender, PaintEventArgs e)
+        //{
+        //    using (Graphics gr = e.Graphics)
+        //    {
+        //        for (int i = 0; i < bt.Length; i++)
+        //        {
+        //            if (i != 14 && i != 30 && i != 32 && i != 36 && i != 37 && i != 38 && i != 48)
+        //            {
+        //                if (StartPage.controlstatus[i] = false)
+        //                {
+        //                    Pen p = new Pen(Color.Red, 5);// цвет линии и ширина
+        //                    Point p1 = new Point(X, Y);// первая точка
+        //                    Point p2 = new Point(X + 90, Y + 90);// вторая точка
+        //                    Point p3 = new Point(X, Y + 90);// первая точка
+        //                    Point p4 = new Point(X + 90, Y);// вторая точка
+        //                    gr.DrawLine(p, p1, p2);// рисуем линию
+        //                    gr.DrawLine(p, p3, p4);// рисуем линию
+        //                }
+        //            }
+        //        }
+        //    }
+        //}
     }
 }

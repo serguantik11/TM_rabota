@@ -139,6 +139,9 @@
   <data name="53" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\53.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="sensorhelp43" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sensorhelp43.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="47" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\47.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -148,20 +151,26 @@
   <data name="sensorhelp18" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sensorhelp18.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="status25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\status25.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CopyMenuImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CopyMenuImage.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="33" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\33.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sensorhelp42" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sensorhelp42.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="status40" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\status40.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="46" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\46.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="status1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\status1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="status20" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\status20.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="status53" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\status53.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="39" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\39.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,9 +193,6 @@
   <data name="sensorhelp4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sensorhelp4.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\6.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="sensorhelp50" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sensorhelp50.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -202,8 +208,8 @@
   <data name="status3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\status3.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sensorhelp43" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sensorhelp43.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="culture5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\culture5.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="status10" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\status10.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -219,6 +225,9 @@
   </data>
   <data name="sensorhelp19" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sensorhelp19.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sensorhelp41" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sensorhelp41.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="culture1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\culture1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -238,9 +247,6 @@
   <data name="52" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\52.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\0.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="43" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\43.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -250,9 +256,6 @@
   <data name="statisticJ1939" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\statisticJ1939.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="55" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\55.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="checkbox1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\checkbox.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -261,6 +264,9 @@
   </data>
   <data name="status9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\status9.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="status47" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\status47.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SystemMenu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SystemMenu.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -292,20 +298,17 @@
   <data name="sensorhelp34" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sensorhelp34.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sensorhelp9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sensorhelp9.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="culture11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\culture11.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="help4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\help4.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sensorhelp13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sensorhelp13.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="13" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\13.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\5.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sensorhelp20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sensorhelp20.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="58" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\58.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -340,17 +343,20 @@
   <data name="combinesettings" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\combinesettings.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sensorhelp13" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sensorhelp13.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="status19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\status19.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sensorhelp17" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sensorhelp17.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="status7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\status7.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="22" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\22.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sensorhelp10" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sensorhelp10.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="35" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\35.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="status4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\status4.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -370,6 +376,9 @@
   <data name="sensorhelp35" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sensorhelp35.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="status16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\status16.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="sensorhelp7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sensorhelp7.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -382,17 +391,23 @@
   <data name="operatingMode" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\operatingMode.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="sensorhelp3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sensorhelp3.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="19" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\19.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="culture5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\culture5.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sensorhelp23" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sensorhelp23.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="status6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\status6.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\9.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sensorhelp49" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sensorhelp49.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="57" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\57.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -415,6 +430,9 @@
   <data name="12" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\12.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="help4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help4.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="MainScreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MainScreen.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -430,6 +448,9 @@
   <data name="status35" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\status35.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="status34" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\status34.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="sensorhelp39" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sensorhelp39.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -441,9 +462,6 @@
   </data>
   <data name="sensorhelp33" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sensorhelp33.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="status53" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\status53.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -481,9 +499,6 @@
   <data name="sensorhelp25" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sensorhelp25.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="status8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\status8.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="sensorhelp8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sensorhelp8.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -493,17 +508,14 @@
   <data name="statistic" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\statistic.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="status7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\status7.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="56" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\56.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="culture8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\culture8.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sensorhelp45" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sensorhelp45.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="culture10" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\culture10.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -519,12 +531,6 @@
   </data>
   <data name="help6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\help6.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="culture0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\culture0.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\4.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="status11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\status11.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -553,14 +559,14 @@
   <data name="sensorhelp31" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sensorhelp31.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="status34" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\status34.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="status20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\status20.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="culture7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\culture7.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="status25" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\status25.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="20" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\20.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -583,20 +589,17 @@
   <data name="status13" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\status13.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sensorhelp23" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sensorhelp23.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="17" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\17.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="culture9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\culture9.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sensorhelp17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sensorhelp17.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="culture3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\culture3.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="27" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\27.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help3.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="emergencystatistic" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\emergencystatistic.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -610,11 +613,11 @@
   <data name="status56" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\status56.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sensorhelp41" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sensorhelp41.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sensorhelp3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sensorhelp3.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="46" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\46.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="51" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\51.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -622,14 +625,14 @@
   <data name="sensorhelp58" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sensorhelp58.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sensorhelp49" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sensorhelp49.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="culture0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\culture0.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="status15" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\status15.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="status19" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\status19.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sensorhelp9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sensorhelp9.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="terminalSettings" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\terminalSettings.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -637,14 +640,11 @@
   <data name="EventLogBackGround" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\EventLogBackGround.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sensorhelp20" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sensorhelp20.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="sensorhelp1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sensorhelp1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="status47" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\status47.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\17.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="status50" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\status50.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -655,8 +655,8 @@
   <data name="lowersieves" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lowersieves.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="status16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\status16.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="55" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\55.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="checkbox" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\checkbox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -664,8 +664,8 @@
   <data name="44" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\44.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="35" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\35.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sensorhelp45" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sensorhelp45.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="culture6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\culture6.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -682,8 +682,8 @@
   <data name="systemsettings" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\systemsettings.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sensorhelp22" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sensorhelp22.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="culture9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\culture9.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sensorhelp21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sensorhelp21.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -712,14 +712,17 @@
   <data name="10" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\10.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="status51" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\status51.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="status57" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\status57.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sensorhelp27" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sensorhelp27.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sensorhelp42" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sensorhelp42.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="status8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\status8.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\7.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -727,8 +730,8 @@
   <data name="sensorhelp2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sensorhelp2.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="help3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\help3.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\0.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sensorhelp54" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sensorhelp54.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -742,10 +745,43 @@
   <data name="sensorhelp16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sensorhelp16.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="status51" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\status51.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sensorhelp22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sensorhelp22.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CopyMenuImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CopyMenuImage.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="culture111" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\culture11.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="culture101" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\culture10.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="culture91" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\culture9.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="culture81" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\culture8.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="culture71" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\culture7.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="culture61" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\culture6.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="culture51" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\culture5.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="culture41" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\culture4.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="culture31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\culture3.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="culture21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\culture2.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="culture12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\culture1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="culture01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\culture0.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

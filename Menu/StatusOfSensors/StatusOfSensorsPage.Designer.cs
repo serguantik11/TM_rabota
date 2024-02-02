@@ -53,12 +53,12 @@
             // 
             // workingbodiesbutton
             // 
-            workingbodiesbutton.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            workingbodiesbutton.Location = new Point(55, 140);
-            workingbodiesbutton.MaximumSize = new Size(680, 40);
-            workingbodiesbutton.MinimumSize = new Size(680, 40);
+            workingbodiesbutton.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            workingbodiesbutton.Location = new Point(115, 210);
+            workingbodiesbutton.MaximumSize = new Size(900, 60);
+            workingbodiesbutton.MinimumSize = new Size(900, 60);
             workingbodiesbutton.Name = "workingbodiesbutton";
-            workingbodiesbutton.Size = new Size(680, 40);
+            workingbodiesbutton.Size = new Size(900, 60);
             workingbodiesbutton.TabIndex = 1;
             workingbodiesbutton.Text = "Обороты рабочих органов";
             workingbodiesbutton.UseVisualStyleBackColor = true;
@@ -66,12 +66,12 @@
             // 
             // sensstatusbutton
             // 
-            sensstatusbutton.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            sensstatusbutton.Location = new Point(55, 190);
-            sensstatusbutton.MaximumSize = new Size(680, 40);
-            sensstatusbutton.MinimumSize = new Size(680, 40);
+            sensstatusbutton.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            sensstatusbutton.Location = new Point(115, 280);
+            sensstatusbutton.MaximumSize = new Size(900, 60);
+            sensstatusbutton.MinimumSize = new Size(900, 60);
             sensstatusbutton.Name = "sensstatusbutton";
-            sensstatusbutton.Size = new Size(680, 40);
+            sensstatusbutton.Size = new Size(900, 60);
             sensstatusbutton.TabIndex = 2;
             sensstatusbutton.Text = "Состояние датчиков";
             sensstatusbutton.UseVisualStyleBackColor = true;
@@ -129,7 +129,6 @@
             Load += StatusOfSensorsPage_Load;
             KeyUp += StatusOfSensors_KeyUp;
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion

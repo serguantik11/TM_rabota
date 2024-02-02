@@ -25,8 +25,8 @@ namespace TM_Simulator.Menu.StatusOfSensors.StatusOfSensorsMode
         private void back_Click(object sender, EventArgs e)
         {
             cl = false;
-            TM_Simulator.StatusOfSensorsMode sensmode = new();
-            sensmode.Show();
+            TM_Simulator.StatusOfSensorsMode sensmodeEng = new();
+            sensmodeEng.Show();
             this.Close();
         }
 

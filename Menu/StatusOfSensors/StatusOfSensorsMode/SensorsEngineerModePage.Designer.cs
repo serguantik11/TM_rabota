@@ -60,7 +60,7 @@
             // back
             // 
             back.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            back.Location = new Point(992, 12);
+            back.Location = new Point(1002, 92);
             back.Name = "back";
             back.Size = new Size(130, 70);
             back.TabIndex = 0;

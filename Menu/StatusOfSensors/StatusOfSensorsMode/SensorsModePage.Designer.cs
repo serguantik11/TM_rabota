@@ -34,12 +34,12 @@
             // 
             // back
             // 
-            back.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            back.Location = new Point(10, 420);
-            back.MaximumSize = new Size(375, 35);
-            back.MinimumSize = new Size(375, 35);
+            back.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            back.Location = new Point(37, 618);
+            back.MaximumSize = new Size(500, 50);
+            back.MinimumSize = new Size(500, 50);
             back.Name = "back";
-            back.Size = new Size(375, 35);
+            back.Size = new Size(500, 50);
             back.TabIndex = 0;
             back.Text = "ESC. НАЗАД";
             back.UseVisualStyleBackColor = true;
@@ -47,12 +47,12 @@
             // 
             // buttonOfControl
             // 
-            buttonOfControl.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            buttonOfControl.Location = new Point(400, 420);
-            buttonOfControl.MaximumSize = new Size(375, 35);
-            buttonOfControl.MinimumSize = new Size(375, 35);
+            buttonOfControl.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonOfControl.Location = new Point(590, 618);
+            buttonOfControl.MaximumSize = new Size(500, 50);
+            buttonOfControl.MinimumSize = new Size(500, 50);
             buttonOfControl.Name = "buttonOfControl";
-            buttonOfControl.Size = new Size(375, 35);
+            buttonOfControl.Size = new Size(500, 50);
             buttonOfControl.TabIndex = 1;
             buttonOfControl.Text = " ";
             buttonOfControl.UseVisualStyleBackColor = true;
