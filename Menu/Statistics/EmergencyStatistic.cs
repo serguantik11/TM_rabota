@@ -16,7 +16,6 @@ namespace TM_Simulator.Статистика
     {
 
         private bool cl = true;
-        private int Y = 0;
 
         public EmergencyStatistic()
         {
@@ -52,7 +51,7 @@ namespace TM_Simulator.Статистика
             {
                 back_Click(this, e);
             }
-            Cursor.Position = new Point(this.Location.X + 350, this.Location.Y + 200);
+            Cursor.Position = new Point(this.Location.X + 600, this.Location.Y + 400);
             //PictureBox box1 = new();
             //box1.Location = new Point(0, Y);
             //box1.Width = 700;
@@ -63,7 +62,7 @@ namespace TM_Simulator.Статистика
             if (e.KeyCode == Keys.Down)
             {
 
-                int u = -63;
+                int u = -100;
                 //Y = Y - 63;
 
                 //panel1.Controls.Add(box1);//панель в которую заносится изображение
@@ -73,7 +72,7 @@ namespace TM_Simulator.Статистика
             }
             if (e.KeyCode == Keys.Up)
             {
-                int u = 63;
+                int u = 100;
                 //Y = Y + 63;
                 //panel1.Controls.Add(box1);//панель в которую заносится изображение
                 mouse_event((uint)MouseEventFlags.MouseWheel, 0, 0, unchecked((uint)u), 0);
@@ -99,11 +98,11 @@ namespace TM_Simulator.Статистика
         //вывод и скролл грёбаной картинки
         private void EmergencyStatistic_Load(object sender, EventArgs e)
         {
-            Cursor.Position = new Point(this.Location.X + 350, this.Location.Y + 200);
+            Cursor.Position = new Point(this.Location.X + 600, this.Location.Y + 400);
             PictureBox box1 = new();
-            box1.Location = new Point(0, Y);
-            box1.Width = 700;
-            box1.Height = 1200;
+            box1.Location = new Point(0, -15);
+            box1.Width = 1080;
+            box1.Height = 1900;
             box1.Image = (Image)Properties.Resources.ResourceManager.GetObject("emstatistic");
             box1.SizeMode = PictureBoxSizeMode.Zoom;
             panel1.Controls.Add(box1);//панель в которую заносится изображение

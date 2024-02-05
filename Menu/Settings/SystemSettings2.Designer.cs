@@ -85,13 +85,13 @@
             // 
             comboBox1.DropDownHeight = 102;
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            comboBox1.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             comboBox1.FormattingEnabled = true;
             comboBox1.IntegralHeight = false;
             comboBox1.Items.AddRange(new object[] { "выкл.", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60" });
-            comboBox1.Location = new Point(236, 173);
+            comboBox1.Location = new Point(344, 245);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(97, 28);
+            comboBox1.Size = new Size(137, 38);
             comboBox1.TabIndex = 4;
             comboBox1.SelectedIndexChanged += ComboBox1_SelectedIndexChanged;
             // 
@@ -99,13 +99,13 @@
             // 
             comboBox2.DropDownHeight = 102;
             comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox2.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            comboBox2.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             comboBox2.FormattingEnabled = true;
             comboBox2.IntegralHeight = false;
             comboBox2.Items.AddRange(new object[] { "выкл.", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "101", "102", "103", "104", "105" });
-            comboBox2.Location = new Point(236, 139);
+            comboBox2.Location = new Point(344, 195);
             comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(97, 28);
+            comboBox2.Size = new Size(137, 38);
             comboBox2.TabIndex = 5;
             comboBox2.SelectedIndexChanged += ComboBox2_SelectedIndexChanged;
             // 
@@ -113,13 +113,13 @@
             // 
             comboBox3.DropDownHeight = 102;
             comboBox3.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox3.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            comboBox3.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             comboBox3.FormattingEnabled = true;
             comboBox3.IntegralHeight = false;
             comboBox3.Items.AddRange(new object[] { "Резистивный", "Резестивный Stage V", "Резистивный Cummins", "Электронный" });
-            comboBox3.Location = new Point(364, 139);
+            comboBox3.Location = new Point(560, 201);
             comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(234, 28);
+            comboBox3.Size = new Size(343, 38);
             comboBox3.TabIndex = 6;
             comboBox3.SelectedIndexChanged += ComboBox3_SelectedIndexChanged;
             // 
@@ -147,7 +147,6 @@
             Load += SystemSettings2_Load;
             KeyDown += SystemSettings2_KeyDown;
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion

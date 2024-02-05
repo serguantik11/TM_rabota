@@ -77,10 +77,10 @@
             // progressBar1
             // 
             progressBar1.BackColor = Color.White;
-            progressBar1.Location = new Point(575, 70);
+            progressBar1.Location = new Point(785, 106);
             progressBar1.Minimum = 1;
             progressBar1.Name = "progressBar1";
-            progressBar1.Size = new Size(200, 25);
+            progressBar1.Size = new Size(334, 37);
             progressBar1.TabIndex = 3;
             progressBar1.Value = 1;
             // 
@@ -110,7 +110,6 @@
             FormClosing += EventLogPage_FormClosing;
             Load += EventLogPage_Load;
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion

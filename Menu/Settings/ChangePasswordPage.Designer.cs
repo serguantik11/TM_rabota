@@ -39,10 +39,10 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
             label1.Location = new Point(54, 33);
             label1.Name = "label1";
-            label1.Size = new Size(181, 20);
+            label1.Size = new Size(233, 25);
             label1.TabIndex = 0;
             label1.Text = "Введите старый пароль";
             label1.TextAlign = ContentAlignment.MiddleCenter;
@@ -50,20 +50,20 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
             label2.Location = new Point(54, 131);
             label2.Name = "label2";
-            label2.Size = new Size(177, 20);
+            label2.Size = new Size(228, 25);
             label2.TabIndex = 1;
             label2.Text = "Введите новый пароль";
             label2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // CancelBtn
             // 
-            CancelBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            CancelBtn.Location = new Point(12, 220);
+            CancelBtn.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            CancelBtn.Location = new Point(18, 255);
             CancelBtn.Name = "CancelBtn";
-            CancelBtn.Size = new Size(125, 35);
+            CancelBtn.Size = new Size(140, 45);
             CancelBtn.TabIndex = 2;
             CancelBtn.Text = "Отмена";
             CancelBtn.UseVisualStyleBackColor = true;
@@ -71,10 +71,10 @@
             // 
             // SaveBtn
             // 
-            SaveBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            SaveBtn.Location = new Point(146, 220);
+            SaveBtn.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            SaveBtn.Location = new Point(174, 255);
             SaveBtn.Name = "SaveBtn";
-            SaveBtn.Size = new Size(125, 35);
+            SaveBtn.Size = new Size(140, 45);
             SaveBtn.TabIndex = 3;
             SaveBtn.Text = "Сохранить";
             SaveBtn.UseVisualStyleBackColor = true;
@@ -83,11 +83,11 @@
             // oldPassword
             // 
             oldPassword.BackColor = Color.White;
-            oldPassword.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            oldPassword.Location = new Point(92, 72);
+            oldPassword.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            oldPassword.Location = new Point(113, 80);
             oldPassword.MaxLength = 4;
             oldPassword.Name = "oldPassword";
-            oldPassword.Size = new Size(100, 29);
+            oldPassword.Size = new Size(109, 33);
             oldPassword.TabIndex = 4;
             oldPassword.Text = "0000";
             oldPassword.TextAlign = HorizontalAlignment.Center;
@@ -96,11 +96,11 @@
             // newPassword
             // 
             newPassword.BackColor = Color.White;
-            newPassword.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            newPassword.Location = new Point(92, 169);
+            newPassword.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            newPassword.Location = new Point(113, 182);
             newPassword.MaxLength = 4;
             newPassword.Name = "newPassword";
-            newPassword.Size = new Size(100, 29);
+            newPassword.Size = new Size(109, 33);
             newPassword.TabIndex = 5;
             newPassword.Text = "0000";
             newPassword.TextAlign = HorizontalAlignment.Center;
@@ -112,7 +112,7 @@
             AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.White;
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(284, 261);
+            ClientSize = new Size(333, 312);
             ControlBox = false;
             Controls.Add(newPassword);
             Controls.Add(oldPassword);

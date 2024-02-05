@@ -55,9 +55,9 @@
             // 
             // checkBox
             // 
-            checkBox.Location = new Point(343, 123);
+            checkBox.Location = new Point(504, 185);
             checkBox.Name = "checkBox";
-            checkBox.Size = new Size(25, 25);
+            checkBox.Size = new Size(27, 27);
             checkBox.TabIndex = 0;
             checkBox.UseVisualStyleBackColor = true;
             checkBox.Click += checkBox_Click;
@@ -66,10 +66,10 @@
             // 
             checkStatus.AutoSize = true;
             checkStatus.BackColor = Color.Transparent;
-            checkStatus.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            checkStatus.Location = new Point(370, 123);
+            checkStatus.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            checkStatus.Location = new Point(537, 182);
             checkStatus.Name = "checkStatus";
-            checkStatus.Size = new Size(66, 25);
+            checkStatus.Size = new Size(74, 30);
             checkStatus.TabIndex = 1;
             checkStatus.Text = "Выкл.";
             // 
@@ -77,7 +77,7 @@
             // 
             trackBarVolume.AutoSize = false;
             trackBarVolume.BackColor = Color.White;
-            trackBarVolume.Location = new Point(336, 150);
+            trackBarVolume.Location = new Point(504, 230);
             trackBarVolume.Name = "trackBarVolume";
             trackBarVolume.Size = new Size(397, 32);
             trackBarVolume.TabIndex = 2;
@@ -87,7 +87,7 @@
             // 
             trackBarBrightness.AutoSize = false;
             trackBarBrightness.BackColor = Color.White;
-            trackBarBrightness.Location = new Point(336, 185);
+            trackBarBrightness.Location = new Point(504, 276);
             trackBarBrightness.Name = "trackBarBrightness";
             trackBarBrightness.Size = new Size(397, 32);
             trackBarBrightness.TabIndex = 2;
@@ -96,23 +96,23 @@
             // comboBox1
             // 
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            comboBox1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "русский", "English" });
-            comboBox1.Location = new Point(343, 295);
+            comboBox1.Location = new Point(504, 426);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(158, 28);
+            comboBox1.Size = new Size(183, 33);
             comboBox1.TabIndex = 3;
             // 
             // comboBox2
             // 
             comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox2.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            comboBox2.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             comboBox2.FormattingEnabled = true;
             comboBox2.Items.AddRange(new object[] { "День", "Ночь" });
-            comboBox2.Location = new Point(343, 329);
+            comboBox2.Location = new Point(504, 471);
             comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(158, 28);
+            comboBox2.Size = new Size(183, 33);
             comboBox2.TabIndex = 3;
             // 
             // time
@@ -159,52 +159,52 @@
             // 
             // timeH
             // 
-            timeH.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            timeH.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             timeH.InterceptArrowKeys = false;
-            timeH.Location = new Point(343, 223);
+            timeH.Location = new Point(504, 327);
             timeH.Maximum = new decimal(new int[] { 23, 0, 0, 0 });
             timeH.Name = "timeH";
             timeH.ReadOnly = true;
-            timeH.Size = new Size(38, 27);
+            timeH.Size = new Size(47, 35);
             timeH.TabIndex = 11;
             timeH.TextAlign = HorizontalAlignment.Center;
             // 
             // timeM
             // 
-            timeM.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            timeM.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             timeM.InterceptArrowKeys = false;
-            timeM.Location = new Point(403, 223);
+            timeM.Location = new Point(586, 327);
             timeM.Maximum = new decimal(new int[] { 59, 0, 0, 0 });
             timeM.Name = "timeM";
             timeM.ReadOnly = true;
-            timeM.Size = new Size(38, 27);
+            timeM.Size = new Size(47, 35);
             timeM.TabIndex = 11;
             timeM.TextAlign = HorizontalAlignment.Center;
             // 
             // dateD
             // 
-            dateD.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            dateD.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             dateD.InterceptArrowKeys = false;
-            dateD.Location = new Point(343, 257);
+            dateD.Location = new Point(504, 377);
             dateD.Maximum = new decimal(new int[] { 31, 0, 0, 0 });
             dateD.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             dateD.Name = "dateD";
             dateD.ReadOnly = true;
-            dateD.Size = new Size(38, 27);
+            dateD.Size = new Size(47, 35);
             dateD.TabIndex = 11;
             dateD.TextAlign = HorizontalAlignment.Center;
             dateD.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
             // datem
             // 
-            datem.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            datem.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             datem.InterceptArrowKeys = false;
-            datem.Location = new Point(403, 257);
+            datem.Location = new Point(586, 377);
             datem.Maximum = new decimal(new int[] { 12, 0, 0, 0 });
             datem.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             datem.Name = "datem";
             datem.ReadOnly = true;
-            datem.Size = new Size(38, 27);
+            datem.Size = new Size(47, 35);
             datem.TabIndex = 11;
             datem.TextAlign = HorizontalAlignment.Center;
             datem.Value = new decimal(new int[] { 1, 0, 0, 0 });
@@ -212,14 +212,14 @@
             // 
             // dateY
             // 
-            dateY.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            dateY.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             dateY.InterceptArrowKeys = false;
-            dateY.Location = new Point(461, 257);
+            dateY.Location = new Point(667, 377);
             dateY.Maximum = new decimal(new int[] { 2050, 0, 0, 0 });
             dateY.Minimum = new decimal(new int[] { 1980, 0, 0, 0 });
             dateY.Name = "dateY";
             dateY.ReadOnly = true;
-            dateY.Size = new Size(61, 27);
+            dateY.Size = new Size(88, 35);
             dateY.TabIndex = 11;
             dateY.TextAlign = HorizontalAlignment.Center;
             dateY.Value = new decimal(new int[] { 1980, 0, 0, 0 });

@@ -35,12 +35,12 @@
             // 
             // PasswordField
             // 
-            PasswordField.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            PasswordField.Location = new Point(87, 25);
+            PasswordField.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            PasswordField.Location = new Point(116, 35);
             PasswordField.MaxLength = 4;
             PasswordField.Multiline = true;
             PasswordField.Name = "PasswordField";
-            PasswordField.Size = new Size(105, 31);
+            PasswordField.Size = new Size(111, 36);
             PasswordField.TabIndex = 0;
             PasswordField.Text = "0000";
             PasswordField.TextAlign = HorizontalAlignment.Center;
@@ -48,10 +48,10 @@
             // 
             // CancelBtn
             // 
-            CancelBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            CancelBtn.Location = new Point(12, 77);
+            CancelBtn.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            CancelBtn.Location = new Point(21, 112);
             CancelBtn.Name = "CancelBtn";
-            CancelBtn.Size = new Size(115, 35);
+            CancelBtn.Size = new Size(136, 45);
             CancelBtn.TabIndex = 1;
             CancelBtn.Text = "ОТМЕНА";
             CancelBtn.UseVisualStyleBackColor = true;
@@ -59,10 +59,10 @@
             // 
             // OkBtn
             // 
-            OkBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            OkBtn.Location = new Point(152, 77);
+            OkBtn.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            OkBtn.Location = new Point(184, 112);
             OkBtn.Name = "OkBtn";
-            OkBtn.Size = new Size(115, 35);
+            OkBtn.Size = new Size(136, 45);
             OkBtn.TabIndex = 2;
             OkBtn.Text = "ОК";
             OkBtn.UseVisualStyleBackColor = true;
@@ -72,7 +72,7 @@
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
-            ClientSize = new Size(279, 122);
+            ClientSize = new Size(343, 168);
             ControlBox = false;
             Controls.Add(OkBtn);
             Controls.Add(CancelBtn);

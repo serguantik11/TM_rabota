@@ -60,7 +60,7 @@
             // zerostatus
             // 
             zerostatus.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            zerostatus.Location = new Point(396, 353);
+            zerostatus.Location = new Point(732, 518);
             zerostatus.MaximumSize = new Size(355, 40);
             zerostatus.MinimumSize = new Size(355, 40);
             zerostatus.Name = "zerostatus";
@@ -101,95 +101,91 @@
             // 
             // label22
             // 
-            label22.AutoSize = true;
             label22.BackColor = Color.Transparent;
-            label22.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label22.Location = new Point(671, 187);
+            label22.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label22.Location = new Point(964, 275);
             label22.Name = "label22";
-            label22.Size = new Size(34, 25);
+            label22.Size = new Size(60, 40);
             label22.TabIndex = 4;
             label22.Text = "10";
+            label22.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label23
             // 
-            label23.AutoSize = true;
             label23.BackColor = Color.Transparent;
-            label23.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label23.Location = new Point(671, 224);
+            label23.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label23.Location = new Point(964, 332);
             label23.Name = "label23";
-            label23.Size = new Size(34, 25);
+            label23.Size = new Size(60, 40);
             label23.TabIndex = 4;
             label23.Text = "10";
+            label23.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label24
             // 
-            label24.AutoSize = true;
             label24.BackColor = Color.Transparent;
-            label24.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label24.Location = new Point(671, 260);
+            label24.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label24.Location = new Point(964, 387);
             label24.Name = "label24";
-            label24.Size = new Size(34, 25);
+            label24.Size = new Size(60, 40);
             label24.TabIndex = 4;
             label24.Text = "10";
+            label24.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label21
             // 
-            label21.AutoSize = true;
             label21.BackColor = Color.Transparent;
-            label21.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label21.Location = new Point(671, 151);
+            label21.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label21.Location = new Point(964, 219);
             label21.Name = "label21";
-            label21.Size = new Size(34, 25);
+            label21.Size = new Size(60, 40);
             label21.TabIndex = 4;
             label21.Text = "10";
+            label21.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label14
             // 
-            label14.AutoSize = true;
             label14.BackColor = Color.Transparent;
-            label14.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label14.Location = new Point(573, 260);
+            label14.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label14.Location = new Point(825, 387);
             label14.Name = "label14";
-            label14.Size = new Size(34, 25);
+            label14.Size = new Size(60, 40);
             label14.TabIndex = 5;
             label14.Text = "10";
-            label14.TextAlign = ContentAlignment.MiddleRight;
+            label14.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label13
             // 
-            label13.AutoSize = true;
             label13.BackColor = Color.Transparent;
-            label13.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label13.Location = new Point(573, 224);
+            label13.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label13.Location = new Point(825, 332);
             label13.Name = "label13";
-            label13.Size = new Size(34, 25);
+            label13.Size = new Size(60, 40);
             label13.TabIndex = 6;
             label13.Text = "10";
-            label13.TextAlign = ContentAlignment.MiddleRight;
+            label13.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label11
             // 
-            label11.AutoSize = true;
             label11.BackColor = Color.Transparent;
-            label11.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label11.Location = new Point(573, 151);
+            label11.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label11.Location = new Point(825, 219);
             label11.Name = "label11";
-            label11.Size = new Size(34, 25);
+            label11.Size = new Size(60, 40);
             label11.TabIndex = 7;
             label11.Text = "10";
-            label11.TextAlign = ContentAlignment.MiddleRight;
+            label11.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label12
             // 
-            label12.AutoSize = true;
             label12.BackColor = Color.Transparent;
-            label12.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label12.Location = new Point(573, 187);
+            label12.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label12.Location = new Point(825, 275);
             label12.Name = "label12";
-            label12.Size = new Size(34, 25);
+            label12.Size = new Size(60, 40);
             label12.TabIndex = 8;
             label12.Text = "10";
-            label12.TextAlign = ContentAlignment.MiddleRight;
+            label12.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // Statistic
             // 
@@ -221,7 +217,6 @@
             Load += Statistic_Load;
             KeyUp += Statistic_KeyUp;
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion

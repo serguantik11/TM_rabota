@@ -82,9 +82,9 @@
             // panel1
             // 
             panel1.AutoScroll = true;
-            panel1.Location = new Point(31, 123);
+            panel1.Location = new Point(10, 155);
             panel1.Name = "panel1";
-            panel1.Size = new Size(720, 255);
+            panel1.Size = new Size(1100, 433);
             panel1.TabIndex = 1;
             // 
             // EmergencyStatistic
@@ -109,7 +109,6 @@
             Load += EmergencyStatistic_Load;
             KeyUp += EmergencyStatistic_KeyUp;
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
